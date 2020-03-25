@@ -174,7 +174,7 @@
   },
   "Mod_OnClientEntr": {
     "type": "resref",
-    "value": "x3_mod_def_enter"
+    "value": "_mod_def_enter"
   },
   "Mod_OnClientLeav": {
     "type": "resref",
