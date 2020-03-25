@@ -25,14 +25,14 @@ void main()
 
     else if (GetLevelByClass(CLASS_TYPE_WIZARD, Activator) <= 19 && GetLevelByClass(CLASS_TYPE_SORCERER, Activator) <= 19)
     {
-        if (GetArea(GetNearestObjectByTag("nocrown", Activator)) == GetArea(Activator))
+        if (GetLocalInt(GetArea(Activator), "NO_CROWN"))
         {
             CreateObject(OBJECT_TYPE_CREATURE, "dancingscimit001", GetLocation(Activator));
             return;
         }
         else
         {
-            SendMessageToPC(Activator, "You can't use that here.");
+            SendMessageToPC(Activator, "You are not powerful enough to use this item.");
             return;
         }
     }

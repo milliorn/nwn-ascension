@@ -1268,6 +1268,17 @@
                     "__struct_id": 0,
                     "NAME": {
                       "type": "cexostring",
+                      "value": "Gem of Teleportation"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "itm_teleport"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
                       "value": "Heart Stone"
                     },
                     "RESREF": {

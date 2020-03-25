@@ -5,12 +5,19 @@
 //::
 //:://////////////////////////////////////////////
 
+#include "inc_discord"
 #include "x2_inc_itemprop"
 #include "x3_inc_string"
+
+//  CD Verification for Staff
+int GetIsGM(object oPC);
 
 //  Checks for the local int 'NPCTHIEF'  this is set in the onspawn script for
 //  NPC's who can pickpocket
 int IsThiefNPC(object oThief); // Check to see if thief is spec, quickling, etc
+
+//  Run DM Verification code
+int VerifyDM(object oPC);
 
 //  Set the Gold Piece value in the items Description
 void PrintGPValue(object oItem);
@@ -21,9 +28,42 @@ void FixBarterExploit(object oFrom, object oPC);
 //  Display Custom Message to Party to notify what loot was acquired.
 void LootMessage(string sItem, string sPlayer, object oFrom, object oPC);
 
-//Send Faction Message
+//  Send Faction Message
 void SendMessageToFactionWithinDistance(object oPC, string sMessage, float fDist);
 
+//  Purge item by its tagname
+void PurgeItem(object oPC, object oItem, string s);
+
+//  Strip all buffs
+void RemoveAllEffects(object oCreature);
+
+// * Applies an XP and GP penalty
+// * to the player respawning
+void ApplyPenalty(object oDead);
+
+//  Used on newly created PC's to strip inventory and gold then assign default
+//  inventory and gold
+void StripPC(object oPC);
+
+//  Reset Hitpoints to what they were when PC logged out (same server session)
+void HitPointsAntiCheatOnEnter(object oPC);
+
+//  Set a variable to the PC's hitpoints so that it's persistant (same server session)
+void HitPointsAntiCheatOnExit(object oPC);
+
+
+int GetIsGM(object oPC)
+{
+    string sCDKEY = GetPCPublicCDKey(oPC, TRUE);
+
+    if (sCDKEY == "QR4JFL9A")
+    {
+        return TRUE;
+    }
+
+    else
+        return FALSE;
+}
 
 int IsThiefNPC(object oThief)
 {
@@ -95,8 +135,6 @@ void LootMessage(string sItem, string sPlayer, object oFrom, object oPC)
     }
 }
 
-// * Applies an XP and GP penalty
-// * to the player respawning
 void ApplyPenalty(object oDead)
 {
     int nXP = GetXP(oDead);
@@ -120,6 +158,115 @@ void ApplyPenalty(object oDead)
     AssignCommand(oDead, TakeGoldFromCreature(nGoldToTake, oDead, TRUE));
     DelayCommand(4.0, FloatingTextStrRefOnCreature(58299, oDead, FALSE));
     DelayCommand(4.8, FloatingTextStrRefOnCreature(58300, oDead, FALSE));
+
+    if (GetXP(oDead) < 1)
+    {
+        SetXP(oDead, 1);
+    }
 }
 
-void main(){}
+void PurgeItem(object oPC, object oItem, string s)
+{
+    if (GetTag(oItem) == s)
+    {
+        GiveGoldToCreature(oPC, GetGoldPieceValue(oItem));
+        DestroyObject(oItem);
+        SendMessageToPC(oPC, GetName(oItem) + " has been purged.  Refund given.");
+    }
+}
+
+void RemoveAllEffects(object oCreature)
+{
+    effect eCurrentEffect = GetFirstEffect(oCreature);
+    while (GetIsEffectValid(eCurrentEffect))
+    {
+        RemoveEffect(oCreature, eCurrentEffect);
+        eCurrentEffect = GetNextEffect(oCreature);
+    }
+}
+
+int VerifyDM(object oPC)
+{
+    string sName = GetName(oPC);
+    string sAccount = GetPCPlayerName(oPC);
+    string sCDKey = GetPCPublicCDKey(oPC);
+    string sIP = GetPCIPAddress(oPC);
+
+    if (GetIsDM(oPC))
+    {
+        if (GetIsGM(oPC))
+        {
+            SendMessageToAllDMs("Entering DM's CD Key "+ StringToRGBString("VERIFIED:", "070")
+            + "\nName: " + StringToRGBString(sName, "777")
+            + "\nAccount: " + StringToRGBString(sAccount, "777")
+            + "\nKey: " + StringToRGBString(sCDKey, "777")
+            + "\nIP: " + StringToRGBString(sIP, "777"));
+
+            ModMiscWebhook("DM VERIFIED - Player: " + sName + " Account: " + sAccount + " - Key: " + sCDKey + " IP: " + sIP);
+            return FALSE;
+        }
+
+        else
+        {
+            SendMessageToAllDMs("Entering DM's CD Key " + StringToRGBString("DENIED:", "700")
+            + "\nName: " + StringToRGBString(sName, "777")
+            + "\nAccount: " + StringToRGBString(sAccount, "777")
+            + "\nKey: " + StringToRGBString(sCDKey, "777")
+            + "\nIP: " + StringToRGBString(sIP, "777"));
+
+            ModMiscWebhook("DM DENIED - Player: " + sName + " Account: " + sAccount + " - Key: " + sCDKey + " IP: " + sIP);
+
+            BootPC(oPC, "DM Entry Denied");
+            return TRUE;
+        }
+    }
+
+    else if (GetIsPC(oPC))
+        return FALSE;
+
+    else
+        return FALSE;
+}
+
+void StripPC(object oPC)
+{
+    object oItem = GetFirstItemInInventory(oPC);
+    object oValid = GetItemPossessedBy(oPC, "itm_teleport");
+
+    while (GetIsObjectValid(oItem))
+    {
+        DestroyObject(oItem);
+        oItem = GetNextItemInInventory(oPC);
+    }
+
+    ClearAllActions(FALSE);
+    AssignCommand(oPC, TakeGoldFromCreature(GetGold(oPC), oPC, TRUE));
+    CreateItemOnObject("itm_teleport", oPC);
+    CreateItemOnObject("itm_sequencer", oPC);
+    GiveGoldToCreature(oPC, 300);
+    SetXP(oPC, 1);
+}
+
+void HitPointsAntiCheatOnEnter(object oPC)
+{
+    object oModule = GetModule();
+    string sID = GetName(oPC) + "_" + IntToString(GetXP(oPC));
+
+    if (GetLocalInt(oModule, "PC_LOGGED_" + sID))
+    {
+        ApplyEffectToObject(DURATION_TYPE_INSTANT, EffectDamage(GetMaxHitPoints(oPC) - GetLocalInt(oModule, "PC_HP_" + sID), DAMAGE_TYPE_MAGICAL, DAMAGE_POWER_ENERGY), oPC);
+    }
+}
+
+
+void HitPointsAntiCheatOnExit(object oPC)
+{
+    object oModule = GetModule();
+    string sID = GetName(oPC) + "_" + IntToString(GetXP(oPC));
+
+    SetLocalInt(oModule, "PC_LOGGED_" + sID, TRUE);
+    SetLocalInt(oModule, "PC_HP_" + sID, GetCurrentHitPoints(oPC));
+}
+
+
+//void main(){}

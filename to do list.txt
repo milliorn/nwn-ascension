@@ -1,0 +1,5 @@
+NO_CROWN var is used instead of nocrown placable from maps and add an int to the areas to replace it in all the scripts that reference the placeable
+
+Update the tag in itm_teleport script to port to the desired location upon teleporting.
+
+Setup LoginWebhook in OnClientEnter module event

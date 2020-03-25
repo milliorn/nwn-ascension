@@ -1,37 +1,63 @@
 //::///////////////////////////////////////////////
-//:: Default On Enter for Module
 //:: x3_mod_def_enter
-//:: Copyright (c) 2008 Bioware Corp.
 //:://////////////////////////////////////////////
-/*
-     This script adds the horse menus to the PCs.
-*/
+//::
+//:: Created By: Scott Milliorn
+//:: Created On: March 22, 2020
+//::
 //:://////////////////////////////////////////////
-//:: Created By: Deva B. Winblood
-//:: Created On: Dec 30th, 2007
-//:: Last Update: April 21th, 2008
-//:://////////////////////////////////////////////
+// Modified 12-22-2003 by AW Olorin to Automatically make DM's
+// Anonymous to PcScry on module entry.
+// Modified 1-25-2004 by AW Olorin - Remove message stones
+// Modified 6-11-2004 by AW Olorin - Added Mod news message
+// DM's log on anonymously. -- AW Olorin
 
-#include "x3_inc_horse"
+#include "inc_event_module"
 
 void main()
 {
-    object oPC=GetEnteringObject();
-    ExecuteScript("x3_mod_pre_enter",OBJECT_SELF); // Override for other skin systems
-    if ((GetIsPC(oPC)||GetIsDM(oPC))&&!GetHasFeat(FEAT_HORSE_MENU,oPC))
-    { // add horse menu
-        HorseAddHorseMenu(oPC);
-        if (GetLocalInt(GetModule(),"X3_ENABLE_MOUNT_DB"))
-        { // restore PC horse status from database
-            DelayCommand(2.0,HorseReloadFromDatabase(oPC,X3_HORSE_DATABASE));
-        } // restore PC horse status from database
-    } // add horse menu
-    if (GetIsPC(oPC))
-    { // more details
-        // restore appearance in case you export your character in mounted form, etc.
-        if (!GetSkinInt(oPC,"bX3_IS_MOUNTED")) HorseIfNotDefaultAppearanceChange(oPC);
-        // pre-cache horse animations for player as attaching a tail to the model
-        HorsePreloadAnimations(oPC);
-        DelayCommand(3.0,HorseRestoreHenchmenLocations(oPC));
-    } // more details
+    object oPC = GetEnteringObject();
+
+    string sName = GetName(oPC);
+    string sAccount = GetPCPlayerName(oPC);
+    string sCDKey = GetPCPublicCDKey(oPC);
+    string sIP = GetPCIPAddress(oPC);
+    string sBIC = NWNX_Player_GetBicFileName(oPC);
+
+    //  Send a message to Discord Channel of the client logging in.
+    LoginWebhook(oPC);
+
+    //  Validate DM Entry
+    if (VerifyDM(oPC)) return;
+
+    //  Redundant DM check to break the script if its a DM.
+    if (GetIsDM(oPC)) return;
+
+    //  Write a server log of the entering PC
+    WriteTimestampedLogEntry("Player: " + sName
+    + " Account: " + sAccount
+    + " KEY: " + sCDKey
+    + " IP: " + sIP
+    + " BIC: " + sBIC);
+
+    //  New player strip down
+    if (!GetIsObjectValid(GetItemPossessedBy(oPC, "itm_teleport")))
+    {
+        StripPC(oPC);
+    }
+
+    //  Notify Server on Shout of a Login.
+    SpeakString(StringToRGBString("LOGIN: "
+    + "\nPlayer: ", "777") + sName
+    + StringToRGBString("\nAccount: ", "777") + sAccount
+    + StringToRGBString("\nKey: ", "777") + sCDKey, TALKVOLUME_SHOUT);
+
+    //  Load PC HP's
+    HitPointsAntiCheatOnEnter(oPC);
+
+    //  Remove all buffs
+    RemoveAllEffects(oPC);
+
+    //  Automated visual upon PC entering the module casted on the starting location.
+    DelayCommand(6.0, ApplyEffectAtLocation(DURATION_TYPE_INSTANT, EffectVisualEffect(VFX_FNF_TIME_STOP), GetStartingLocation()));
 }
