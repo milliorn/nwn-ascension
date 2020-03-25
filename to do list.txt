@@ -3,3 +3,5 @@ NO_CROWN var is used instead of nocrown placable from maps and add an int to the
 Update the tag in itm_teleport script to port to the desired location upon teleporting.
 
 Setup LoginWebhook in OnClientEnter module event
+
+Do a check in the future if we are immortal in the modules client on enter event.
