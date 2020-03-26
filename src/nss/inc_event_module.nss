@@ -6,6 +6,7 @@
 //:://////////////////////////////////////////////
 
 #include "inc_discord"
+#include "nwnx_redis_save"
 #include "x2_inc_itemprop"
 #include "x3_inc_string"
 
@@ -50,6 +51,12 @@ void HitPointsAntiCheatOnEnter(object oPC);
 
 //  Set a variable to the PC's hitpoints so that it's persistant (same server session)
 void HitPointsAntiCheatOnExit(object oPC);
+
+//  Apply penalty if we logout in combat
+void DeathLog(object oPC);
+
+//  If you logout with 0 or less HP you are penalized
+void DrowCorpseLoot(object oPC);
 
 
 int GetIsGM(object oPC)
@@ -266,6 +273,72 @@ void HitPointsAntiCheatOnExit(object oPC)
 
     SetLocalInt(oModule, "PC_LOGGED_" + sID, TRUE);
     SetLocalInt(oModule, "PC_HP_" + sID, GetCurrentHitPoints(oPC));
+}
+
+void DeathLog(object oPC)
+{
+    if (GetIsInCombat(oPC))
+    {
+        SpeakString(StringToRGBString("AUTOKILLED\n", "700")
+        + StringToRGBString(GetName(oPC), "777")
+        + "\nLogging out in combat.", TALKVOLUME_SHOUT);
+
+        ApplyEffectToObject(DURATION_TYPE_INSTANT, EffectDamage(GetCurrentHitPoints(oPC) + 20, DAMAGE_TYPE_MAGICAL, DAMAGE_POWER_PLUS_TWENTY), oPC);
+    }
+}
+
+void DrowCorpseLoot(object oPC)
+{
+    if (GetCurrentHitPoints(oPC) <= 0)
+    {
+        switch (Random(13))
+        {
+            case 0:
+                DestroyObject(GetItemInSlot(INVENTORY_SLOT_ARMS, oPC));
+                break;
+            case 1:
+                DestroyObject(GetItemInSlot(INVENTORY_SLOT_ARROWS, oPC));
+                break;
+            case 2:
+                DestroyObject(GetItemInSlot(INVENTORY_SLOT_BELT, oPC));
+                break;
+            case 3:
+                DestroyObject(GetItemInSlot(INVENTORY_SLOT_BOLTS, oPC));
+                break;
+            case 4:
+                DestroyObject(GetItemInSlot(INVENTORY_SLOT_BOOTS, oPC));
+                break;
+            case 5:
+                DestroyObject(GetItemInSlot(INVENTORY_SLOT_BULLETS, oPC));
+                break;
+            case 6:
+                DestroyObject(GetItemInSlot(INVENTORY_SLOT_CHEST, oPC));
+                break;
+            case 7:
+                DestroyObject(GetItemInSlot(INVENTORY_SLOT_CLOAK, oPC));
+                break;
+            case 8:
+                DestroyObject(GetItemInSlot(INVENTORY_SLOT_HEAD, oPC));
+                break;
+            case 9:
+                DestroyObject(GetItemInSlot(INVENTORY_SLOT_LEFTHAND, oPC));
+                break;
+            case 10:
+                DestroyObject(GetItemInSlot(INVENTORY_SLOT_LEFTRING, oPC));
+                break;
+            case 11:
+                DestroyObject(GetItemInSlot(INVENTORY_SLOT_NECK, oPC));
+                break;
+            case 12:
+                DestroyObject(GetItemInSlot(INVENTORY_SLOT_RIGHTHAND, oPC));
+                break;
+            case 13:
+                DestroyObject(GetItemInSlot(INVENTORY_SLOT_RIGHTRING, oPC));
+                break;
+        }
+
+        AssignCommand(oPC, TakeGoldFromCreature(GetGold(oPC) / 15, oPC, TRUE));
+    }
 }
 
 

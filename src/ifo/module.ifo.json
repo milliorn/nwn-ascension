@@ -178,7 +178,7 @@
   },
   "Mod_OnClientLeav": {
     "type": "resref",
-    "value": ""
+    "value": "_mod_def_leave"
   },
   "Mod_OnCutsnAbort": {
     "type": "resref",

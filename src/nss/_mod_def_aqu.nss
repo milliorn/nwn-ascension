@@ -13,9 +13,7 @@ void main()
     object oItem = GetModuleItemAcquired();
     object oFrom = GetModuleItemAcquiredFrom();
     object oPC = GetModuleItemAcquiredBy();
-    object oPossessor = GetItemPossessor(oItem);
 
-    string sVictimName = "";
     string sFrom = GetName(oFrom);
     string sItem = GetName(oItem);
 
