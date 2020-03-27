@@ -186,7 +186,7 @@
   },
   "Mod_OnHeartbeat": {
     "type": "resref",
-    "value": ""
+    "value": "_mod_def_hb"
   },
   "Mod_OnModLoad": {
     "type": "resref",

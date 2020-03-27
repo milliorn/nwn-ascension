@@ -5,3 +5,5 @@ Update the tag in itm_teleport script to port to the desired location upon telep
 Setup LoginWebhook in OnClientEnter module event
 
 Do a check in the future if we are immortal in the modules client on enter event.
+
+Revisit moduleheartbeat script when events are finished to complete it.

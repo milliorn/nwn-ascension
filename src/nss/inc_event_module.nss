@@ -341,5 +341,4 @@ void DrowCorpseLoot(object oPC)
     }
 }
 
-
 //void main(){}
