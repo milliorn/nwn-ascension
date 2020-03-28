@@ -1388,6 +1388,22 @@
           "type": "byte",
           "value": 54
         },
+        "LIST": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Sequencer Stone"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "itm_sequencer"
+              }
+            }
+          ]
+        },
         "STRREF": {
           "type": "dword",
           "value": 6808

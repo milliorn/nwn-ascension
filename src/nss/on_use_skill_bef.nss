@@ -58,7 +58,6 @@ void main()
 
                     sMessage = "WARNING! " + GetName(OBJECT_SELF) + " - feat spam - FEAT_HIDE_IN_PLAIN_SIGHT";
                     SendMessageToAllDMs(sMessage);
-                    WriteTimestampedLogEntry(sMessage);
                 }
             }
         }

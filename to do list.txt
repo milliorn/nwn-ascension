@@ -7,3 +7,9 @@ Setup LoginWebhook in OnClientEnter module event
 Do a check in the future if we are immortal in the modules client on enter event.
 
 Revisit moduleheartbeat script when events are finished to complete it.
+
+Revisit afx_sfunc and afx_mod_spawn later on when maps are imported
+
+Add jail waypoint when jail is made for script on_use_skill_bef, inc_ai
+
+Update description and appearance of Sequencer Stone

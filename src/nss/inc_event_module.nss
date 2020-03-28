@@ -4,8 +4,9 @@
 //:: Created On: March 22, 2020
 //::
 //:://////////////////////////////////////////////
-
 #include "inc_discord"
+#include "nwnx_admin"
+#include "nwnx_redis"
 #include "nwnx_redis_save"
 #include "x2_inc_itemprop"
 #include "x3_inc_string"
@@ -57,6 +58,9 @@ void DeathLog(object oPC);
 
 //  If you logout with 0 or less HP you are penalized
 void DrowCorpseLoot(object oPC);
+
+//  Boot all clients
+void BootAllPC(object oPC);
 
 
 int GetIsGM(object oPC)
@@ -340,5 +344,16 @@ void DrowCorpseLoot(object oPC)
         AssignCommand(oPC, TakeGoldFromCreature(GetGold(oPC) / 15, oPC, TRUE));
     }
 }
+
+void BootAllPC(object oPC)
+{
+    object oPC = GetFirstPC();
+    while (GetIsObjectValid(oPC) == TRUE)
+    {
+        BootPC(oPC, "SERVER RESET. You may log back in now.");
+        oPC = GetNextPC();
+    }
+}
+
 
 //void main(){}

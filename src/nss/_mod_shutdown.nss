@@ -1,20 +1,10 @@
-#include "inc_discord"
-#include "nwnx_admin"
-#include "nwnx_redis"
-#include "nwnx_redis_save"
-#include "x3_inc_string"
-
-//  Boot all clients
-void BootAllPC(object oPC);
-void BootAllPC(object oPC)
-{
-    object oPC = GetFirstPC();
-    while (GetIsObjectValid(oPC) == TRUE)
-    {
-        BootPC(oPC, "SERVER RESET. You may log back in now.");
-        oPC = GetNextPC();
-    }
-}
+//:://////////////////////////////////////////////
+//::
+//:: Created By: Scott Milliorn
+//:: Created On: March 27, 2020
+//::
+//:://////////////////////////////////////////////
+#include "inc_event_module"
 
 void main()
 {
