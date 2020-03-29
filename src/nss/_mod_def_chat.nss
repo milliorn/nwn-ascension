@@ -1,24 +1,12 @@
-//::///////////////////////////////////////////////
-//:: Name: Chat Tools - Beta
-//:: FileName mod_pc_chat
-//::
-//:://////////////////////////////////////////////
-/*
-
-*/
 //:://////////////////////////////////////////////
 //:: By: Scott Milliorn
 //:: Created On: 26th August 2008
 //:: Updated On: 3rd October 2018
 //:://////////////////////////////////////////////
-#include "inc_event_module"
 #include "inc_chat"
-#include "inc_chat_emotes"
-#include "inc_chat_list"
 
 void main()
 {
-
     object oPC = GetPCChatSpeaker();
 
     //  If we are not a PC or DM then we stop here
