@@ -198,7 +198,7 @@
   },
   "Mod_OnPlrChat": {
     "type": "resref",
-    "value": ""
+    "value": "_mod_def_chat"
   },
   "Mod_OnPlrDeath": {
     "type": "resref",

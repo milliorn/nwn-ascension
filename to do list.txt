@@ -13,3 +13,11 @@ Revisit afx_sfunc and afx_mod_spawn later on when maps are imported
 Add jail waypoint when jail is made for script on_use_skill_bef, inc_ai
 
 Update description and appearance of Sequencer Stone
+
+Need to update xp in mod chat scripts for legendary levels
+
+Need to finish SF_GetIsShoutBanned to shout ban
+
+Update mod_chat script to reflect any hak changes when it comes to heads, tails, wings, etc.
+
+Add waypoint to dm room in script inc_chat when DM room is finished
