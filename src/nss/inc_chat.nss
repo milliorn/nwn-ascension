@@ -28,6 +28,11 @@ const int XP_REQ_LVL58 = 14820000; //
 const int XP_REQ_LVL59 = 15600000; //
 const int XP_REQ_LVL60 = 16380000; //
 
+const string JAIL = "WP_JAIL";
+const string HELL = "WP_HELL";
+
+
+#include "nwnx_chat"
 #include "nwnx_creature"
 #include "inc_chat_emotes"
 #include "inc_chat_list"
@@ -38,11 +43,14 @@ const int XP_REQ_LVL60 = 16380000; //
 //  Check if we are shout banned
 int GetIsShoutBanned(object oSender);
 
+//  Get if object is PC or DM
+int GetIsPlayer();
+
 //  Stop PC from spamming chat
 void StopSpam(object oPC, string sName, string sAccount, string sCDKEY, int iSpam);
 
 //  DM Chat tools
-void DmChatTools(object oPC, string sText, string sName);
+void ChatDMTools(object oPC, string sText, string sName);
 
 // Created Arm - Bone
 void ChatArmBone(object oPC);
@@ -92,15 +100,232 @@ void ChatEmote(object oPC, string sMsg);
 //  Execute chat commands
 void ChatCommand(object oPC, string sMsg, string sName, string sPCLevel);
 
+//  Send all messages to staff
+void SendMessageToGM(string sChat);
+
+//  Auto Follow command
+void AutoFollow(object oTarget, object oSender);
+
+//  Auto Follow command
+void AutoFollow(object oTarget, object oSender);
+
+//  Send target to jail waypoint
+void SendToJail(object oTarget, object oSender);
+
+//  Send target to hell waypoint
+void SendToHell(object oTarget, object oSender);
+
+//  Punish player who is misbehaving
+void DMPunsh(object oTarget, object oSender);
+
+//  Print target inventory
+void ShowInventory(object oPC);
+
+//  Take target's inventory
+void TakeInventory(object oPC, object oSender);
+
+//  DM Temp shout ban target
+void ShoutBanTemp(object oTarget, object oSender);
+
+
+int GetIsPlayer()
+{
+    /*if (GetIsPC(OBJECT_SELF) == TRUE || GetIsDM(OBJECT_SELF) == TRUE)
+        return TRUE;
+    else
+        return FALSE;  */
+    return GetIsPC(OBJECT_SELF) == TRUE || GetIsDM(OBJECT_SELF) == TRUE;
+}
+
 int GetIsShoutBanned(object oSender)
 {
-    if (GetLocalInt(GetModule(), "shout_disabled"))
+    if (GetLocalString(GetModule(), "SHOUT_BAN_TEMP") == GetPCPublicCDKey(oSender))
     {
         return TRUE;
     }
 
     else
         return FALSE;
+}
+
+void SendMessageToGM(string sChat)
+{
+    object oPC = GetFirstPC();
+    while (GetIsObjectValid(oPC))
+    {
+        if (GetIsGM(oPC))
+        {
+            NWNX_Chat_SendMessage(5, sChat, OBJECT_SELF, oPC);
+        }
+
+        oPC = GetNextPC();
+    }
+}
+
+//  Auto Follow command
+void AutoFollow(object oTarget, object oSender)
+{
+    DelayCommand(0.2, AssignCommand(oSender, ActionForceFollowObject(oTarget, 3.3)));
+    NWNX_Chat_SkipMessage();
+    FloatingTextStringOnCreature(StringToRGBString("You are now auto following ", "777") + GetName(oTarget), oSender);
+    SendMessageToGM(StringToRGBString(GetName(oSender) + " is auto following ", "777") + GetName(oTarget));
+}
+
+void ShoutBanTemp(object oTarget, object oSender)
+{
+    SetLocalString(GetModule(), "SHOUT_BAN_TEMP", GetPCPublicCDKey(oTarget));
+    SendMessageToGM(StringToRGBString(GetName(oSender), "777") + " temporary shout banned " + GetName(oTarget));
+
+    ModChatWebhook(GetName(oTarget) + " shout banned until reset by " + GetName(oSender));
+}
+
+//  DM Info command. Printout of PC stats
+void DMInfo(object oTarget, object oSender)
+{
+    SendMessageToGM(StringToRGBString("DM Info:", "777")
+    + StringToRGBString("\nPLAYER: ", "777") +  GetName(oTarget)
+    + StringToRGBString("\nACCOUNT: ", "777") +  GetPCPlayerName(oTarget)
+    + StringToRGBString("\nCDKEY: ", "777") +  GetPCPublicCDKey(oTarget)
+    + StringToRGBString("\nIP: ", "777") +  GetPCIPAddress(oTarget)
+    + StringToRGBString("\nCHARISMA: ", "777") +  IntToString(GetAbilityScore(oTarget, ABILITY_CHARISMA))
+    + StringToRGBString("\nCONSTITUTION: ", "777") +  IntToString(GetAbilityScore(oTarget, ABILITY_CONSTITUTION))
+    + StringToRGBString("\nDEXTERITY: ", "777") +  IntToString(GetAbilityScore(oTarget, ABILITY_DEXTERITY))
+    + StringToRGBString("\nINTELLIGENCE: ", "777") +  IntToString(GetAbilityScore(oTarget, ABILITY_INTELLIGENCE))
+    + StringToRGBString("\nSTRENGTH: ", "777") +  IntToString(GetAbilityScore(oTarget, ABILITY_STRENGTH))
+    + StringToRGBString("\nWISDOM: ", "777") +  IntToString(GetAbilityScore(oTarget, ABILITY_WISDOM))
+    + StringToRGBString("\nAC: ", "777") +  IntToString(GetAC(oTarget))
+    + StringToRGBString("\nAge: ", "777") +  IntToString(GetAge(oTarget))
+    + StringToRGBString("\nArea: ", "777") +  GetName(GetArea(oTarget))
+    + StringToRGBString("\nBAB: ", "777") +  IntToString(GetBaseAttackBonus(oTarget))
+    + StringToRGBString("\nChallenge Rating: ", "777") +  FloatToString(GetChallengeRating(oTarget))
+    + StringToRGBString("\nBAB: ", "777") +  IntToString(GetBaseAttackBonus(oTarget))
+    + StringToRGBString("\nHit Points: ", "777") +  IntToString(GetCurrentHitPoints(oTarget)) + "/" + IntToString(GetMaxHitPoints(oTarget))
+    + StringToRGBString("\nDeity: ", "777") + GetDeity(oTarget)
+    + StringToRGBString("\nLeader: ", "777") +  GetName(GetFactionLeader(oTarget))
+    + StringToRGBString("\nFamiliar: ", "777") +  GetFamiliarName(oTarget)
+    + StringToRGBString("\nFortitude: ", "777") +  IntToString(GetFortitudeSavingThrow(oTarget))
+    + StringToRGBString("\nReflex: ", "777") +  IntToString(GetReflexSavingThrow(oTarget))
+    + StringToRGBString("\nWill: ", "777") +  IntToString(GetWillSavingThrow(oTarget))
+    + StringToRGBString("\nGold: ", "777") +  IntToString(GetGold(oTarget))
+    + StringToRGBString("\nLevel: ", "777") +  IntToString(GetHitDice(oTarget))
+    + StringToRGBString("\nDead: ", "777") +  IntToString(GetIsDead(oTarget))
+    + StringToRGBString("\nEnemy: ", "777") +  IntToString(GetIsEnemy(oTarget, oSender))
+    + StringToRGBString("\nFriend: ", "777") +  IntToString(GetIsFriend(oTarget, oSender))
+    + StringToRGBString("\nCombat: ", "777") +  IntToString(GetIsInCombat(oTarget))
+    + StringToRGBString("\nNeutral: ", "777") +  IntToString(GetIsNeutral(oTarget))
+    + StringToRGBString("\nLevel: ", "777") +  IntToString(GetIsResting(oTarget))
+    + StringToRGBString("\nSR: ", "777") +  IntToString(GetSpellResistance(oTarget))
+    + StringToRGBString("\nSubrace: ", "777") +  GetSubRace(oTarget)
+    + StringToRGBString("\nUUID: ", "777") +  GetObjectUUID(oTarget)
+    + StringToRGBString("\nTag: ", "777") +  GetTag(oTarget)
+    + StringToRGBString("\nWeight: ", "777") +  IntToString(GetWeight(oTarget))
+    + StringToRGBString("\nXP: ", "777") +  IntToString(GetXP(oTarget))
+    );
+}
+
+void SendToJail(object oTarget, object oSender)
+{
+    AssignCommand(oTarget, ClearAllActions());
+    AssignCommand(oTarget, ActionJumpToLocation(GetLocation(GetWaypointByTag(JAIL))));
+
+    SendMessageToGM(StringToRGBString("Scales of Sentencing Activated on ", "777")
+    + GetName(oTarget)
+    + StringToRGBString(" by ", "777")
+    + GetName(oSender));
+
+    ModChatWebhook("Scales of Sentencing Activated on " + GetName(oTarget) + " by " + GetName(oSender));
+}
+
+void SendToHell(object oTarget, object oSender)
+{
+    AssignCommand(oTarget, ClearAllActions());
+    AssignCommand(oTarget, ActionJumpToLocation(GetLocation(GetWaypointByTag(JAIL))));
+
+    ApplyEffectAtLocation(DURATION_TYPE_TEMPORARY, EffectVisualEffect(VFX_FNF_SUMMON_GATE), GetLocation(oTarget), 12.0);
+    ApplyEffectToObject(DURATION_TYPE_TEMPORARY, EffectVisualEffect(VFX_DUR_TENTACLE), oTarget, 8.0);
+    ApplyEffectToObject(DURATION_TYPE_TEMPORARY, EffectVisualEffect(VFX_DUR_GHOSTLY_PULSE), oTarget, 8.0);
+    AssignCommand(oTarget, ActionSpeakString("Oh NO! I'm being sucked into the depths of Hell!!", TALKVOLUME_SHOUT));
+    DelayCommand(6.0, AssignCommand(oTarget, ActionSpeakString("I will be at the mercy of a powerfull demon! HELP ME!!!", TALKVOLUME_SHOUT)));
+    DelayCommand(6.0, AssignCommand(oTarget, ClearAllActions()));
+    DelayCommand(6.1, AssignCommand(oTarget, ActionJumpToLocation(GetLocation(GetWaypointByTag(HELL)))));
+    DelayCommand(12.0, AssignCommand(oTarget, ActionSpeakString("There is no escape from Hell! Only repeated brutal torture!", TALKVOLUME_SHOUT)));
+    DelayCommand(18.0, AssignCommand(oTarget, ActionSpeakString("I deserve this hellish judgements for my misdeeds!", TALKVOLUME_SHOUT)));
+    DelayCommand(24.0, AssignCommand(oTarget, ActionSpeakString("If I had known the consequences of my actions, I would have chosen a different path!", TALKVOLUME_SHOUT)));
+
+    SendMessageToGM(StringToRGBString("Boots of Banishing Activated on ", "777")
+    + GetName(oTarget)
+    + StringToRGBString(" by ", "777")
+    + GetName(oSender));
+
+    ModChatWebhook("Boots of Banishing Activated on " + GetName(oTarget) + " by " + GetName(oSender));
+}
+
+void DMPunsh(object oTarget, object oSender)
+{
+    string sTarget = GetPCPlayerName(oTarget);
+    string sSender = GetPCPlayerName(oSender);
+
+    SendMessageToAllDMs("Boots of Bannishing Activated on " + sTarget + " by " + sSender);
+
+    DelayCommand(0.2, ApplyEffectToObject(DURATION_TYPE_INSTANT, EffectVisualEffect(VFX_FNF_STRIKE_HOLY), OBJECT_SELF));
+
+    DelayCommand(1.0, ApplyEffectToObject(DURATION_TYPE_INSTANT, EffectVisualEffect(VFX_FNF_LOS_EVIL_30), OBJECT_SELF));
+    DelayCommand(1.3, ApplyEffectToObject(DURATION_TYPE_TEMPORARY, EffectVisualEffect(VFX_FNF_DISPEL_DISJUNCTION), OBJECT_SELF, 5.0));
+    DelayCommand(1.8, ApplyEffectToObject(DURATION_TYPE_INSTANT, EffectVisualEffect(VFX_FNF_BLINDDEAF), OBJECT_SELF));
+
+    ApplyEffectToObject(DURATION_TYPE_TEMPORARY, SupernaturalEffect(EffectDispelMagicAll(40)), oTarget, 60.0);
+    ApplyEffectToObject(DURATION_TYPE_TEMPORARY, SupernaturalEffect(EffectCurse(20, 20, 20, 20, 20, 20)), oTarget, 60.0);
+    ApplyEffectToObject(DURATION_TYPE_TEMPORARY, SupernaturalEffect(EffectBlindness()), oTarget, 60.0);
+    ApplyEffectToObject(DURATION_TYPE_TEMPORARY, SupernaturalEffect(EffectDarkness()), oTarget, 60.0);
+    ApplyEffectToObject(DURATION_TYPE_TEMPORARY, SupernaturalEffect(EffectDeaf()), oTarget, 60.0);
+    ApplyEffectToObject(DURATION_TYPE_TEMPORARY, SupernaturalEffect(EffectSilence()), oTarget, 60.0);
+    ApplyEffectToObject(DURATION_TYPE_TEMPORARY, SupernaturalEffect(EffectSlow()), oTarget, 60.0);
+
+    ApplyEffectToObject(DURATION_TYPE_TEMPORARY, EffectVisualEffect(VFX_DUR_ANTI_LIGHT_10), oTarget, 60.0);
+    ApplyEffectToObject(DURATION_TYPE_TEMPORARY, EffectVisualEffect(VFX_DUR_CESSATE_NEGATIVE), oTarget, 60.0);
+    ApplyEffectToObject(DURATION_TYPE_TEMPORARY, EffectVisualEffect(VFX_DUR_DARKNESS), oTarget, 60.0);
+    AssignCommand(oTarget, ActionSpeakString("I have offended the Gods, and must be punished!", TALKVOLUME_SHOUT));
+    DelayCommand(6.0, AssignCommand(oTarget, ActionSpeakString("I wander the realms in my accursed state as a pointed reminder... Don't anger the DM!", TALKVOLUME_SHOUT)));
+    DelayCommand(12.0, AssignCommand(oTarget, ActionSpeakString("I know now that the DM will punish me for misbehaving!", TALKVOLUME_SHOUT)));
+    DelayCommand(18.0, AssignCommand(oTarget, ActionSpeakString("I promise to behave if only you will take this horrific curse off of me!", TALKVOLUME_SHOUT)));
+
+    ModChatWebhook("DM Punishment activated on " + GetName(oTarget) + " by " + GetName(oSender));
+}
+
+void ShowInventory(object oPC)
+{
+    object oItem = GetFirstItemInInventory(oPC);
+    while (GetIsObjectValid(oItem))
+    {
+        SendMessageToGM(GetName(oItem));
+        oItem = GetNextItemInInventory(oPC);
+    }
+}
+
+void TakeInventory(object oPC, object oSender)
+{
+    AssignCommand(oPC, ActionUnequipItem(GetItemInSlot(INVENTORY_SLOT_ARMS, oPC)));
+    AssignCommand(oPC, ActionUnequipItem(GetItemInSlot(INVENTORY_SLOT_ARROWS, oPC)));
+    AssignCommand(oPC, ActionUnequipItem(GetItemInSlot(INVENTORY_SLOT_BELT, oPC)));
+    AssignCommand(oPC, ActionUnequipItem(GetItemInSlot(INVENTORY_SLOT_BOLTS, oPC)));
+    AssignCommand(oPC, ActionUnequipItem(GetItemInSlot(INVENTORY_SLOT_BOOTS, oPC)));
+    AssignCommand(oPC, ActionUnequipItem(GetItemInSlot(INVENTORY_SLOT_BULLETS, oPC)));
+    AssignCommand(oPC, ActionUnequipItem(GetItemInSlot(INVENTORY_SLOT_CHEST, oPC)));
+    AssignCommand(oPC, ActionUnequipItem(GetItemInSlot(INVENTORY_SLOT_CLOAK, oPC)));
+    AssignCommand(oPC, ActionUnequipItem(GetItemInSlot(INVENTORY_SLOT_HEAD, oPC)));
+    AssignCommand(oPC, ActionUnequipItem(GetItemInSlot(INVENTORY_SLOT_LEFTHAND, oPC)));
+    AssignCommand(oPC, ActionUnequipItem(GetItemInSlot(INVENTORY_SLOT_LEFTRING, oPC)));
+    AssignCommand(oPC, ActionUnequipItem(GetItemInSlot(INVENTORY_SLOT_NECK, oPC)));
+    AssignCommand(oPC, ActionUnequipItem(GetItemInSlot(INVENTORY_SLOT_RIGHTHAND, oPC)));
+    AssignCommand(oPC, ActionUnequipItem(GetItemInSlot(INVENTORY_SLOT_RIGHTRING, oPC)));
+
+    object oItem = GetFirstItemInInventory(oPC);
+    while (GetIsObjectValid(oItem))
+    {
+        CopyItem(oItem, oSender);
+        DestroyObject(oItem);
+        oItem = GetNextItemInInventory(oPC);
+    }
 }
 
 void ChatArmBone(object oPC)
@@ -1071,7 +1296,7 @@ void StopSpam(object oPC, string sName, string sAccount, string sCDKEY, int iSpa
     }
 }
 
-void DmChatTools(object oPC, string sText, string sName)
+void ChatDMTools(object oPC, string sText, string sName)
 {
     if (TestStringAgainstPattern(sText, "!dm_room"))
     {

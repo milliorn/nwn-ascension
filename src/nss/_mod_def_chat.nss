@@ -30,6 +30,7 @@ void main()
             {
                 // the player is banned from shout, process their shout through the talk channel
                 SetPCChatMessage("");
+                SendMessageToPC(oPC, "You are shout banned until server restart");
                 // tell the player they cannot shout until server reset, or until a dm removes the shout ban
                 //FloatingTextStringOnCreature (MSG_SHOUT_BANNED_1, oPC);
                 return;
@@ -47,25 +48,6 @@ void main()
     {
         StopSpam(oPC, sName, sAccount, sCDKEY, iSpam);
         return;
-    }
-
-    switch (GetPCChatVolume())
-    {
-    // we only process shout from here, other chat are hooked in the events_chat script
-        case TALKVOLUME_SHOUT:
-        {
-            // if the player used shout, but shouldn't be allowed to, disable shout and set talk channel
-            if (GetIsShoutBanned(oPC))
-            {
-                // the player is banned from shout, process their shout through the talk channel
-                SetPCChatMessage("");
-                // tell the player they cannot shout until server reset, or until a dm removes the shout ban
-                //FloatingTextStringOnCreature (MSG_SHOUT_BANNED_1, oPC);
-                return;
-            }
-            // no break needed, we don't want to exit the switch, but continue to default
-        }
-        default:
     }
 
     SetLocalInt(oPC, "PC_CHAT", 1);
@@ -117,7 +99,7 @@ void main()
     if (GetStringLeft(sMsg, 3) == "!dm")
     {
         if (!GetIsGM(oPC)) return;
-        DmChatTools(oPC, sText, sName);
+        ChatDMTools(oPC, sText, sName);
         return;
     }
 
@@ -137,4 +119,3 @@ void main()
         return;
     }
 }
-

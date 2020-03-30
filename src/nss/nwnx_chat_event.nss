@@ -4,20 +4,8 @@
 //:: Created On: March 27, 2020
 //::
 //:://////////////////////////////////////////////
-#include "inc_event_module"
-#include "nwnx_chat"
+#include "inc_chat"
 
-//  Get if object is PC or DM
-int GetIsPlayer();
-
-int GetIsPlayer()
-{
-    /*if (GetIsPC(OBJECT_SELF) == TRUE || GetIsDM(OBJECT_SELF) == TRUE)
-        return TRUE;
-    else
-        return FALSE;  */
-    return GetIsPC(OBJECT_SELF) == TRUE || GetIsDM(OBJECT_SELF) == TRUE;
-}
 
 void main()
 {
@@ -28,10 +16,13 @@ void main()
     if (NWNX_Chat_GetSender() == OBJECT_INVALID)
         return;
 
+    object oSender = NWNX_Chat_GetSender();
+    object oTarget =NWNX_Chat_GetTarget();
+
     string sChannel;
     string sChat;
-    string sNameSender = GetName(NWNX_Chat_GetSender());
-    string sNameReceiver = GetName(NWNX_Chat_GetTarget());
+    string sNameSender = GetName(oSender);
+    string sNameReceiver = GetName(oTarget);
     string sMessage = NWNX_Chat_GetMessage();
 
     int iChannel = NWNX_Chat_GetChannel();
@@ -82,6 +73,80 @@ void main()
             break;
     }
 
+    //  Auto Follow command
+    if (sMessage == "!follow" && iChannel == 4)
+    {
+        AutoFollow(oTarget, oSender);
+        return;
+    }
+
+    if (iChannel == 4 && GetIsGM(oSender))
+    {
+        if (sMessage == "!dm_info")
+        {
+            DMInfo(oTarget, oSender);
+            return;
+        }
+
+        //  DM Sent target to jail command
+        if (sMessage == "!dm_send_jail")
+        {
+            SendToJail(oTarget, oSender);
+            return;
+        }
+
+        //  DM Sent target to hell command
+        if (sMessage == "!dm_send_hell")
+        {
+            SendToHell(oTarget, oSender);
+            return;
+        }
+        //  DM Sent target to hell command
+        if (sMessage == "!dm_send_hell")
+        {
+            DMPunsh(oTarget, oSender);
+            return;
+        }
+
+        //  DM Jump target to DM command
+        if (sMessage == "!dm_jump_here")
+        {
+            AssignCommand(oTarget, ActionJumpToLocation(GetLocation(oSender)));
+            return;
+        }
+        //  DM Jump DM to target command
+        if (sMessage == "!dm_jump_there")
+        {
+            AssignCommand(oSender, ActionJumpToLocation(GetLocation(oTarget)));
+            return;
+        }
+
+        //  DM Reveal Map command
+        if (sMessage == "!dm_map")
+        {
+            ExploreAreaForPlayer(GetArea(oSender), oTarget);
+            return;
+        }
+
+        if (sMessage == "!dm_inv_show")
+        {
+            ShowInventory(oTarget);
+        }
+
+        if (sMessage == "!dm_inv_take")
+        {
+            TakeInventory(oTarget, oSender);
+        }
+
+        //  Temp ban the target from shout until reset
+        if (sMessage == "!dm_shout_ban")
+        {
+            ShoutBanTemp(oTarget, oSender);
+            ModChatWebhook(GetName(oTarget) + " shout banned until reset by " + GetName(oSender));
+            return;
+        }
+    }
+
     if (iChannel == 4 || iChannel == 20)
     {
         sChat = "(SENDER) - " + sNameSender +
@@ -90,7 +155,6 @@ void main()
                 " (TIME) - " + NWNX_Time_GetSystemTime() +
                 " (MESSAGE) - " + sMessage;
     }
-
     else
     {
         sChat = "(SENDER) - " + sNameSender +
@@ -108,7 +172,6 @@ void main()
                 StringToRGBString("CHANNEL: ", "070") + sChannel +
                 StringToRGBString("MESSAGE: ", "070") + sMessage;
     }
-
     else
     {
         sChat = StringToRGBString("SENDER: ", "070") + sNameSender +
@@ -116,15 +179,5 @@ void main()
                 StringToRGBString("MESSAGE: ", "070") + sMessage;
     }
 
-    object oPC = GetFirstPC();
-    while (GetIsObjectValid(oPC))
-    {
-        if (GetIsGM(oPC))
-        {
-            NWNX_Chat_SendMessage(5, sChat, OBJECT_SELF, oPC);
-        }
-
-        oPC = GetNextPC();
-    }
+    SendMessageToGM(sChat);
 }
-

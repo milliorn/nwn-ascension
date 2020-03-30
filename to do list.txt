@@ -21,3 +21,10 @@ Need to finish SF_GetIsShoutBanned to shout ban
 Update mod_chat script to reflect any hak changes when it comes to heads, tails, wings, etc.
 
 Add waypoint to dm room in script inc_chat when DM room is finished
+
+Updated waypoint in nwnx chat event script from sentenced to WP_JAIL.  Need to update the waypoint in jail
+
+Updated waypoint in nwnxchat event script from torture to WP_HELL.  Need to update the waypoint in hell
+
+Need to update the waypoint tag in itm_signet script
+

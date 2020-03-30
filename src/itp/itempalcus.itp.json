@@ -1179,6 +1179,17 @@
                           "__struct_id": 0,
                           "NAME": {
                             "type": "cexostring",
+                            "value": "Galadriem Signet Ring"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "itm_signet"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
                             "value": "Mordenkainens Ring"
                           },
                           "RESREF": {
@@ -1262,17 +1273,6 @@
                     "RESREF": {
                       "type": "resref",
                       "value": "itm_arcanesheat"
-                    }
-                  },
-                  {
-                    "__struct_id": 0,
-                    "NAME": {
-                      "type": "cexostring",
-                      "value": "Gem of Teleportation"
-                    },
-                    "RESREF": {
-                      "type": "resref",
-                      "value": "itm_teleport"
                     }
                   },
                   {
@@ -1391,6 +1391,17 @@
         "LIST": {
           "type": "list",
           "value": [
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Gem of Teleportation"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "itm_teleport"
+              }
+            },
             {
               "__struct_id": 0,
               "NAME": {
