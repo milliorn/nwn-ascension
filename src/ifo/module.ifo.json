@@ -202,7 +202,7 @@
   },
   "Mod_OnPlrDeath": {
     "type": "resref",
-    "value": "nw_o0_death"
+    "value": "_mod_def_death"
   },
   "Mod_OnPlrDying": {
     "type": "resref",

@@ -65,6 +65,10 @@ void BootAllPC(object oPC);
 //  Raise a PC with full HP, Spells, Feats
 void Raise(object oPlayer);
 
+// Reset Faction Reputation to PC
+void SetFactionsFriendly(object oPlayer);
+
+
 int GetIsGM(object oPC)
 {
     string sCDKEY = GetPCPublicCDKey(oPC, TRUE);
@@ -391,4 +395,26 @@ void Raise(object oPlayer)
     SignalEvent(oPlayer, EventSpellCastAt(OBJECT_SELF, SPELL_RESTORATION, FALSE));
     ApplyEffectToObject(DURATION_TYPE_INSTANT, eVisual, oPlayer);
 }
+
+void SetFactionsFriendly(object oPlayer)
+{
+    // * make friendly to Each of the 3 common factions
+    AssignCommand(oPlayer, ClearAllActions());
+
+    // * Note: waiting for Sophia to make SetStandardFactionReptuation to clear all personal reputation
+    if (GetStandardFactionReputation(STANDARD_FACTION_COMMONER, oPlayer) <= 10)
+    {
+        SetStandardFactionReputation(STANDARD_FACTION_COMMONER, 80, oPlayer);
+    }
+    if (GetStandardFactionReputation(STANDARD_FACTION_MERCHANT, oPlayer) <= 10)
+    {
+        SetStandardFactionReputation(STANDARD_FACTION_MERCHANT, 80, oPlayer);
+    }
+    if (GetStandardFactionReputation(STANDARD_FACTION_DEFENDER, oPlayer) <= 10)
+    {
+        SetStandardFactionReputation(STANDARD_FACTION_DEFENDER, 80, oPlayer);
+    }
+}
+
+
 //void main(){}
