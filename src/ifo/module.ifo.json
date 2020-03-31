@@ -214,7 +214,7 @@
   },
   "Mod_OnPlrLvlUp": {
     "type": "resref",
-    "value": ""
+    "value": "_mod_def_levelup"
   },
   "Mod_OnPlrRest": {
     "type": "resref",
