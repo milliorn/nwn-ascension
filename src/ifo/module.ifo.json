@@ -210,7 +210,7 @@
   },
   "Mod_OnPlrEqItm": {
     "type": "resref",
-    "value": "x2_mod_def_equ"
+    "value": "_mod_def_equ"
   },
   "Mod_OnPlrLvlUp": {
     "type": "resref",
