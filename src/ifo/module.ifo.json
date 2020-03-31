@@ -206,7 +206,7 @@
   },
   "Mod_OnPlrDying": {
     "type": "resref",
-    "value": "nw_o0_dying"
+    "value": "_mod_def_dying"
   },
   "Mod_OnPlrEqItm": {
     "type": "resref",

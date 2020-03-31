@@ -34,3 +34,4 @@ Need to add the int from _mod_def_death that auto raises pc's into maps
 
 Decide if bounty script will be added to PoA in the _mod_def_death event
 
+Need to go back an add the crown code from OnDeath.
