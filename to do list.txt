@@ -39,3 +39,7 @@ Need to go back an add the crown code from OnDeath.
 Need to revisit _mod_def_equ script and see if we need to merge it with on_pc_equip (crown stuff)
 
 Change the tag in _mod_def_respawn to port to where you respawn, or change the tag in the area you respawn at.
+
+I want to put some torches in town that turn on at night and off in the day?
+
+Can you put "lokitheft" (OnEnter) script on the area OnEnter so the trigger can be removed?
