@@ -226,7 +226,7 @@
   },
   "Mod_OnSpawnBtnDn": {
     "type": "resref",
-    "value": "nw_o0_respawn"
+    "value": "_mod_def_respawn"
   },
   "Mod_OnUnAqreItem": {
     "type": "resref",
