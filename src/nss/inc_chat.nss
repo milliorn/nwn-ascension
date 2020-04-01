@@ -1015,9 +1015,7 @@ void ChatReEquipItem(object oPC)
     }
 
     DelayCommand(1.1, FloatingTextStringOnCreature(StringToRGBString("All Items have been re-equipped.", STRING_COLOR_GREEN), oPC, FALSE));
-    DelayCommand(1.2, ExportSingleCharacter(oPC));
-    DelayCommand(1.3, FloatingTextStringOnCreature(StringToRGBString("Character Saved", STRING_COLOR_GREEN), oPC, FALSE));
-    DelayCommand(1.4, ExecuteScript("ws_saveall_sub", oPC));
+    DelayCommand(1.2, SaveClient(oPC));
     return;
 }
 
@@ -1068,9 +1066,7 @@ void ChatServer()
 void ChatSaveCharacter(object oPC)
 {
     SetPCChatMessage("");
-    ExportSingleCharacter(oPC);
-    FloatingTextStringOnCreature(StringToRGBString("Character Saved", STRING_COLOR_GREEN), oPC, FALSE);
-    ExecuteScript("ws_saveall_sub", oPC);
+    SaveClient(oPC);
     return;
 }
 
@@ -1080,9 +1076,8 @@ void ChatRelevelPC(object oPC)
     int nHD = GetHitDice(oPC);
     SetXP(oPC, (((nHD * (nHD - 1)) / 2 * 1000) - 1));
     DelayCommand(1.0, SetXP(oPC, nXP));
-    ExportSingleCharacter(oPC);
+    SaveClient(oPC);
     FloatingTextStringOnCreature(StringToRGBString("Level re-roll activated.", STRING_COLOR_GREEN), oPC, FALSE);
-    ExecuteScript("ws_saveall_sub", oPC);
 }
 
 void ChatRebuildPC(object oPC)
@@ -1090,9 +1085,8 @@ void ChatRebuildPC(object oPC)
     int nXP = GetXP(oPC);
     SetXP(oPC, 0);
     DelayCommand(1.0, SetXP(oPC, nXP));
-    ExportSingleCharacter(oPC);
+    SaveClient(oPC);
     FloatingTextStringOnCreature(StringToRGBString("Rebuild all levels activated.", STRING_COLOR_GREEN), oPC, FALSE);
-    ExecuteScript("ws_saveall_sub", oPC);
 }
 
 void ChatPvP(object oPC)
@@ -1316,10 +1310,6 @@ void ChatDMTools(object oPC, string sText, string sName)
         SpeakString(sName +
                         " has activated SERVER RESET!!!Account: " + GetPCPlayerName(oPC) + " CD Key: " + GetPCPublicCDKey(oPC),
                     TALKVOLUME_SHOUT);
-
-        ExportAllCharacters();
-        ExecuteScript("ws_saveall_sub", OBJECT_SELF);
-        ExecuteScript("_mod_shutdown", OBJECT_SELF);
     }
 
     if (TestStringAgainstPattern(sText, "!dm_plot"))

@@ -43,3 +43,7 @@ Change the tag in _mod_def_respawn to port to where you respawn, or change the t
 I want to put some torches in town that turn on at night and off in the day?
 
 Can you put "lokitheft" (OnEnter) script on the area OnEnter so the trigger can be removed?
+
+Change area variable checking if we should die if we rest on the map to REST_DEATH from "norest"
+
+In the module rest event make sure drowwarrior003 exist when npcs are imported, if not change the tagname.

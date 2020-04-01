@@ -42,7 +42,8 @@ void main()
     HitPointsAntiCheatOnExit(oPC);
 
     //  Logout Penalty if you are dead or dying
-    DrowCorpseLoot(oPC);
+    if (GetCurrentHitPoints(oPC) <= 0)
+        DrowCorpseLoot(oPC);
 
     //  Database save
     SaveRedis();

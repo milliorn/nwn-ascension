@@ -17,11 +17,10 @@ void main()
         AssignCommand(oPC, PlaySound("as_sw_x2gong1"));
         DelayCommand(1.0, AssignCommand(oPC, PlaySound("as_sw_x2gong2")));
         DelayCommand(2.0, AssignCommand(oPC, PlaySound("vs_nx2mephm_107")));
-        ExecuteScript("ws_saveall_sub", OBJECT_SELF);
+        SaveClient(oPC);
         oPC = GetNextPC();
     }
 
-    ExportAllCharacters();
     SpeakString("All characters have been saved by auto-reboot script.", TALKVOLUME_SHOUT);
 
     //  Send a message to ACN Discord Channel of the client logging out

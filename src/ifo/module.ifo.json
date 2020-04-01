@@ -218,7 +218,7 @@
   },
   "Mod_OnPlrRest": {
     "type": "resref",
-    "value": "x2_mod_def_rest"
+    "value": "_mod_def_rest"
   },
   "Mod_OnPlrUnEqItm": {
     "type": "resref",

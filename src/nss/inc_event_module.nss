@@ -68,6 +68,9 @@ void Raise(object oPlayer);
 // Reset Faction Reputation to PC
 void SetFactionsFriendly(object oPlayer);
 
+//  Wrapper to export bic file and send client a message
+void SaveClient(object oPC);
+
 
 int GetIsGM(object oPC)
 {
@@ -110,11 +113,8 @@ void FixBarterExploit(object oFrom, object oPC)
     if (GetIsPC(oFrom) && GetIsPC(oPC))
     {
         ExportSingleCharacter(oFrom);
-        FloatingTextStringOnCreature(StringToRGBString("Character Saved", "070"), oFrom, FALSE);
-        ExportSingleCharacter(oPC);
-        FloatingTextStringOnCreature(StringToRGBString("Character Saved", "070"), oPC, FALSE);
+        SaveClient(oPC);
         ExecuteScript("ws_saveall_sub", oFrom);
-        ExecuteScript("ws_saveall_sub", oPC);
         return;
     }
 }
@@ -299,56 +299,8 @@ void DeathLog(object oPC)
 
 void DrowCorpseLoot(object oPC)
 {
-    if (GetCurrentHitPoints(oPC) <= 0)
-    {
-        switch (Random(13))
-        {
-            case 0:
-                DestroyObject(GetItemInSlot(INVENTORY_SLOT_ARMS, oPC));
-                break;
-            case 1:
-                DestroyObject(GetItemInSlot(INVENTORY_SLOT_ARROWS, oPC));
-                break;
-            case 2:
-                DestroyObject(GetItemInSlot(INVENTORY_SLOT_BELT, oPC));
-                break;
-            case 3:
-                DestroyObject(GetItemInSlot(INVENTORY_SLOT_BOLTS, oPC));
-                break;
-            case 4:
-                DestroyObject(GetItemInSlot(INVENTORY_SLOT_BOOTS, oPC));
-                break;
-            case 5:
-                DestroyObject(GetItemInSlot(INVENTORY_SLOT_BULLETS, oPC));
-                break;
-            case 6:
-                DestroyObject(GetItemInSlot(INVENTORY_SLOT_CHEST, oPC));
-                break;
-            case 7:
-                DestroyObject(GetItemInSlot(INVENTORY_SLOT_CLOAK, oPC));
-                break;
-            case 8:
-                DestroyObject(GetItemInSlot(INVENTORY_SLOT_HEAD, oPC));
-                break;
-            case 9:
-                DestroyObject(GetItemInSlot(INVENTORY_SLOT_LEFTHAND, oPC));
-                break;
-            case 10:
-                DestroyObject(GetItemInSlot(INVENTORY_SLOT_LEFTRING, oPC));
-                break;
-            case 11:
-                DestroyObject(GetItemInSlot(INVENTORY_SLOT_NECK, oPC));
-                break;
-            case 12:
-                DestroyObject(GetItemInSlot(INVENTORY_SLOT_RIGHTHAND, oPC));
-                break;
-            case 13:
-                DestroyObject(GetItemInSlot(INVENTORY_SLOT_RIGHTRING, oPC));
-                break;
-        }
-
-        AssignCommand(oPC, TakeGoldFromCreature(GetGold(oPC) / 15, oPC, TRUE));
-    }
+    DestroyObject(GetItemInSlot(Random(13), oPC));
+    AssignCommand(oPC, TakeGoldFromCreature(GetGold(oPC) / 15, oPC, TRUE));
 }
 
 void BootAllPC(object oPC)
@@ -414,6 +366,13 @@ void SetFactionsFriendly(object oPlayer)
     {
         SetStandardFactionReputation(STANDARD_FACTION_DEFENDER, 80, oPlayer);
     }
+}
+
+void SaveClient(object oPC)
+{
+    ExportSingleCharacter(oPC);
+    FloatingTextStringOnCreature(StringToRGBString("Character Saved", "777"), oPC, FALSE);
+    ExecuteScript("ws_saveall_sub", oPC);
 }
 
 

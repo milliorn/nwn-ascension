@@ -5,6 +5,7 @@
 //::
 //:://////////////////////////////////////////////
 #include "inc_discord"
+#include "inc_event_module"
 #include "x3_inc_string"
 
 void main()
@@ -13,9 +14,7 @@ void main()
     int iHD = GetHitDice(oPC);
 
     ForceRest(oPC);
-    ExportSingleCharacter(oPC);
-    ExecuteScript("ws_saveall_sub", oPC);
-    FloatingTextStringOnCreature(StringToRGBString("Character Saved", "070"), oPC, FALSE);
+    SaveClient(oPC);
 
     //  Special VFX effects at level up milestones with a discord message
     switch (iHD)

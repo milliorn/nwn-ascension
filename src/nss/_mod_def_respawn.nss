@@ -1,3 +1,7 @@
+//:://////////////////////////////////////////////
+//:: Created By: Scott Milliorn
+//:: Created On: 2020-03-31
+//:://////////////////////////////////////////////
 #include "inc_event_module"
 
 void main()
@@ -10,14 +14,13 @@ void main()
     ApplyEffectAtLocation(DURATION_TYPE_INSTANT, EffectVisualEffect(VFX_FNF_SMOKE_PUFF), GetLocation(oRespawner));
     DelayCommand(0.1, AssignCommand(oRespawner, ClearAllActions()));
     DelayCommand(0.2, AssignCommand(oRespawner, JumpToLocation(GetLocation(GetWaypointByTag("NW_DEATH_TEMPLE")))));
-    ExportSingleCharacter(oRespawner);
-    FloatingTextStringOnCreature(StringToRGBString("Character Saved", "777"), oRespawner, FALSE);
-    ExecuteScript("ws_saveall_sub", oRespawner);
+    SaveClient(oRespawner);
+    PlayVoiceChat(VOICE_CHAT_GOODBYE, oRespawner);
 
     if (d6() == 1)
     {
-        DestroyObject(GetItemInSlot(Random(13), oRespawner));
-        SendMessageToPC(oRespawner, "Someone or Something has looted your corpse!");
+        DrowCorpseLoot(oRespawner);
+        SendMessageToPC(oRespawner, "Someone or something has looted your corpse!");
     }
 }
 
