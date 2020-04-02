@@ -222,7 +222,7 @@
   },
   "Mod_OnPlrUnEqItm": {
     "type": "resref",
-    "value": "x2_mod_def_unequ"
+    "value": "_mod_def_unequ"
   },
   "Mod_OnSpawnBtnDn": {
     "type": "resref",
@@ -230,7 +230,7 @@
   },
   "Mod_OnUnAqreItem": {
     "type": "resref",
-    "value": "x2_mod_def_unaqu"
+    "value": "_mod_def_unaqu"
   },
   "Mod_OnUsrDefined": {
     "type": "resref",

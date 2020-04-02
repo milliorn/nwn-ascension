@@ -71,6 +71,9 @@ void SetFactionsFriendly(object oPlayer);
 //  Wrapper to export bic file and send client a message
 void SaveClient(object oPC);
 
+//  Check for Traps being set in NO PvP area
+void CheckForTraps(object oArea, object oPC);
+
 
 int GetIsGM(object oPC)
 {
@@ -375,5 +378,31 @@ void SaveClient(object oPC)
     ExecuteScript("ws_saveall_sub", oPC);
 }
 
+void CheckForTraps(object oArea, object oPC)
+{
+    object oTrap = GetNearestTrapToObject(oPC, FALSE);
 
+    if (GetIsObjectValid(oTrap) && GetTrapCreator(oTrap) == oPC)
+    {
+        SetTrapActive(oTrap, FALSE);
+        SetTrapDetectable(oTrap, FALSE);
+        SetTrapDetectDC(oTrap, 0);
+        SetTrapDisabled(oTrap);
+        SetTrapDisarmable(oTrap, TRUE);
+        SetTrapDisarmDC(oTrap, 0);
+        SetTrapRecoverable(oTrap, TRUE);
+
+        ModMiscWebhook("Player: " + GetName(oPC) +
+                        " - Account: " + GetPCPlayerName(oPC) +
+                        " - CDKEY: " + GetPCPublicCDKey(oPC, TRUE) +
+                        " has set a trap in NO PVP area!");
+
+        SendMessageToAllDMs("Player: " + StringToRGBString(GetName(oPC), "777")
+        + " - Account: " + StringToRGBString(GetPCPlayerName(oPC), "777")
+        + " - CDKEY: " + StringToRGBString(GetPCPublicCDKey(oPC, TRUE), "777")
+        + StringToRGBString(" has set a trap in NO PVP area!", "700"));
+
+        ClearAllActions(FALSE);
+    }
+}
 //void main(){}

@@ -47,3 +47,5 @@ Can you put "lokitheft" (OnEnter) script on the area OnEnter so the trigger can 
 Change area variable checking if we should die if we rest on the map to REST_DEATH from "norest"
 
 In the module rest event make sure drowwarrior003 exist when npcs are imported, if not change the tagname.
+
+Add NO_TRAP variable to maps that prohibit trap setting.
