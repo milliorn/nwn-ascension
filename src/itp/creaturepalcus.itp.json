@@ -1870,6 +1870,30 @@
           "type": "byte",
           "value": 46
         },
+        "LIST": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
+                "value": 0.25
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Merchant"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Captain Maley"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "captainmaleyreyn"
+              }
+            }
+          ]
+        },
         "STRREF": {
           "type": "dword",
           "value": 6732

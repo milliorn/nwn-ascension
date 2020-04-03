@@ -11,7 +11,7 @@
         "__struct_id": 6,
         "Area_Name": {
           "type": "resref",
-          "value": "cep_starter_001"
+          "value": "thevoyage"
         }
       }
     ]
@@ -48,7 +48,7 @@
   },
   "Mod_Entry_Area": {
     "type": "resref",
-    "value": "cep_starter_001"
+    "value": "thevoyage"
   },
   "Mod_Entry_Dir_X": {
     "type": "float",
@@ -60,15 +60,15 @@
   },
   "Mod_Entry_X": {
     "type": "float",
-    "value": 10.0
+    "value": 24.8372688293457
   },
   "Mod_Entry_Y": {
     "type": "float",
-    "value": 9.0
+    "value": 36.68982696533203
   },
   "Mod_Entry_Z": {
     "type": "float",
-    "value": 0.0
+    "value": 4.990000247955322
   },
   "Mod_Expan_List": {
     "type": "list",

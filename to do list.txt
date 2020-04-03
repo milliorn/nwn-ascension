@@ -49,3 +49,17 @@ Change area variable checking if we should die if we rest on the map to REST_DEA
 In the module rest event make sure drowwarrior003 exist when npcs are imported, if not change the tagname.
 
 Add NO_TRAP variable to maps that prohibit trap setting.
+
+Add recall stone tagname to are_voyage_skip script and update the waypoint tagname when its done in Town of Ascension
+
+Replace the trinket in the Sages home with another item, probably the sequencer stone.
+
+Changed waypoint "swim" to "WP_VOYAGE"
+
+Add the code from the script "lokitheft" into an area_on_enter event script at a later date.
+
+Change waypoint tag in Town of Ascension that you jump to after the voyage and update the tag in the script "port_start"
+
+Add lokitheft code to "are_voyage_skip" script
+
+Change the code in module onenter script so that you get itm_teleport after you completed the convo on the voyage boat.
