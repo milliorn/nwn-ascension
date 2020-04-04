@@ -63,3 +63,5 @@ Change waypoint tag in Town of Ascension that you jump to after the voyage and u
 Add lokitheft code to "are_voyage_skip" script
 
 Change the code in module onenter script so that you get itm_teleport after you completed the convo on the voyage boat.
+
+test
