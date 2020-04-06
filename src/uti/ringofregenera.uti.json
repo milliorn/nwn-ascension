@@ -1,0 +1,113 @@
+{
+  "__data_type": "UTI ",
+  "AddCost": {
+    "type": "dword",
+    "value": 10000
+  },
+  "BaseItem": {
+    "type": "int",
+    "value": 52
+  },
+  "Charges": {
+    "type": "byte",
+    "value": 0
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Cost": {
+    "type": "dword",
+    "value": 86051
+  },
+  "Cursed": {
+    "type": "byte",
+    "value": 0
+  },
+  "DescIdentified": {
+    "id": 13460,
+    "type": "cexolocstring",
+    "value": {
+      "0": "The lowly wizard Huhhus discovered an efficient way to distill troll flesh into a regenerative potion, but few people were willing to drink the vile liquid and it was considered a failure. Decades later, one of his students built upon these foundations to create a regenerative ring fueled by bits of troll ichor and brains. This external use caused far less nausea, and the invention met with success."
+    }
+  },
+  "Description": {
+    "type": "cexolocstring",
+    "value": {}
+  },
+  "Identified": {
+    "type": "byte",
+    "value": 1
+  },
+  "LocalizedName": {
+    "id": 13459,
+    "type": "cexolocstring",
+    "value": {
+      "0": "Ring of Regeneration"
+    }
+  },
+  "ModelPart1": {
+    "type": "byte",
+    "value": 12
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 53
+  },
+  "Plot": {
+    "type": "byte",
+    "value": 0
+  },
+  "PropertiesList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "ChanceAppear": {
+          "type": "byte",
+          "value": 100
+        },
+        "CostTable": {
+          "type": "byte",
+          "value": 2
+        },
+        "CostValue": {
+          "type": "word",
+          "value": 4
+        },
+        "Param1": {
+          "type": "byte",
+          "value": 255
+        },
+        "Param1Value": {
+          "type": "byte",
+          "value": 255
+        },
+        "PropertyName": {
+          "type": "word",
+          "value": 51
+        },
+        "Subtype": {
+          "type": "word",
+          "value": 0
+        }
+      }
+    ]
+  },
+  "StackSize": {
+    "type": "word",
+    "value": 1
+  },
+  "Stolen": {
+    "type": "byte",
+    "value": 0
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "NW_IT_MRING004"
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "ringofregenera"
+  }
+}

@@ -1,0 +1,10 @@
+//:://////////////////////////////////////////////
+//:: Created By: Scott Milliorn
+//:: Created On: 2020-04-05
+//::///////////////////////////////////////////////
+//:://////////////////////////////////////////////
+
+void main()
+{
+    ApplyEffectToObject(DURATION_TYPE_TEMPORARY, EffectVisualEffect(VFX_FNF_DISPEL), GetObjectByTag("Gravestone1"));
+}

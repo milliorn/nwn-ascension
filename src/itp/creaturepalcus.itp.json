@@ -1877,6 +1877,44 @@
               "__struct_id": 0,
               "CR": {
                 "type": "float",
+                "value": 95.0
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Defender"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Ascension High Priest"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "ascensionhighp"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
+                "value": 39.0
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Defender"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Ascension Jail Guard"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "jailguard"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
                 "value": 0.25
               },
               "FACTION": {
@@ -1890,6 +1928,139 @@
               "RESREF": {
                 "type": "resref",
                 "value": "captainmaleyreyn"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
+                "value": 2.0
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Defender"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Madman"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "madman"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
+                "value": 60.0
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Defender"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Merem"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "merem"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
+                "value": 121.0
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Defender"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Rowans Guardian"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "leveler"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
+                "value": 22.0
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Defender"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Town Watch"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "townwatch004"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
+                "value": 39.0
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Defender"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Town Watch"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "townwatch005"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
+                "value": 39.0
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Defender"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Town Watch"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "townwatch006"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
+                "value": 0.5
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Defender"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Travelling Merchant"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "travelingmerchan"
               }
             }
           ]

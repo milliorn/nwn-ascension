@@ -2825,7 +2825,7 @@
         },
         "Script": {
           "type": "resref",
-          "value": "port_start"
+          "value": "cv_voyage"
         },
         "Sound": {
           "type": "resref",

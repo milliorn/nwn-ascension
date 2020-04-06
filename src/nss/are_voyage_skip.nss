@@ -4,9 +4,9 @@ void main()
     object oPC = GetEnteringObject(),
            oBanker = GetWaypointByTag("WP_CaptainMaleyReynolds");
 
-    if (HasItem(oPC, "itm_teleport") || GetIsDM(oPC))
+    if (HasItem(oPC, "itm_teleport") && GetXP(oPC) > 1 || GetIsDM(oPC))
     {
-        AssignCommand(oPC, ActionJumpToLocation(GetLocation(GetWaypointByTag("voyage"))));
+        AssignCommand(oPC, ActionJumpToLocation(GetLocation(GetWaypointByTag("WP_HOME"))));
         return;
     }
 

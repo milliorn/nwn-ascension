@@ -73,7 +73,7 @@
         },
         "CostValue": {
           "type": "word",
-          "value": 1
+          "value": 8
         },
         "Param1": {
           "type": "byte",
@@ -104,7 +104,7 @@
   },
   "Tag": {
     "type": "cexostring",
-    "value": "GemofTeleportation"
+    "value": "itm_teleport"
   },
   "TemplateResRef": {
     "type": "resref",

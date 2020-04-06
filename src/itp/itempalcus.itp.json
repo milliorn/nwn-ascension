@@ -768,6 +768,22 @@
                 "type": "byte",
                 "value": 5
               },
+              "LIST": {
+                "type": "list",
+                "value": [
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Urchin Rags"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "urchinrags"
+                    }
+                  }
+                ]
+              },
               "STRREF": {
                 "type": "dword",
                 "value": 186
@@ -778,6 +794,22 @@
               "ID": {
                 "type": "byte",
                 "value": 8
+              },
+              "LIST": {
+                "type": "list",
+                "value": [
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Militia Armor"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "militiaarmor"
+                    }
+                  }
+                ]
               },
               "STRREF": {
                 "type": "dword",
@@ -838,6 +870,44 @@
                     "ID": {
                       "type": "byte",
                       "value": 11
+                    },
+                    "LIST": {
+                      "type": "list",
+                      "value": [
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Militia Shield"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "militiashield"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Militia Shield"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "militiashield002"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Militia Shield"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "militiashield003"
+                          }
+                        }
+                      ]
                     },
                     "STRREF": {
                       "type": "dword",
@@ -1493,6 +1563,330 @@
           "type": "byte",
           "value": 53
         },
+        "LIST": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Amulet of Ogre Strength"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "amuletofogres"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Elven Gift"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "elvengift"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Ice Fang"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "icefang"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Longsword +1"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "003"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Merchants Silk"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "008"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Militia Armor"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "006"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Militia Armor"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "007"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Militia Armor"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "maarcl084"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Militia Shield"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "004"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Mind Mask"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "mindmask"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Potion of Divine  Power"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "potionofdivine"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Potion of Elemental Shield"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "potionofelemen"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Potion of Heal"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "potionofheal"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Potion of Iron Skin"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "potionofirons"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Potion of Mighty Strength"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "potionofmighty"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Potion of Negative Energy Protection"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "potionofnegati"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Potion of Spell Resistance"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "potionofspell"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Potion of Trap Finding"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "potionoftrapf"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Potion of True Seeing"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "potionoftrues"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Quicksilver Boots"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "002"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Quicksilver Boots"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "83gd"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Quicksilver Boots"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "quicksilverboot"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Rhiannon's Embracement"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "rhiannonsembra"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Ring of Regeneration"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "ringofregenera"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Ring of the Saints"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "ringofthesain"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Rod of Triumph"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "001"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Rod of Victory"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "005"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Shadow Cloth"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "shadowcloth"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Short Shrift"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "shortshrift"
+              }
+            }
+          ]
+        },
         "STRREF": {
           "type": "dword",
           "value": 6732
@@ -1651,6 +2045,39 @@
                     "LIST": {
                       "type": "list",
                       "value": [
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Longsword +1"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "longsword1"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "wswmls004"
+                          },
+                          "STRREF": {
+                            "type": "dword",
+                            "value": 14346
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "wswmls005"
+                          },
+                          "STRREF": {
+                            "type": "dword",
+                            "value": 14346
+                          }
+                        },
                         {
                           "__struct_id": 0,
                           "NAME": {

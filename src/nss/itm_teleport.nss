@@ -27,7 +27,7 @@ void CheckIsInBattle(object oPC, int iTimer, vector vLoc)
     //  If timer runs out teleport PC
     if (iTimer <= 0)
     {
-        location lLoc = GetLocation(GetWaypointByTag("NW_DEATH_TEMPLE"));
+        location lLoc = GetLocation(GetWaypointByTag("WP_HOME"));
         int iGoldLoss = GetHitDice(oPC) * 15;
 
         AssignCommand(oPC, TakeGoldFromCreature(iGoldLoss, oPC, TRUE));

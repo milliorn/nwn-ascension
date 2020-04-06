@@ -1,16 +1,12 @@
 NO_CROWN var is used instead of nocrown placable from maps and add an int to the areas to replace it in all the scripts that reference the placeable
 
-Update the tag in itm_teleport script to port to the desired location upon teleporting.
-
 Setup LoginWebhook in OnClientEnter module event
 
 Do a check in the future if we are immortal in the modules client on enter event.
 
-Revisit moduleheartbeat script when events are finished to complete it.
-
 Revisit afx_sfunc and afx_mod_spawn later on when maps are imported
 
-Add jail waypoint when jail is made for script on_use_skill_bef, inc_ai
+Add jail waypoint WP_JAIL when jail map is put in.  Old name was prison
 
 Update description and appearance of Sequencer Stone
 
@@ -30,8 +26,6 @@ Need to update the waypoint tag in itm_signet script
 
 Updated Area tag in _mod_def_death
 
-Need to add the int from _mod_def_death that auto raises pc's into maps
-
 Decide if bounty script will be added to PoA in the _mod_def_death event
 
 Need to go back an add the crown code from OnDeath.
@@ -42,26 +36,26 @@ Change the tag in _mod_def_respawn to port to where you respawn, or change the t
 
 I want to put some torches in town that turn on at night and off in the day?
 
-Can you put "lokitheft" (OnEnter) script on the area OnEnter so the trigger can be removed?
-
 Change area variable checking if we should die if we rest on the map to REST_DEATH from "norest"
 
 In the module rest event make sure drowwarrior003 exist when npcs are imported, if not change the tagname.
 
 Add NO_TRAP variable to maps that prohibit trap setting.
 
-Add recall stone tagname to are_voyage_skip script and update the waypoint tagname when its done in Town of Ascension
-
 Replace the trinket in the Sages home with another item, probably the sequencer stone.
 
-Changed waypoint "swim" to "WP_VOYAGE"
+Add lokitheft code to onenter area scripts script
 
-Add the code from the script "lokitheft" into an area_on_enter event script at a later date.
+Add the item with the tagname "Readme" to the players inventory.
 
-Change waypoint tag in Town of Ascension that you jump to after the voyage and update the tag in the script "port_start"
+Change waypoint tagname in "are_ascension" to the waypoint in Encumbria.
 
-Add lokitheft code to "are_voyage_skip" script
+Change and update script cv_sc_is_immort when db is added to check for immortality
 
-Change the code in module onenter script so that you get itm_teleport after you completed the convo on the voyage boat.
+Go back and check ai_dam_send_jail script for the wp tag and update it if need to after working on jail.
 
-tests
+Adjust signs in town.  Get them off the tile lines
+
+Make sure to update the Information/Maps placeable in town.
+
+Update Server Rules / Info placeable in town

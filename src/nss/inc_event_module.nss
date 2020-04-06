@@ -74,6 +74,9 @@ void SaveClient(object oPC);
 //  Check for Traps being set in NO PvP area
 void CheckForTraps(object oArea, object oPC);
 
+//  Check if we have immortal gear and unequip it
+void TakeOffCrown(object oItem, object oPC);
+
 
 int GetIsGM(object oPC)
 {
@@ -179,9 +182,9 @@ void ApplyPenalty(object oDead)
     DelayCommand(4.0, FloatingTextStrRefOnCreature(58299, oDead, FALSE));
     DelayCommand(4.8, FloatingTextStrRefOnCreature(58300, oDead, FALSE));
 
-    if (GetXP(oDead) < 1)
+    if (GetXP(oDead) < 2)
     {
-        SetXP(oDead, 1);
+        SetXP(oDead, 2);
     }
 }
 
@@ -261,10 +264,6 @@ void StripPC(object oPC)
 
     ClearAllActions(FALSE);
     AssignCommand(oPC, TakeGoldFromCreature(GetGold(oPC), oPC, TRUE));
-    CreateItemOnObject("itm_teleport", oPC);
-    CreateItemOnObject("itm_sequencer", oPC);
-    GiveGoldToCreature(oPC, 300);
-    SetXP(oPC, 1);
 }
 
 void HitPointsAntiCheatOnEnter(object oPC)
@@ -405,4 +404,44 @@ void CheckForTraps(object oArea, object oPC)
         ClearAllActions(FALSE);
     }
 }
+
+void TakeOffCrown(object oItem, object oPC)
+{
+   object oDagger = GetItemPossessedBy(oPC, "immortaldagger1");
+   object target = (GetNearestObject(OBJECT_TYPE_CREATURE, oPC, 1));
+   object target2 = (GetNearestObject(OBJECT_TYPE_CREATURE, oPC, 2));
+   object target3 = (GetNearestObject(OBJECT_TYPE_CREATURE, oPC, 3));
+   object target4 = (GetNearestObject(OBJECT_TYPE_CREATURE, oPC, 4));
+   effect eBeam = EffectBeam(VFX_BEAM_EVIL, oPC, BODY_NODE_CHEST);
+   effect eDamage = EffectDamage(60 + d20(5), DAMAGE_TYPE_NEGATIVE, DAMAGE_POWER_NORMAL);
+
+   ApplyEffectToObject(DURATION_TYPE_TEMPORARY, eBeam, target, 2.0f);
+   ApplyEffectToObject(DURATION_TYPE_TEMPORARY, eBeam, target2, 2.0f);
+   ApplyEffectToObject(DURATION_TYPE_TEMPORARY, eBeam, target3, 2.0f);
+   ApplyEffectToObject(DURATION_TYPE_TEMPORARY, eBeam, target4, 2.0f);
+
+   ApplyEffectToObject(DURATION_TYPE_INSTANT, eDamage, target);
+   ApplyEffectToObject(DURATION_TYPE_INSTANT, eDamage, target2);
+   ApplyEffectToObject(DURATION_TYPE_INSTANT, eDamage, target3);
+   ApplyEffectToObject(DURATION_TYPE_INSTANT, eDamage, target4);
+
+   if (GetIsObjectValid(oItem))
+      AssignCommand(oPC, ActionUnequipItem(oItem));
+
+   if (GetIsObjectValid(oDagger))
+   {
+      AssignCommand(oPC, ActionUnequipItem(oDagger));
+      AssignCommand(oPC, DestroyObject(oDagger));
+   }
+
+   oDagger = GetItemPossessedBy(oPC, "immortaldagger2");
+
+   if (GetIsObjectValid(oDagger))
+   {
+      AssignCommand(oPC, ActionUnequipItem(oDagger));
+      AssignCommand(oPC, DestroyObject(oDagger));
+   }
+}
+
+
 //void main(){}
