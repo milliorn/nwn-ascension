@@ -86,10 +86,5 @@ void main()
     {
         CreateObject(OBJECT_TYPE_CREATURE, "travelingmerchan", GetLocation(oWpTravel));
     }
-
-    //  Advertise the server
-    DelayCommand(6.0, FloatingTextStringOnCreature(StringToRGBString("Join us on our Discord Channel!", "777"), oEnter, FALSE));
-    DelayCommand(7.0, FloatingTextStringOnCreature(StringToRGBString("https://discord.gg/VjDUCSx", "777"), oEnter, FALSE));
-    DelayCommand(8.0, FloatingTextStringOnCreature(StringToRGBString("Press 'J' to read your journal for important info!", "777"), oEnter, FALSE));
 }
 

@@ -2062,6 +2062,25 @@
                 "type": "resref",
                 "value": "travelingmerchan"
               }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
+                "value": 257.0
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Defender"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Warden"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "warden"
+              }
             }
           ]
         },

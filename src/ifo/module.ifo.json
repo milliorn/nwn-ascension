@@ -20,6 +20,13 @@
           "type": "resref",
           "value": "townofascension"
         }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "jail"
+        }
       }
     ]
   },
@@ -67,15 +74,15 @@
   },
   "Mod_Entry_X": {
     "type": "float",
-    "value": 35.0
+    "value": 35.09434509277344
   },
   "Mod_Entry_Y": {
     "type": "float",
-    "value": 39.0
+    "value": 38.10372543334961
   },
   "Mod_Entry_Z": {
     "type": "float",
-    "value": 5.0
+    "value": 5.799996376037598
   },
   "Mod_Expan_List": {
     "type": "list",
@@ -88,6 +95,34 @@
   "Mod_HakList": {
     "type": "list",
     "value": [
+      {
+        "__struct_id": 8,
+        "Mod_Hak": {
+          "type": "cexostring",
+          "value": "cep2_ext_tiles"
+        }
+      },
+      {
+        "__struct_id": 8,
+        "Mod_Hak": {
+          "type": "cexostring",
+          "value": "cep2_add_tiles"
+        }
+      },
+      {
+        "__struct_id": 8,
+        "Mod_Hak": {
+          "type": "cexostring",
+          "value": "cep2_add_tiles1"
+        }
+      },
+      {
+        "__struct_id": 8,
+        "Mod_Hak": {
+          "type": "cexostring",
+          "value": "cep2_add_tiles2"
+        }
+      },
       {
         "__struct_id": 8,
         "Mod_Hak": {

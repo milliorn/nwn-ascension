@@ -1,4 +1,5 @@
 #include "inc_discord"
+#include "x3_inc_string"
 
 const float F_HIDE = 6.0;
 const float F_PICK_POCKET = 60.0;

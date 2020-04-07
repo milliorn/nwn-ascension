@@ -25,7 +25,10 @@ void main()
                     + ". Now, escape from jail!", OBJECT_SELF, TRUE);
 
                     sMessage = "WARNING! " + GetName(OBJECT_SELF) + " - skill spam - SKILL_PICK_POCKET";
-                    SendMessageToAllDMs(sMessage);
+                    SendMessageToAllDMs(sMessage + StringToRGBString(" and has been sent to jail.", "700"));
+
+                    ModMiscWebhook(sMessage
+                    + " has been sent to jail for pickpocket abuse.");
                 }
 
                 if (GetLocalInt(OBJECT_SELF, GetName(OBJECT_SELF) + "_SKILL_PICK_POCKET"))

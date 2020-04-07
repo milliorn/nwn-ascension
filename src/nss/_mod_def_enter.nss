@@ -63,4 +63,11 @@ void main()
 
     //  Chat Cooldown Var
     DelayCommand(0.9, DeleteLocalInt(oPC, "PC_CHAT"));
+
+
+    //  Advertise the server
+    DelayCommand(6.0, SendMessageToPC(oPC, StringToRGBString("This world was built by AW Trespasser.\nWork began on it when NWN was first released.\nIt has been a long arduous process, but here is the final result.", "777")));
+    DelayCommand(12.0, FloatingTextStringOnCreature(StringToRGBString("Join us on our Discord Channel!", "777"), oPC, FALSE));
+    DelayCommand(14.0, FloatingTextStringOnCreature(StringToRGBString("https://discord.gg/VjDUCSx", "777"), oPC, FALSE));
+    DelayCommand(16.0, FloatingTextStringOnCreature(StringToRGBString("Press 'J' to read your journal for important info!", "777"), oPC, FALSE));
 }

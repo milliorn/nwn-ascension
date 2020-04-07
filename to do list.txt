@@ -6,8 +6,6 @@ Do a check in the future if we are immortal in the modules client on enter event
 
 Revisit afx_sfunc and afx_mod_spawn later on when maps are imported
 
-Add jail waypoint WP_JAIL when jail map is put in.  Old name was prison
-
 Update description and appearance of Sequencer Stone
 
 Need to update xp in mod chat scripts for legendary levels
@@ -17,8 +15,6 @@ Need to finish SF_GetIsShoutBanned to shout ban
 Update mod_chat script to reflect any hak changes when it comes to heads, tails, wings, etc.
 
 Add waypoint to dm room in script inc_chat when DM room is finished
-
-Updated waypoint in nwnx chat event script from sentenced to WP_JAIL.  Need to update the waypoint in jail
 
 Updated waypoint in nwnxchat event script from torture to WP_HELL.  Need to update the waypoint in hell
 
@@ -52,10 +48,9 @@ Change waypoint tagname in "are_ascension" to the waypoint in Encumbria.
 
 Change and update script cv_sc_is_immort when db is added to check for immortality
 
-Go back and check ai_dam_send_jail script for the wp tag and update it if need to after working on jail.
-
 Adjust signs in town.  Get them off the tile lines
 
 Make sure to update the Information/Maps placeable in town.
 
 Update Server Rules / Info placeable in town
+
