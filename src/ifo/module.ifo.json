@@ -27,6 +27,13 @@
           "type": "resref",
           "value": "jail"
         }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "encumbria"
+        }
       }
     ]
   },
@@ -74,15 +81,15 @@
   },
   "Mod_Entry_X": {
     "type": "float",
-    "value": 35.09434509277344
+    "value": 35.50774383544922
   },
   "Mod_Entry_Y": {
     "type": "float",
-    "value": 38.10372543334961
+    "value": 35.01906585693359
   },
   "Mod_Entry_Z": {
     "type": "float",
-    "value": 5.799996376037598
+    "value": 5.799999237060547
   },
   "Mod_Expan_List": {
     "type": "list",

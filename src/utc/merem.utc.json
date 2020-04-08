@@ -90,7 +90,7 @@
   },
   "ChallengeRating": {
     "type": "float",
-    "value": 60.0
+    "value": 56.0
   },
   "ClassList": {
     "type": "list",
@@ -192,28 +192,6 @@
         }
       },
       {
-        "__struct_id": 4,
-        "Dropable": {
-          "type": "byte",
-          "value": 1
-        },
-        "EquippedRes": {
-          "type": "resref",
-          "value": "quicksilverboot"
-        }
-      },
-      {
-        "__struct_id": 8,
-        "Dropable": {
-          "type": "byte",
-          "value": 1
-        },
-        "EquippedRes": {
-          "type": "resref",
-          "value": "83gd"
-        }
-      },
-      {
         "__struct_id": 16,
         "Dropable": {
           "type": "byte",
@@ -244,50 +222,6 @@
         "EquippedRes": {
           "type": "resref",
           "value": "elvengift"
-        }
-      },
-      {
-        "__struct_id": 128,
-        "Dropable": {
-          "type": "byte",
-          "value": 1
-        },
-        "EquippedRes": {
-          "type": "resref",
-          "value": "ringofregenera"
-        }
-      },
-      {
-        "__struct_id": 256,
-        "Dropable": {
-          "type": "byte",
-          "value": 1
-        },
-        "EquippedRes": {
-          "type": "resref",
-          "value": "ringofthesain"
-        }
-      },
-      {
-        "__struct_id": 512,
-        "Dropable": {
-          "type": "byte",
-          "value": 1
-        },
-        "EquippedRes": {
-          "type": "resref",
-          "value": "amuletofogres"
-        }
-      },
-      {
-        "__struct_id": 1024,
-        "Dropable": {
-          "type": "byte",
-          "value": 1
-        },
-        "EquippedRes": {
-          "type": "resref",
-          "value": "rhiannonsembra"
         }
       }
     ]
@@ -695,182 +629,6 @@
   "IsPC": {
     "type": "byte",
     "value": 0
-  },
-  "ItemList": {
-    "type": "list",
-    "value": [
-      {
-        "__struct_id": 0,
-        "Dropable": {
-          "type": "byte",
-          "value": 1
-        },
-        "InventoryRes": {
-          "type": "resref",
-          "value": "potionofdivine"
-        },
-        "Repos_PosX": {
-          "type": "word",
-          "value": 0
-        },
-        "Repos_Posy": {
-          "type": "word",
-          "value": 0
-        }
-      },
-      {
-        "__struct_id": 1,
-        "Dropable": {
-          "type": "byte",
-          "value": 1
-        },
-        "InventoryRes": {
-          "type": "resref",
-          "value": "potionofelemen"
-        },
-        "Repos_PosX": {
-          "type": "word",
-          "value": 1
-        },
-        "Repos_Posy": {
-          "type": "word",
-          "value": 0
-        }
-      },
-      {
-        "__struct_id": 2,
-        "Dropable": {
-          "type": "byte",
-          "value": 1
-        },
-        "InventoryRes": {
-          "type": "resref",
-          "value": "potionofheal"
-        },
-        "Repos_PosX": {
-          "type": "word",
-          "value": 2
-        },
-        "Repos_Posy": {
-          "type": "word",
-          "value": 0
-        }
-      },
-      {
-        "__struct_id": 3,
-        "Dropable": {
-          "type": "byte",
-          "value": 1
-        },
-        "InventoryRes": {
-          "type": "resref",
-          "value": "potionofirons"
-        },
-        "Repos_PosX": {
-          "type": "word",
-          "value": 3
-        },
-        "Repos_Posy": {
-          "type": "word",
-          "value": 0
-        }
-      },
-      {
-        "__struct_id": 4,
-        "Dropable": {
-          "type": "byte",
-          "value": 1
-        },
-        "InventoryRes": {
-          "type": "resref",
-          "value": "potionofmighty"
-        },
-        "Repos_PosX": {
-          "type": "word",
-          "value": 4
-        },
-        "Repos_Posy": {
-          "type": "word",
-          "value": 0
-        }
-      },
-      {
-        "__struct_id": 5,
-        "Dropable": {
-          "type": "byte",
-          "value": 1
-        },
-        "InventoryRes": {
-          "type": "resref",
-          "value": "potionofnegati"
-        },
-        "Repos_PosX": {
-          "type": "word",
-          "value": 5
-        },
-        "Repos_Posy": {
-          "type": "word",
-          "value": 0
-        }
-      },
-      {
-        "__struct_id": 6,
-        "Dropable": {
-          "type": "byte",
-          "value": 1
-        },
-        "InventoryRes": {
-          "type": "resref",
-          "value": "potionofspell"
-        },
-        "Repos_PosX": {
-          "type": "word",
-          "value": 6
-        },
-        "Repos_Posy": {
-          "type": "word",
-          "value": 0
-        }
-      },
-      {
-        "__struct_id": 7,
-        "Dropable": {
-          "type": "byte",
-          "value": 1
-        },
-        "InventoryRes": {
-          "type": "resref",
-          "value": "potionoftrapf"
-        },
-        "Repos_PosX": {
-          "type": "word",
-          "value": 7
-        },
-        "Repos_Posy": {
-          "type": "word",
-          "value": 0
-        }
-      },
-      {
-        "__struct_id": 8,
-        "Dropable": {
-          "type": "byte",
-          "value": 1
-        },
-        "InventoryRes": {
-          "type": "resref",
-          "value": "potionoftrues"
-        },
-        "Repos_PosX": {
-          "type": "word",
-          "value": 8
-        },
-        "Repos_Posy": {
-          "type": "word",
-          "value": 0
-        }
-      }
-    ]
   },
   "LastName": {
     "type": "cexolocstring",

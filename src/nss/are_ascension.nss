@@ -34,8 +34,8 @@ void main()
         return;
     }
 
-    CheckItemLimit(oEnter);
     LokiTheft(oEnter);
+    CheckItemLimit(oEnter);
 
     //  Stop hostile actions
     AssignCommand(oEnter, ClearAllActions(TRUE));

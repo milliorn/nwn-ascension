@@ -36,7 +36,7 @@ void CheckItemLimit(object oPC)
     if (x >= iLimit)
     {
         ActionWait(0.2);
-        location loc = GetLocation(GetWaypointByTag("burdened"));
+        location loc = GetLocation(GetWaypointByTag("WP_ENCUMBRIA"));
         AssignCommand(oPC, ActionJumpToLocation(loc));
         return;
     }

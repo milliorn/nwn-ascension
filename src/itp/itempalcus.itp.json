@@ -1570,17 +1570,6 @@
               "__struct_id": 0,
               "NAME": {
                 "type": "cexostring",
-                "value": "Amulet of Ogre Strength"
-              },
-              "RESREF": {
-                "type": "resref",
-                "value": "amuletofogres"
-              }
-            },
-            {
-              "__struct_id": 0,
-              "NAME": {
-                "type": "cexostring",
                 "value": "Elven Gift"
               },
               "RESREF": {
@@ -1597,17 +1586,6 @@
               "RESREF": {
                 "type": "resref",
                 "value": "icefang"
-              }
-            },
-            {
-              "__struct_id": 0,
-              "NAME": {
-                "type": "cexostring",
-                "value": "Longsword +1"
-              },
-              "RESREF": {
-                "type": "resref",
-                "value": "003"
               }
             },
             {
@@ -1636,28 +1614,6 @@
               "__struct_id": 0,
               "NAME": {
                 "type": "cexostring",
-                "value": "Militia Armor"
-              },
-              "RESREF": {
-                "type": "resref",
-                "value": "007"
-              }
-            },
-            {
-              "__struct_id": 0,
-              "NAME": {
-                "type": "cexostring",
-                "value": "Militia Armor"
-              },
-              "RESREF": {
-                "type": "resref",
-                "value": "maarcl084"
-              }
-            },
-            {
-              "__struct_id": 0,
-              "NAME": {
-                "type": "cexostring",
                 "value": "Militia Shield"
               },
               "RESREF": {
@@ -1674,193 +1630,6 @@
               "RESREF": {
                 "type": "resref",
                 "value": "mindmask"
-              }
-            },
-            {
-              "__struct_id": 0,
-              "NAME": {
-                "type": "cexostring",
-                "value": "Potion of Divine  Power"
-              },
-              "RESREF": {
-                "type": "resref",
-                "value": "potionofdivine"
-              }
-            },
-            {
-              "__struct_id": 0,
-              "NAME": {
-                "type": "cexostring",
-                "value": "Potion of Elemental Shield"
-              },
-              "RESREF": {
-                "type": "resref",
-                "value": "potionofelemen"
-              }
-            },
-            {
-              "__struct_id": 0,
-              "NAME": {
-                "type": "cexostring",
-                "value": "Potion of Heal"
-              },
-              "RESREF": {
-                "type": "resref",
-                "value": "potionofheal"
-              }
-            },
-            {
-              "__struct_id": 0,
-              "NAME": {
-                "type": "cexostring",
-                "value": "Potion of Iron Skin"
-              },
-              "RESREF": {
-                "type": "resref",
-                "value": "potionofirons"
-              }
-            },
-            {
-              "__struct_id": 0,
-              "NAME": {
-                "type": "cexostring",
-                "value": "Potion of Mighty Strength"
-              },
-              "RESREF": {
-                "type": "resref",
-                "value": "potionofmighty"
-              }
-            },
-            {
-              "__struct_id": 0,
-              "NAME": {
-                "type": "cexostring",
-                "value": "Potion of Negative Energy Protection"
-              },
-              "RESREF": {
-                "type": "resref",
-                "value": "potionofnegati"
-              }
-            },
-            {
-              "__struct_id": 0,
-              "NAME": {
-                "type": "cexostring",
-                "value": "Potion of Spell Resistance"
-              },
-              "RESREF": {
-                "type": "resref",
-                "value": "potionofspell"
-              }
-            },
-            {
-              "__struct_id": 0,
-              "NAME": {
-                "type": "cexostring",
-                "value": "Potion of Trap Finding"
-              },
-              "RESREF": {
-                "type": "resref",
-                "value": "potionoftrapf"
-              }
-            },
-            {
-              "__struct_id": 0,
-              "NAME": {
-                "type": "cexostring",
-                "value": "Potion of True Seeing"
-              },
-              "RESREF": {
-                "type": "resref",
-                "value": "potionoftrues"
-              }
-            },
-            {
-              "__struct_id": 0,
-              "NAME": {
-                "type": "cexostring",
-                "value": "Quicksilver Boots"
-              },
-              "RESREF": {
-                "type": "resref",
-                "value": "002"
-              }
-            },
-            {
-              "__struct_id": 0,
-              "NAME": {
-                "type": "cexostring",
-                "value": "Quicksilver Boots"
-              },
-              "RESREF": {
-                "type": "resref",
-                "value": "83gd"
-              }
-            },
-            {
-              "__struct_id": 0,
-              "NAME": {
-                "type": "cexostring",
-                "value": "Quicksilver Boots"
-              },
-              "RESREF": {
-                "type": "resref",
-                "value": "quicksilverboot"
-              }
-            },
-            {
-              "__struct_id": 0,
-              "NAME": {
-                "type": "cexostring",
-                "value": "Rhiannon's Embracement"
-              },
-              "RESREF": {
-                "type": "resref",
-                "value": "rhiannonsembra"
-              }
-            },
-            {
-              "__struct_id": 0,
-              "NAME": {
-                "type": "cexostring",
-                "value": "Ring of Regeneration"
-              },
-              "RESREF": {
-                "type": "resref",
-                "value": "ringofregenera"
-              }
-            },
-            {
-              "__struct_id": 0,
-              "NAME": {
-                "type": "cexostring",
-                "value": "Ring of the Saints"
-              },
-              "RESREF": {
-                "type": "resref",
-                "value": "ringofthesain"
-              }
-            },
-            {
-              "__struct_id": 0,
-              "NAME": {
-                "type": "cexostring",
-                "value": "Rod of Triumph"
-              },
-              "RESREF": {
-                "type": "resref",
-                "value": "001"
-              }
-            },
-            {
-              "__struct_id": 0,
-              "NAME": {
-                "type": "cexostring",
-                "value": "Rod of Victory"
-              },
-              "RESREF": {
-                "type": "resref",
-                "value": "005"
               }
             },
             {

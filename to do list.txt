@@ -1,12 +1,10 @@
 NO_CROWN var is used instead of nocrown placable from maps and add an int to the areas to replace it in all the scripts that reference the placeable
 
-Setup LoginWebhook in OnClientEnter module event
+Setup webhooks with discord server when server is ready for testing
 
 Do a check in the future if we are immortal in the modules client on enter event.
 
 Revisit afx_sfunc and afx_mod_spawn later on when maps are imported
-
-Update description and appearance of Sequencer Stone
 
 Need to update xp in mod chat scripts for legendary levels
 
@@ -32,19 +30,13 @@ Change the tag in _mod_def_respawn to port to where you respawn, or change the t
 
 I want to put some torches in town that turn on at night and off in the day?
 
-Change area variable checking if we should die if we rest on the map to REST_DEATH from "norest"
-
 In the module rest event make sure drowwarrior003 exist when npcs are imported, if not change the tagname.
-
-Add NO_TRAP variable to maps that prohibit trap setting.
 
 Replace the trinket in the Sages home with another item, probably the sequencer stone.
 
 Add lokitheft code to onenter area scripts script
 
 Add the item with the tagname "Readme" to the players inventory.
-
-Change waypoint tagname in "are_ascension" to the waypoint in Encumbria.
 
 Change and update script cv_sc_is_immort when db is added to check for immortality
 
@@ -53,4 +45,16 @@ Adjust signs in town.  Get them off the tile lines
 Make sure to update the Information/Maps placeable in town.
 
 Update Server Rules / Info placeable in town
+
+Update the "unburdened" waypoint in town and change it to "WP_FOUNTAIN" and remove the old waypoint when Leo sends the town map back.
+
+Remove the "raindow1" waypoint when the time comes and change it to "WP_FOUNTAIN"
+
+
+Area variables in non hostile areas
+
+NO_CROWN 
+NO_TELEPORT
+NO_TRAP 
+PC_AUTO_RAISE
 

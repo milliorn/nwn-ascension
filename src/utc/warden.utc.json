@@ -90,7 +90,7 @@
   },
   "ChallengeRating": {
     "type": "float",
-    "value": 257.0
+    "value": 256.0
   },
   "ClassList": {
     "type": "list",
@@ -173,7 +173,7 @@
         "__struct_id": 2,
         "EquippedRes": {
           "type": "resref",
-          "value": "001"
+          "value": "006"
         }
       },
       {
@@ -181,13 +181,6 @@
         "EquippedRes": {
           "type": "resref",
           "value": "wswmls004"
-        }
-      },
-      {
-        "__struct_id": 32,
-        "EquippedRes": {
-          "type": "resref",
-          "value": "002"
         }
       },
       {

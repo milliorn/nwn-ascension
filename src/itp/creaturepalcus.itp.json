@@ -1934,6 +1934,25 @@
               "__struct_id": 0,
               "CR": {
                 "type": "float",
+                "value": 0.5
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Merchant"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Gypsy"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "gypsyaerthel"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
                 "value": 2.0
               },
               "FACTION": {
@@ -1953,7 +1972,7 @@
               "__struct_id": 0,
               "CR": {
                 "type": "float",
-                "value": 60.0
+                "value": 56.0
               },
               "FACTION": {
                 "type": "cexostring",
@@ -1972,7 +1991,7 @@
               "__struct_id": 0,
               "CR": {
                 "type": "float",
-                "value": 121.0
+                "value": 120.0
               },
               "FACTION": {
                 "type": "cexostring",
@@ -2067,7 +2086,7 @@
               "__struct_id": 0,
               "CR": {
                 "type": "float",
-                "value": 257.0
+                "value": 256.0
               },
               "FACTION": {
                 "type": "cexostring",

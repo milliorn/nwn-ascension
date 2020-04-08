@@ -14,7 +14,7 @@
   },
   "ChallengeRating": {
     "type": "float",
-    "value": 121.0
+    "value": 120.0
   },
   "ClassList": {
     "type": "list",
@@ -237,15 +237,7 @@
   },
   "Equip_ItemList": {
     "type": "list",
-    "value": [
-      {
-        "__struct_id": 4,
-        "EquippedRes": {
-          "type": "resref",
-          "value": "002"
-        }
-      }
-    ]
+    "value": []
   },
   "FactionID": {
     "type": "word",

@@ -20,7 +20,6 @@ void main()
     }
 
     DestroyObject(OBJECT_SELF, 0.0);
-
     AssignCommand(GetArea(OBJECT_SELF), DelayCommand(1800.0, RespawnObject(GetTag(OBJECT_SELF), GetObjectType(OBJECT_SELF), lLoc)));
 }
 
