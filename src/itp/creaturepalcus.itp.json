@@ -1579,6 +1579,30 @@
                       "type": "byte",
                       "value": 29
                     },
+                    "LIST": {
+                      "type": "list",
+                      "value": [
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 74.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Hostile"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Rogue Spectre"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "roguespectre"
+                          }
+                        }
+                      ]
+                    },
                     "STRREF": {
                       "type": "dword",
                       "value": 201
@@ -2004,6 +2028,25 @@
               "RESREF": {
                 "type": "resref",
                 "value": "leveler"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
+                "value": 50.0
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Hostile"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Satan"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "satan"
               }
             },
             {

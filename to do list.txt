@@ -14,8 +14,6 @@ Update mod_chat script to reflect any hak changes when it comes to heads, tails,
 
 Add waypoint to dm room in script inc_chat when DM room is finished
 
-Updated waypoint in nwnxchat event script from torture to WP_HELL.  Need to update the waypoint in hell
-
 Need to update the waypoint tag in itm_signet script
 
 Updated Area tag in _mod_def_death
@@ -49,6 +47,8 @@ Update Server Rules / Info placeable in town
 Update the "unburdened" waypoint in town and change it to "WP_FOUNTAIN" and remove the old waypoint when Leo sends the town map back.
 
 Remove the "raindow1" waypoint when the time comes and change it to "WP_FOUNTAIN"
+
+Remove an Immortal's immortality if they enter Hell.
 
 
 Area variables in non hostile areas
