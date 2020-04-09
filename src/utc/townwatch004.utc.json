@@ -757,7 +757,7 @@
   },
   "ScriptHeartbeat": {
     "type": "resref",
-    "value": "nw_c2_default1"
+    "value": "tg_town_watch"
   },
   "ScriptOnBlocked": {
     "type": "resref",
