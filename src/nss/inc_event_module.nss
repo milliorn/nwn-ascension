@@ -396,10 +396,10 @@ void CheckForTraps(object oArea, object oPC)
                         " - CDKEY: " + GetPCPublicCDKey(oPC, TRUE) +
                         " has set a trap in NO PVP area!");
 
-        SendMessageToAllDMs("Player: " + StringToRGBString(GetName(oPC), "777")
-        + " - Account: " + StringToRGBString(GetPCPlayerName(oPC), "777")
-        + " - CDKEY: " + StringToRGBString(GetPCPublicCDKey(oPC, TRUE), "777")
-        + StringToRGBString(" has set a trap in NO PVP area!", "700"));
+        SpeakString("Player: " + StringToRGBString(GetName(oPC), "777")
+        + "\n- Account: " + StringToRGBString(GetPCPlayerName(oPC), "777")
+        + "\n- CDKEY: " + StringToRGBString(GetPCPublicCDKey(oPC, TRUE), "777")
+        + StringToRGBString("\nhas set a trap in NO PVP area!", "700"), TALKVOLUME_SHOUT);
 
         ClearAllActions(FALSE);
     }

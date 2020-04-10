@@ -3,6 +3,7 @@
 //:: Modified On: 2020-04-03
 //:://////////////////////////////////////////////
 
+#include "inc_chat"
 #include "inc_discord"
 #include "x3_inc_string"
 
@@ -17,7 +18,7 @@ void main()
         SendMessageToPC(oAttacker, "You have been sent to jail for vandalism.");
         AssignCommand(oAttacker, ClearAllActions());
 
-        SendMessageToAllDMs(StringToRGBString(sName, "777")
+        SendMessageToGM(StringToRGBString(sName, "777")
         + " has been sent to jail for vandalism.");
 
         ModMiscWebhook(sName

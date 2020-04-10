@@ -265,7 +265,7 @@ void DMPunsh(object oTarget, object oSender)
     string sTarget = GetPCPlayerName(oTarget);
     string sSender = GetPCPlayerName(oSender);
 
-    SendMessageToAllDMs("Boots of Bannishing Activated on " + sTarget + " by " + sSender);
+    SendMessageToGM("Boots of Bannishing Activated on " + sTarget + " by " + sSender);
 
     DelayCommand(0.2, ApplyEffectToObject(DURATION_TYPE_INSTANT, EffectVisualEffect(VFX_FNF_STRIKE_HOLY), OBJECT_SELF));
 

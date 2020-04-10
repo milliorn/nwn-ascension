@@ -25,7 +25,7 @@ void main()
                 SendMessageToPC(OBJECT_SELF, "");
 
                 sMessage = "WARNING! " + sName + " - feat spam - FEAT_HIDE_IN_PLAIN_SIGHT";
-                SendMessageToAllDMs(sMessage);
+                SendMessageToGM(sMessage);
             }
         }
     }

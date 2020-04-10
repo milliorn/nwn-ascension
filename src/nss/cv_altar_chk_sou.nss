@@ -7,8 +7,9 @@
 //place in action taken scipt in trapdoor conversation
 //in 'yes' end dialog of the trapdoor
 
-#include "nw_i0_tool"
+#include "inc_chat"
 #include "inc_discord"
+#include "nw_i0_tool"
 #include "x3_inc_string"
 
 void main()
@@ -24,7 +25,7 @@ void main()
         BootPC(oPC, "Booted for attempting to exploit teleporter.");
 
         sMessage = StringToRGBString(GetName(oPC), "777") + " has been booted for attempting to exploit teleporter.";
-        SendMessageToAllDMs(sMessage);
+        SendMessageToGM(sMessage);
         return;
     }
 

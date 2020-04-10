@@ -284,7 +284,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": 3.141434192657471
+          "value": 3.141433715820312
         },
         "CloseLockDC": {
           "type": "byte",
@@ -938,7 +938,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": -3.141436338424683
+          "value": -3.141435861587524
         },
         "CloseLockDC": {
           "type": "byte",
@@ -1156,7 +1156,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": -3.141436338424683
+          "value": -3.141435861587524
         },
         "CloseLockDC": {
           "type": "byte",
@@ -2032,7 +2032,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": 3.080394506454468
+          "value": 3.08039402961731
         },
         "CloseLockDC": {
           "type": "byte",
@@ -2252,7 +2252,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": -3.141481876373291
+          "value": -3.141481399536133
         },
         "CloseLockDC": {
           "type": "byte",
@@ -2688,7 +2688,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": -3.141490936279297
+          "value": -3.141490459442139
         },
         "CloseLockDC": {
           "type": "byte",
@@ -3778,7 +3778,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": 1.570794463157654
+          "value": 1.570794224739075
         },
         "CloseLockDC": {
           "type": "byte",
@@ -3994,7 +3994,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": -1.570795059204102
+          "value": -1.570794820785522
         },
         "CloseLockDC": {
           "type": "byte",
@@ -4210,7 +4210,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": 1.570795059204102
+          "value": 1.570794820785522
         },
         "CloseLockDC": {
           "type": "byte",
@@ -4439,7 +4439,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": 1.153661847114563
+          "value": 1.1536625623703
         },
         "BodyBag": {
           "type": "byte",
@@ -4642,15 +4642,15 @@
             "__struct_id": 6,
             "ScaleX": {
               "type": "float",
-              "value": 4.320000171661377
+              "value": 4.0
             },
             "ScaleY": {
               "type": "float",
-              "value": 4.320000171661377
+              "value": 4.0
             },
             "ScaleZ": {
               "type": "float",
-              "value": 4.320000171661377
+              "value": 4.0
             }
           }
         },
@@ -4916,7 +4916,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": 3.141436338424683
+          "value": 3.141435861587524
         },
         "BodyBag": {
           "type": "byte",
@@ -5259,7 +5259,7 @@
         },
         "OnOpen": {
           "type": "resref",
-          "value": "door_close_12"
+          "value": ""
         },
         "OnSpellCastAt": {
           "type": "resref",
@@ -5275,7 +5275,7 @@
         },
         "OnUsed": {
           "type": "resref",
-          "value": ""
+          "value": "pl_use_examine"
         },
         "OnUserDefined": {
           "type": "resref",
@@ -5287,7 +5287,7 @@
         },
         "Plot": {
           "type": "byte",
-          "value": 1
+          "value": 0
         },
         "PortraitId": {
           "type": "word",
@@ -5615,7 +5615,7 @@
         },
         "Conversation": {
           "type": "resref",
-          "value": "ascension_wondro"
+          "value": ""
         },
         "CurrentHP": {
           "type": "short",
@@ -5625,7 +5625,7 @@
           "id": 14716,
           "type": "cexolocstring",
           "value": {
-            "0": "A carefully constructed marker denoting a point of interest."
+            "0": "Wondrous Items"
           }
         },
         "DisarmDC": {
@@ -5733,7 +5733,7 @@
         },
         "OnUsed": {
           "type": "resref",
-          "value": "pl_use"
+          "value": "pl_use_examine"
         },
         "OnUserDefined": {
           "type": "resref",
@@ -5844,7 +5844,7 @@
         },
         "Conversation": {
           "type": "resref",
-          "value": "ascension_trespa"
+          "value": ""
         },
         "CurrentHP": {
           "type": "short",
@@ -5854,7 +5854,7 @@
           "id": 14716,
           "type": "cexolocstring",
           "value": {
-            "0": "A carefully constructed marker denoting a point of interest."
+            "0": "Trespassers Tavern , Rare Provisions, Exotic Dancers, and Slots."
           }
         },
         "DisarmDC": {
@@ -5962,7 +5962,7 @@
         },
         "OnUsed": {
           "type": "resref",
-          "value": "pl_use"
+          "value": "pl_use_examine"
         },
         "OnUserDefined": {
           "type": "resref",
@@ -6061,7 +6061,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": -3.043270349502563
+          "value": -3.043269872665405
         },
         "BodyBag": {
           "type": "byte",
@@ -6073,7 +6073,7 @@
         },
         "Conversation": {
           "type": "resref",
-          "value": "ascension_weapon"
+          "value": ""
         },
         "CurrentHP": {
           "type": "short",
@@ -6083,7 +6083,7 @@
           "id": 14716,
           "type": "cexolocstring",
           "value": {
-            "0": "A carefully constructed marker denoting a point of interest."
+            "0": "Weapons Shop"
           }
         },
         "DisarmDC": {
@@ -6191,7 +6191,7 @@
         },
         "OnUsed": {
           "type": "resref",
-          "value": ""
+          "value": "pl_use_examine"
         },
         "OnUserDefined": {
           "type": "resref",
@@ -6290,7 +6290,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": -3.043270349502563
+          "value": -3.043269872665405
         },
         "BodyBag": {
           "type": "byte",
@@ -6302,7 +6302,7 @@
         },
         "Conversation": {
           "type": "resref",
-          "value": "ascension_armor"
+          "value": ""
         },
         "CurrentHP": {
           "type": "short",
@@ -6312,7 +6312,7 @@
           "id": 14716,
           "type": "cexolocstring",
           "value": {
-            "0": "A carefully constructed marker denoting a point of interest."
+            "0": "Armor Shop"
           }
         },
         "DisarmDC": {
@@ -6420,7 +6420,7 @@
         },
         "OnUsed": {
           "type": "resref",
-          "value": "pl_use"
+          "value": "pl_use_examine"
         },
         "OnUserDefined": {
           "type": "resref",
@@ -8781,7 +8781,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": -1.570794820785522
+          "value": -1.570794701576233
         },
         "BodyBag": {
           "type": "byte",
@@ -9010,7 +9010,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": 1.619880557060242
+          "value": 1.619880318641663
         },
         "BodyBag": {
           "type": "byte",
@@ -9032,7 +9032,7 @@
           "id": 14568,
           "type": "cexolocstring",
           "value": {
-            "0": "A carefully constructed marker denoting a point of interest."
+            "0": "Ascension Jail"
           }
         },
         "DisarmDC": {
@@ -9140,7 +9140,7 @@
         },
         "OnUsed": {
           "type": "resref",
-          "value": ""
+          "value": "pl_use_examine"
         },
         "OnUserDefined": {
           "type": "resref",
@@ -9712,7 +9712,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": -3.09240460395813
+          "value": -3.092404127120972
         },
         "BodyBag": {
           "type": "byte",
@@ -9734,7 +9734,7 @@
           "id": 14623,
           "type": "cexolocstring",
           "value": {
-            "0": "A banner - stitched and dyed - denoting a point of interest."
+            "0": "Fine Clothier"
           }
         },
         "DisarmDC": {
@@ -9842,7 +9842,7 @@
         },
         "OnUsed": {
           "type": "resref",
-          "value": ""
+          "value": "pl_use_examine"
         },
         "OnUserDefined": {
           "type": "resref",
@@ -9963,7 +9963,7 @@
           "id": 14622,
           "type": "cexolocstring",
           "value": {
-            "0": "A banner - stitched and dyed - denoting a point of interest."
+            "0": "Sage"
           }
         },
         "DisarmDC": {
@@ -10071,7 +10071,7 @@
         },
         "OnUsed": {
           "type": "resref",
-          "value": ""
+          "value": "pl_use_examine"
         },
         "OnUserDefined": {
           "type": "resref",
@@ -10849,7 +10849,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": 0.9817191958427429
+          "value": 0.9817190766334534
         },
         "BodyBag": {
           "type": "byte",
@@ -11074,7 +11074,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": 0.9817191958427429
+          "value": 0.9817190766334534
         },
         "BodyBag": {
           "type": "byte",
@@ -12886,7 +12886,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": -0.9817191958427429
+          "value": -0.9817190766334534
         },
         "BodyBag": {
           "type": "byte",
@@ -13111,7 +13111,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": -0.9817191958427429
+          "value": -0.9817190766334534
         },
         "BodyBag": {
           "type": "byte",
@@ -14244,7 +14244,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": -1.619880557060242
+          "value": -1.619880318641663
         },
         "BodyBag": {
           "type": "byte",
@@ -14266,7 +14266,7 @@
           "id": 14716,
           "type": "cexolocstring",
           "value": {
-            "0": "A carefully constructed marker denoting a point of interest."
+            "0": "Merchants Emporium"
           }
         },
         "DisarmDC": {
@@ -14374,7 +14374,7 @@
         },
         "OnUsed": {
           "type": "resref",
-          "value": ""
+          "value": "pl_use_examine"
         },
         "OnUserDefined": {
           "type": "resref",
@@ -14402,7 +14402,7 @@
         },
         "Tag": {
           "type": "cexostring",
-          "value": "erffd"
+          "value": "MerchantsEmporium"
         },
         "TemplateResRef": {
           "type": "resref",
@@ -14970,7 +14970,7 @@
         },
         "OnUsed": {
           "type": "resref",
-          "value": "pl_use"
+          "value": "pl_use_examine"
         },
         "OnUserDefined": {
           "type": "resref",
@@ -15091,7 +15091,7 @@
           "id": 14621,
           "type": "cexolocstring",
           "value": {
-            "0": "A banner - stitched and dyed - denoting a point of interest."
+            "0": "Alchemist"
           }
         },
         "DisarmDC": {
@@ -15199,7 +15199,7 @@
         },
         "OnUsed": {
           "type": "resref",
-          "value": ""
+          "value": "pl_use_examine"
         },
         "OnUserDefined": {
           "type": "resref",
@@ -15527,7 +15527,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": -0.9817421436309814
+          "value": -0.9817420244216919
         },
         "BodyBag": {
           "type": "byte",
@@ -15657,7 +15657,7 @@
         },
         "OnUsed": {
           "type": "resref",
-          "value": ""
+          "value": "pl_use_examine"
         },
         "OnUserDefined": {
           "type": "resref",
@@ -16111,7 +16111,7 @@
         },
         "OnUsed": {
           "type": "resref",
-          "value": ""
+          "value": "pl_use_examine"
         },
         "OnUserDefined": {
           "type": "resref",
@@ -17784,7 +17784,7 @@
         },
         "XOrientation": {
           "type": "float",
-          "value": -0.000156315159983933
+          "value": -0.0001567919971421361
         },
         "XPosition": {
           "type": "float",
@@ -21622,7 +21622,7 @@
         },
         "XOrientation": {
           "type": "float",
-          "value": 0.09817297756671906
+          "value": 0.09817345440387726
         },
         "XPosition": {
           "type": "float",
@@ -22610,7 +22610,7 @@
         },
         "XOrientation": {
           "type": "float",
-          "value": -0.0001403411151841283
+          "value": -0.0001408179523423314
         },
         "XPosition": {
           "type": "float",
@@ -22672,7 +22672,7 @@
         },
         "XOrientation": {
           "type": "float",
-          "value": -0.4275530874729156
+          "value": -0.4275530278682709
         },
         "XPosition": {
           "type": "float",
@@ -22680,7 +22680,7 @@
         },
         "YOrientation": {
           "type": "float",
-          "value": 0.9039902091026306
+          "value": 0.9039902687072754
         },
         "YPosition": {
           "type": "float",
@@ -22731,7 +22731,7 @@
         },
         "XOrientation": {
           "type": "float",
-          "value": -0.1218702271580696
+          "value": -0.1218706965446472
         },
         "XPosition": {
           "type": "float",
@@ -22739,7 +22739,7 @@
         },
         "YOrientation": {
           "type": "float",
-          "value": -0.992546021938324
+          "value": -0.9925459623336792
         },
         "YPosition": {
           "type": "float",
@@ -22793,7 +22793,7 @@
         },
         "XOrientation": {
           "type": "float",
-          "value": 8.662515256219194e-07
+          "value": 1.343088683825044e-06
         },
         "XPosition": {
           "type": "float",
@@ -22854,7 +22854,7 @@
         },
         "XOrientation": {
           "type": "float",
-          "value": 0.0981435552239418
+          "value": 0.09814403206110001
         },
         "XPosition": {
           "type": "float",
@@ -22862,7 +22862,7 @@
         },
         "YOrientation": {
           "type": "float",
-          "value": -0.9951722621917725
+          "value": -0.9951722025871277
         },
         "YPosition": {
           "type": "float",
@@ -22913,7 +22913,7 @@
         },
         "XOrientation": {
           "type": "float",
-          "value": 0.5141187310218811
+          "value": 0.5141189098358154
         },
         "XPosition": {
           "type": "float",
@@ -22921,7 +22921,7 @@
         },
         "YOrientation": {
           "type": "float",
-          "value": -0.8577190637588501
+          "value": -0.8577189445495605
         },
         "YPosition": {
           "type": "float",
@@ -23090,7 +23090,7 @@
         },
         "XOrientation": {
           "type": "float",
-          "value": 0.0490710586309433
+          "value": 0.0490712970495224
         },
         "XPosition": {
           "type": "float",
@@ -23339,7 +23339,7 @@
         },
         "YOrientation": {
           "type": "float",
-          "value": -0.0490645244717598
+          "value": -0.04906428605318069
         },
         "YPosition": {
           "type": "float",
@@ -23403,7 +23403,7 @@
         },
         "YOrientation": {
           "type": "float",
-          "value": 3.139164732601785e-07
+          "value": 4.331257628109597e-07
         },
         "YPosition": {
           "type": "float",
@@ -24406,7 +24406,7 @@
         },
         "XOrientation": {
           "type": "float",
-          "value": -9.671052248449996e-05
+          "value": -9.718735964270309e-05
         },
         "XPosition": {
           "type": "float",

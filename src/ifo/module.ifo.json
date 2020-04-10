@@ -41,6 +41,13 @@
           "type": "resref",
           "value": "hell"
         }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "tournamentarena"
+        }
       }
     ]
   },

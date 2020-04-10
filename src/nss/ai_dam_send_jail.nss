@@ -3,6 +3,7 @@
 //:: Created On: 2020-04-03
 //:://////////////////////////////////////////////
 
+#include "inc_chat"
 #include "inc_discord"
 #include "x3_inc_string"
 
@@ -22,7 +23,7 @@ void main()
         DelayCommand(59.0, SendMessageToPC(oHostile, "You have been taken to jail. Speak with the guard to get out."));
         DelayCommand(60.0, AssignCommand(oHostile, JumpToObject(GetWaypointByTag("WP_JAIL"))));
 
-        SendMessageToAllDMs(StringToRGBString(sName, "777")
+        SendMessageToGM(StringToRGBString(sName, "777")
         + " has been sent to jail for attacking a non hostile NPC.");
 
         ModMiscWebhook(sName

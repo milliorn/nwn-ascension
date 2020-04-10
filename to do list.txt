@@ -16,8 +16,6 @@ Add waypoint to dm room in script inc_chat when DM room is finished
 
 Need to update the waypoint tag in itm_signet script
 
-Updated Area tag in _mod_def_death
-
 Decide if bounty script will be added to PoA in the _mod_def_death event
 
 Need to go back an add the crown code from OnDeath.

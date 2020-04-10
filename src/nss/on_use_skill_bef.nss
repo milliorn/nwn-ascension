@@ -25,7 +25,7 @@ void main()
                     + ". Now, escape from jail!", OBJECT_SELF, TRUE);
 
                     sMessage = "WARNING! " + GetName(OBJECT_SELF) + " - skill spam - SKILL_PICK_POCKET";
-                    SendMessageToAllDMs(sMessage + StringToRGBString(" and has been sent to jail.", "700"));
+                    SendMessageToGM(sMessage + StringToRGBString(" and has been sent to jail.", "700"));
 
                     ModMiscWebhook(sMessage
                     + " has been sent to jail for pickpocket abuse.");
@@ -44,7 +44,7 @@ void main()
                     sMessage = "WARNING! "
                     + GetName(OBJECT_SELF)
                     + " - skill spam - SKILL_PICK_POCKET";
-                    SendMessageToAllDMs(sMessage);
+                    SendMessageToGM(sMessage);
                }
             }
 
@@ -60,7 +60,7 @@ void main()
                     + " seconds.", OBJECT_SELF, TRUE);
 
                     sMessage = "WARNING! " + GetName(OBJECT_SELF) + " - feat spam - FEAT_HIDE_IN_PLAIN_SIGHT";
-                    SendMessageToAllDMs(sMessage);
+                    SendMessageToGM(sMessage);
                 }
             }
         }

@@ -2,8 +2,9 @@
 //jumps the using PC to target waypoint and closes the trapdoor for next use
 //place in action taken scipt in trapdoor conversation
 //in 'yes' end dialog of the trapdoor
-#include "nw_i0_tool"
 #include "inc_discord"
+#include "inc_chat"
+#include "nw_i0_tool"
 #include "x3_inc_string"
 void main()
 {
@@ -16,7 +17,7 @@ void main()
         + " has been invalidated and booted for attempting to exploit teleporter.";
 
         BootPC(oPC, "You have been booted for attempting to exploit teleporter.");
-        SendMessageToAllDMs(sMessage);
+        SendMessageToGM(sMessage);
 
         sMessage = GetName(oPC)
         + " has been booted for attempting to exploit teleporter.";

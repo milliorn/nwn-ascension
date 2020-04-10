@@ -1,3 +1,4 @@
+#include "inc_chat"
 #include "inc_discord"
 #include "x3_inc_string"
 

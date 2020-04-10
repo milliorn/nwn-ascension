@@ -12,7 +12,7 @@ void main()
     //  Reset Faction Reputation to PC
     SetFactionsFriendly(oDied);
 
-    if (sArea == "Arena")
+    if (sArea == "TournamentArena")
     {
         //Send the 2 PC's a message
         DelayCommand(1.0, FloatingTextStringOnCreature("You Win", oKiller, FALSE));
@@ -22,7 +22,7 @@ void main()
         SpeakString(StringToRGBString(sDead, "777")
         + " lost a duel to "
         + StringToRGBString(sKiller, "777")
-        + " in the Arena", TALKVOLUME_SHOUT);
+        + " in the Tournament Arena.", TALKVOLUME_SHOUT);
 
         AssignCommand(oKiller, ClearAllActions(TRUE));
         Raise(oDied);

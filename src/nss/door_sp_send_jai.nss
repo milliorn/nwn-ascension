@@ -3,6 +3,7 @@
 //:: Created On: 2020-04-04
 //:://////////////////////////////////////////////
 
+#include "inc_chat"
 #include "inc_discord"
 #include "x3_inc_string"
 
@@ -17,7 +18,7 @@ void main()
         DelayCommand(6.0, AssignCommand(oCaster, JumpToLocation(GetLocation(GetWaypointByTag("WP_JAIL")))));
         DelayCommand(12.0, SendMessageToPC(oCaster, "You have been sent to jail for vandalism."));
 
-        SendMessageToAllDMs(StringToRGBString(sName, "777")
+        SendMessageToGM(StringToRGBString(sName, "777")
         + " has been sent to jail for vandalism.");
 
         ModMiscWebhook(sName

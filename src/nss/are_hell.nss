@@ -6,6 +6,7 @@
 // Remove an Immortal's immortality if they enter Hell.
 
 #include "inc_area"
+#include "inc_chat"
 #include "inc_discord"
 #include "x3_inc_string"
 
@@ -17,7 +18,7 @@ void main()
 
     if (GetIsPC(oEnter) && !GetIsDM(oEnter))
     {
-        SendMessageToAllDMs(StringToRGBString(sName, "777") + " has entered Hell.");
+        SendMessageToGM(StringToRGBString(sName, "777") + " has entered Hell.");
         DelayCommand(3.0, ApplyEffectToObject(DURATION_TYPE_INSTANT, EffectVisualEffect(VFX_FNF_DEMON_HAND, 0), oEnter));
         ModMiscWebhook(sName + " has entered Hell.");
         LokiTheft(oEnter);

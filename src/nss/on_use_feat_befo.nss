@@ -27,7 +27,7 @@ void main()
                     GetName(OBJECT_SELF) + ". FEAT_CALLED_SHOT once every 6 seconds.", OBJECT_SELF, TRUE);
 
                     sMessage = "WARNING! " + GetName(OBJECT_SELF) + " - feat spam - FEAT_CALLED_SHOT";
-                    SendMessageToAllDMs(sMessage);
+                    SendMessageToGM(sMessage);
                 }
             }
 
@@ -41,7 +41,7 @@ void main()
                     GetName(OBJECT_SELF) + ". FEAT_DISARM once every 6 seconds.", OBJECT_SELF, TRUE);
 
                     sMessage = "WARNING! " + GetName(OBJECT_SELF) + " - feat spam - FEAT_DISARM";
-                    SendMessageToAllDMs(sMessage);
+                    SendMessageToGM(sMessage);
                 }
             }
             case FEAT_IMPROVED_DISARM:
@@ -54,7 +54,7 @@ void main()
                     GetName(OBJECT_SELF) + ". FEAT_IMPROVED_DISARM once every 6 seconds.", OBJECT_SELF, TRUE);
 
                     sMessage = "WARNING! " + GetName(OBJECT_SELF) + " - feat spam - FEAT_IMPROVED_DISARM";
-                    SendMessageToAllDMs(sMessage);
+                    SendMessageToGM(sMessage);
                 }
             }
 
@@ -68,7 +68,7 @@ void main()
                     GetName(OBJECT_SELF) + ". FEAT_KNOCKDOWN once every 6 seconds.", OBJECT_SELF, TRUE);
 
                     sMessage = "WARNING! " + GetName(OBJECT_SELF) + " - feat spam - FEAT_KNOCKDOWN";
-                    SendMessageToAllDMs(sMessage);
+                    SendMessageToGM(sMessage);
                 }
             }
 
@@ -82,7 +82,7 @@ void main()
                     GetName(OBJECT_SELF) + ". FEAT_IMPROVED_KNOCKDOWN once every 6 seconds.", OBJECT_SELF, TRUE);
 
                     sMessage = "WARNING! " + GetName(OBJECT_SELF) + " - feat spam - FEAT_IMPROVED_KNOCKDOWN";
-                    SendMessageToAllDMs(sMessage);
+                    SendMessageToGM(sMessage);
                 }
             }
         }
