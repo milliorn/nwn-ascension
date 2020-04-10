@@ -34,6 +34,8 @@ void CheckIsInBattle(object oPC, int iTimer, vector vLoc)
         ApplyEffectToObject(DURATION_TYPE_INSTANT, EffectVisualEffect(VFX_FNF_ELECTRIC_EXPLOSION), oPC);
         DelayCommand(1.0, AssignCommand(oPC, JumpToLocation(lLoc)));
         DelayCommand(6.0, SendMessageToPC(oPC, "Some of your gold was turned to lead during the teleport!"));
+        DelayCommand(6.0, ApplyEffectAtLocation(DURATION_TYPE_INSTANT, EffectVisualEffect(VFX_FNF_TIME_STOP), lLoc));
+
         return;
     }
 

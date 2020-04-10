@@ -83,7 +83,7 @@
   },
   "Mod_Entry_Area": {
     "type": "resref",
-    "value": "thevoyage"
+    "value": "townofascension"
   },
   "Mod_Entry_Dir_X": {
     "type": "float",
@@ -95,15 +95,15 @@
   },
   "Mod_Entry_X": {
     "type": "float",
-    "value": 35.50774383544922
+    "value": 61.03972244262695
   },
   "Mod_Entry_Y": {
     "type": "float",
-    "value": 35.01906585693359
+    "value": 87.6475830078125
   },
   "Mod_Entry_Z": {
     "type": "float",
-    "value": 5.799999237060547
+    "value": -4.76837158203125e-07
   },
   "Mod_Expan_List": {
     "type": "list",

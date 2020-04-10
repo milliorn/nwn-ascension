@@ -106,7 +106,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "I am the Rowan tree guardian. Should anyone try  to damage the Rowan tree, I will take care of business.  I have a limited power granted me by the tree.. I can tune the trees spirit with your own....  Also at any point you may save your character, and everyone elses at the same time, just by asking me. If you want to save your character, and I am not available, just use your saving pen."
+            "0": "I am the Rowan tree guardian. Should anyone try  to damage the Rowan tree, I will take care of business.  I have a limited power granted me by the tree.. I can tune the trees spirit with your own...."
           }
         }
       },
@@ -645,7 +645,7 @@
   },
   "NumWords": {
     "type": "dword",
-    "value": 306
+    "value": 226
   },
   "PreventZoomIn": {
     "type": "byte",
@@ -1139,7 +1139,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "I do NOT want to be leveled up."
+            "0": "I do not want to be leveled up."
           }
         }
       },
@@ -1196,7 +1196,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Please raise or lower me to level 2. I understand that even if I am higher than level 2, the tree will make me level 2. I still want to do it. I also understand that if my spirit is not toughened, I will become level 3."
+            "0": "Please raise my level."
           }
         }
       },

@@ -58,9 +58,6 @@ void main()
     //  Remove all buffs
     RemoveAllEffects(oPC);
 
-    //  Automated visual upon PC entering the module casted on the starting location.
-    DelayCommand(6.0, ApplyEffectAtLocation(DURATION_TYPE_INSTANT, EffectVisualEffect(VFX_FNF_TIME_STOP), GetStartingLocation()));
-
     //  Chat Cooldown Var
     DelayCommand(0.9, DeleteLocalInt(oPC, "PC_CHAT"));
 

@@ -57,9 +57,9 @@ void main()
     oArea = GetFirstArea();
     while (GetIsObjectValid(oArea))
     {
-        if (GetIsAreaInterior(oArea) != TRUE)
+        if (!GetIsAreaInterior(oArea))
         {
-            SetFogAmount(FOG_TYPE_ALL, d12(), oArea);
+            SetFogAmount(FOG_TYPE_ALL, d2(), oArea);
 
             switch (Random(16))
             {
@@ -116,235 +116,224 @@ void main()
                     break;
             }
 
-            if (d2() == 1)
+            switch (Random(16))
             {
-                switch (Random(16))
-                {
-                    case 0:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_BLACK);
-                        break;
-                    case 1:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_BLUE);
-                        break;
-                    case 2:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_BLUE_DARK);
-                        break;
-                    case 3:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_BROWN);
-                        break;
-                    case 4:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_BROWN_DARK);
-                        break;
-                    case 5:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_CYAN);
-                        break;
-                    case 6:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_GREEN);
-                        break;
-                    case 7:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_GREEN_DARK);
-                        break;
-                    case 8:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_GREY);
-                        break;
-                    case 9:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_MAGENTA);
-                        break;
-                    case 10:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_ORANGE);
-                        break;
-                    case 11:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_ORANGE_DARK);
-                        break;
-                    case 12:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_RED);
-                        break;
-                    case 13:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_RED_DARK);
-                        break;
-                    case 14:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_WHITE);
-                        break;
-                    case 15:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_YELLOW);
-                        break;
-                    case 16:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_YELLOW_DARK);
-                        break;
-                }
+                case 0:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_BLACK);
+                    break;
+                case 1:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_BLUE);
+                    break;
+                case 2:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_BLUE_DARK);
+                    break;
+                case 3:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_BROWN);
+                    break;
+                case 4:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_BROWN_DARK);
+                    break;
+                case 5:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_CYAN);
+                    break;
+                case 6:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_GREEN);
+                    break;
+                case 7:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_GREEN_DARK);
+                    break;
+                case 8:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_GREY);
+                    break;
+                case 9:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_MAGENTA);
+                    break;
+                case 10:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_ORANGE);
+                    break;
+                case 11:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_ORANGE_DARK);
+                    break;
+                case 12:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_RED);
+                    break;
+                case 13:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_RED_DARK);
+                    break;
+                case 14:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_WHITE);
+                    break;
+                case 15:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_YELLOW);
+                    break;
+                case 16:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_YELLOW_DARK);
+                    break;
             }
 
-            if (d2() == 1)
+            switch (Random(16))
             {
-                switch (Random(16))
-                {
-                    case 0:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_BLACK);
-                        break;
-                    case 1:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_BLUE);
-                        break;
-                    case 2:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_BLUE_DARK);
-                        break;
-                    case 3:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_BROWN);
-                        break;
-                    case 4:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_BROWN_DARK);
-                        break;
-                    case 5:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_CYAN);
-                        break;
-                    case 6:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_GREEN);
-                        break;
-                    case 7:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_GREEN_DARK);
-                        break;
-                    case 8:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_GREY);
-                        break;
-                    case 9:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_MAGENTA);
-                        break;
-                    case 10:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_ORANGE);
-                        break;
-                    case 11:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_ORANGE_DARK);
-                        break;
-                    case 12:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_RED);
-                        break;
-                    case 13:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_RED_DARK);
-                        break;
-                    case 14:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_WHITE);
-                        break;
-                    case 15:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_YELLOW);
-                        break;
-                    case 16:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_YELLOW_DARK);
-                        break;
-                }
+                case 0:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_BLACK);
+                    break;
+                case 1:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_BLUE);
+                    break;
+                case 2:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_BLUE_DARK);
+                    break;
+                case 3:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_BROWN);
+                    break;
+                case 4:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_BROWN_DARK);
+                    break;
+                case 5:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_CYAN);
+                    break;
+                case 6:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_GREEN);
+                    break;
+                case 7:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_GREEN_DARK);
+                    break;
+                case 8:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_GREY);
+                    break;
+                case 9:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_MAGENTA);
+                    break;
+                case 10:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_ORANGE);
+                    break;
+                case 11:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_ORANGE_DARK);
+                    break;
+                case 12:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_RED);
+                    break;
+                case 13:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_RED_DARK);
+                    break;
+                case 14:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_WHITE);
+                    break;
+                case 15:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_YELLOW);
+                    break;
+                case 16:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_YELLOW_DARK);
+                    break;
             }
 
-            if (d2() == 1)
+            switch (Random(16))
             {
-                switch (Random(16))
-                {
-                    case 0:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_BLACK);
-                        break;
-                    case 1:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_BLUE);
-                        break;
-                    case 2:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_BLUE_DARK);
-                        break;
-                    case 3:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_BROWN);
-                        break;
-                    case 4:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_BROWN_DARK);
-                        break;
-                    case 5:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_CYAN);
-                        break;
-                    case 6:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_GREEN);
-                        break;
-                    case 7:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_GREEN_DARK);
-                        break;
-                    case 8:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_GREY);
-                        break;
-                    case 9:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_MAGENTA);
-                        break;
-                    case 10:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_ORANGE);
-                        break;
-                    case 11:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_ORANGE_DARK);
-                        break;
-                    case 12:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_RED);
-                        break;
-                    case 13:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_RED_DARK);
-                        break;
-                    case 14:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_WHITE);
-                        break;
-                    case 15:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_YELLOW);
-                        break;
-                    case 16:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_YELLOW_DARK);
-                        break;
-                }
+                case 0:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_BLACK);
+                    break;
+                case 1:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_BLUE);
+                    break;
+                case 2:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_BLUE_DARK);
+                    break;
+                case 3:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_BROWN);
+                    break;
+                case 4:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_BROWN_DARK);
+                    break;
+                case 5:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_CYAN);
+                    break;
+                case 6:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_GREEN);
+                    break;
+                case 7:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_GREEN_DARK);
+                    break;
+                case 8:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_GREY);
+                    break;
+                case 9:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_MAGENTA);
+                    break;
+                case 10:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_ORANGE);
+                    break;
+                case 11:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_ORANGE_DARK);
+                    break;
+                case 12:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_RED);
+                    break;
+                case 13:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_RED_DARK);
+                    break;
+                case 14:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_WHITE);
+                    break;
+                case 15:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_YELLOW);
+                    break;
+                case 16:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_YELLOW_DARK);
+                    break;
             }
-            if (d2() == 1)
+
+            switch (Random(16))
             {
-                switch (Random(16))
-                {
-                    case 0:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_BLACK);
-                        break;
-                    case 1:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_BLUE);
-                        break;
-                    case 2:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_BLUE_DARK);
-                        break;
-                    case 3:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_BROWN);
-                        break;
-                    case 4:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_BROWN_DARK);
-                        break;
-                    case 5:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_CYAN);
-                        break;
-                    case 6:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_GREEN);
-                        break;
-                    case 7:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_GREEN_DARK);
-                        break;
-                    case 8:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_GREY);
-                        break;
-                    case 9:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_MAGENTA);
-                        break;
-                    case 10:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_ORANGE);
-                        break;
-                    case 11:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_ORANGE_DARK);
-                        break;
-                    case 12:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_RED);
-                        break;
-                    case 13:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_RED_DARK);
-                        break;
-                    case 14:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_WHITE);
-                        break;
-                    case 15:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_YELLOW);
-                        break;
-                    case 16:
-                        NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_YELLOW_DARK);
-                        break;
-                }
+                case 0:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_BLACK);
+                    break;
+                case 1:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_BLUE);
+                    break;
+                case 2:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_BLUE_DARK);
+                    break;
+                case 3:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_BROWN);
+                    break;
+                case 4:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_BROWN_DARK);
+                    break;
+                case 5:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_CYAN);
+                    break;
+                case 6:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_GREEN);
+                    break;
+                case 7:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_GREEN_DARK);
+                    break;
+                case 8:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_GREY);
+                    break;
+                case 9:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_MAGENTA);
+                    break;
+                case 10:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_ORANGE);
+                    break;
+                case 11:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_ORANGE_DARK);
+                    break;
+                case 12:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_RED);
+                    break;
+                case 13:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_RED_DARK);
+                    break;
+                case 14:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_WHITE);
+                    break;
+                case 15:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_YELLOW);
+                    break;
+                case 16:
+                    NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_YELLOW_DARK);
+                    break;
             }
 
             if (GetSkyBox(oArea) == SKYBOX_NONE)

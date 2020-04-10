@@ -8,7 +8,7 @@
 int StartingConditional()
 {
     if (GetHitDice(GetPCSpeaker()) == 1)
-        return FALSE;
+        return TRUE;
 
-    return TRUE;
+    return FALSE;
 }
