@@ -48,6 +48,13 @@
           "type": "resref",
           "value": "tournamentarena"
         }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "fugue"
+        }
       }
     ]
   },
@@ -83,7 +90,7 @@
   },
   "Mod_Entry_Area": {
     "type": "resref",
-    "value": "townofascension"
+    "value": "thevoyage"
   },
   "Mod_Entry_Dir_X": {
     "type": "float",
@@ -95,15 +102,15 @@
   },
   "Mod_Entry_X": {
     "type": "float",
-    "value": 61.03972244262695
+    "value": 35.35995483398438
   },
   "Mod_Entry_Y": {
     "type": "float",
-    "value": 87.6475830078125
+    "value": 34.91904067993164
   },
   "Mod_Entry_Z": {
     "type": "float",
-    "value": -4.76837158203125e-07
+    "value": 5.799996376037598
   },
   "Mod_Expan_List": {
     "type": "list",

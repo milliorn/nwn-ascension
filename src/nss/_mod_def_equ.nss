@@ -30,6 +30,7 @@ void main()
     object oPC = GetPCItemLastEquippedBy();
 
     PrintGPValue(oItem);
+
     if (GetModuleSwitchValue(MODULE_SWITCH_ENABLE_TAGBASED_SCRIPTS) == TRUE)
     {
         SetUserDefinedItemEventNumber(X2_ITEM_EVENT_EQUIP);

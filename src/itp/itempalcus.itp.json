@@ -795,22 +795,6 @@
                 "type": "byte",
                 "value": 8
               },
-              "LIST": {
-                "type": "list",
-                "value": [
-                  {
-                    "__struct_id": 0,
-                    "NAME": {
-                      "type": "cexostring",
-                      "value": "Militia Armor"
-                    },
-                    "RESREF": {
-                      "type": "resref",
-                      "value": "militiaarmor"
-                    }
-                  }
-                ]
-              },
               "STRREF": {
                 "type": "dword",
                 "value": 4818
@@ -1607,7 +1591,29 @@
               },
               "RESREF": {
                 "type": "resref",
+                "value": "001"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Militia Armor"
+              },
+              "RESREF": {
+                "type": "resref",
                 "value": "006"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Militia Armor"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "militiaarmor"
               }
             },
             {

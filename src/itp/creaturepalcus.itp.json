@@ -1985,6 +1985,25 @@
               },
               "NAME": {
                 "type": "cexostring",
+                "value": "Immortal"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "immortal"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
+                "value": 2.0
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Defender"
+              },
+              "NAME": {
+                "type": "cexostring",
                 "value": "Madman"
               },
               "RESREF": {
