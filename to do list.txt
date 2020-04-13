@@ -46,6 +46,10 @@ Remove an Immortal's immortality if they enter Hell.
 
 Replace the tag in scripts "sucked2" with the fugue waypoint tag
 
+Reevaluate the Sage wizard shop when that time comes
+
+Fix an issue with placeables not respawning
+
 
 Area variables in non hostile areas
 

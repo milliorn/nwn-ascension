@@ -55,6 +55,13 @@
           "type": "resref",
           "value": "fugue"
         }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "sageshome"
+        }
       }
     ]
   },
@@ -102,15 +109,15 @@
   },
   "Mod_Entry_X": {
     "type": "float",
-    "value": 35.35995483398438
+    "value": 35.32061386108398
   },
   "Mod_Entry_Y": {
     "type": "float",
-    "value": 34.91904067993164
+    "value": 34.80859375
   },
   "Mod_Entry_Z": {
     "type": "float",
-    "value": 5.799996376037598
+    "value": 5.800000190734863
   },
   "Mod_Expan_List": {
     "type": "list",

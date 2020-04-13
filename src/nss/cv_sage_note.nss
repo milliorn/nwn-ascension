@@ -1,0 +1,20 @@
+//:://////////////////////////////////////////////
+//:: Created By: Scott Milliorn
+//:: Created On: 2020-04-12
+//::///////////////////////////////////////////////
+//::///////////////////////////////////////////////
+//:: FileName saeendg
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 2019-05-01 00:21:27
+//:://////////////////////////////////////////////
+void main()
+{
+    // Give the speaker the items
+    CreateItemOnObject("lichkey001", GetPCSpeaker(), 1);
+
+    object oItemToTake = GetItemPossessedBy(GetPCSpeaker(), "SagesNote");
+    if (GetIsObjectValid(oItemToTake) != 0)
+        DestroyObject(oItemToTake);
+}

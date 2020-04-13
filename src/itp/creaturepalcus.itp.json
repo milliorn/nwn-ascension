@@ -2053,6 +2053,25 @@
               "__struct_id": 0,
               "CR": {
                 "type": "float",
+                "value": 2.0
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Commoner"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Sage"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "sage"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
                 "value": 50.0
               },
               "FACTION": {

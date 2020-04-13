@@ -25,7 +25,7 @@ void main()
         DropNote(lLoc);
         DestroyInventory(OBJECT_SELF);
     }
-
-    AssignCommand(GetArea(OBJECT_SELF), DelayCommand(1800.0, RespawnObject(GetTag(OBJECT_SELF), GetObjectType(OBJECT_SELF), lLoc)));
+//1800
+    AssignCommand(GetArea(OBJECT_SELF), DelayCommand(8.0, RespawnObject(GetTag(OBJECT_SELF), GetObjectType(OBJECT_SELF), lLoc)));
 }
 
