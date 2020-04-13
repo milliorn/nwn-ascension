@@ -5,8 +5,6 @@
 //:: Created On: 2020-04-04
 //:://////////////////////////////////////////////
 
-#include "nw_i0_tool"
-
 int StartingConditional()
 {
     return GetItemPossessedBy(GetPCSpeaker(), "rainbowstone") != OBJECT_INVALID;
