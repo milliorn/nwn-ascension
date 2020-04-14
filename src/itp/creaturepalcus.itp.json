@@ -1901,6 +1901,25 @@
               "__struct_id": 0,
               "CR": {
                 "type": "float",
+                "value": 0.5
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Merchant"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Ascension Alchemist"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "alchemist"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
                 "value": 95.0
               },
               "FACTION": {

@@ -62,6 +62,13 @@
           "type": "resref",
           "value": "sageshome"
         }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "alchemistsshop"
+        }
       }
     ]
   },
@@ -109,11 +116,11 @@
   },
   "Mod_Entry_X": {
     "type": "float",
-    "value": 35.32061386108398
+    "value": 35.54367065429688
   },
   "Mod_Entry_Y": {
     "type": "float",
-    "value": 34.80859375
+    "value": 34.45702362060547
   },
   "Mod_Entry_Z": {
     "type": "float",

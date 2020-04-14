@@ -50,6 +50,8 @@ Reevaluate the Sage wizard shop when that time comes
 
 Fix an issue with placeables not respawning
 
+Add code to onuse placeable events to stop GS looting
+
 
 Area variables in non hostile areas
 
