@@ -4,11 +4,11 @@
 //:://////////////////////////////////////////////
 
 //  Respawn Placeable object
-void RespawnObject(string sTag, int iType, location lLoc);
+void RespawnObject();
 
-void RespawnObject(string sTag, int iType, location lLoc)
+void RespawnObject()
 {
-    CreateObject(iType, GetStringLowerCase(GetStringLeft(sTag, 16)), lLoc);
+    CreateObject(GetObjectType(OBJECT_SELF), GetResRef(OBJECT_SELF), GetLocation(OBJECT_SELF));
 }
 
 //void main()

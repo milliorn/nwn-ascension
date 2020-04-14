@@ -3,23 +3,24 @@
 //:: Created On: 2020-04-05
 //:://////////////////////////////////////////////
 
-#include "inc_pl"
+//  Modified by AW Olorin 1-12-2004
+//  Anti-GS Looting
+
+void RespawnObject(string sTag, int iType, location lLoc)
+{
+    CreateObject(iType, GetStringLowerCase(GetStringLeft(sTag, 16)), lLoc);
+}
 
 void main()
 {
     location lLoc = GetLocation(OBJECT_SELF);
+    string sTag = GetTag(OBJECT_SELF);
+    int iType = GetObjectType(OBJECT_SELF);
 
-    SetPlotFlag(OBJECT_SELF, FALSE);
+    CreateObject(OBJECT_TYPE_ITEM, "brokenloot", lLoc);
 
-    object item = GetFirstItemInInventory(OBJECT_SELF);
-    while (GetIsObjectValid(item))
-    {
-        DestroyObject(item);
-        CreateObject(OBJECT_TYPE_ITEM, "brokenloot", lLoc);
-        item = GetNextItemInInventory(OBJECT_SELF);
-    }
 
-    AssignCommand(GetArea(OBJECT_SELF), DelayCommand(8.0, RespawnObject(GetTag(OBJECT_SELF), GetObjectType(OBJECT_SELF), lLoc)));
-    DestroyObject(OBJECT_SELF, 0.0);
+    DestroyObject(OBJECT_SELF);
+    AssignCommand(GetArea(OBJECT_SELF), DelayCommand(12.0, RespawnObject(sTag, iType, lLoc)));
 }
 

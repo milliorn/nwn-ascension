@@ -14,7 +14,7 @@ void main()
     object oFrom = GetModuleItemAcquiredFrom();
     object oPC = GetModuleItemAcquiredBy();
 
-    string sFrom = GetName(oFrom);
+    string sPC = GetName(oPC);
     string sItem = GetName(oItem);
 
     PrintGPValue(oPC);
@@ -44,5 +44,5 @@ void main()
     }
 
     FixBarterExploit(oFrom, oPC);
-    LootMessage(sItem, sFrom, oFrom, oPC);
+    LootMessage(sItem, sPC, oFrom, oPC);
 }

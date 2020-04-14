@@ -1050,22 +1050,6 @@
           "type": "byte",
           "value": 9
         },
-        "LIST": {
-          "type": "list",
-          "value": [
-            {
-              "__struct_id": 0,
-              "NAME": {
-                "type": "cexostring",
-                "value": "nocrown"
-              },
-              "RESREF": {
-                "type": "resref",
-                "value": "nocrown"
-              }
-            }
-          ]
-        },
         "STRREF": {
           "type": "dword",
           "value": 1592

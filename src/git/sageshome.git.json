@@ -66,7 +66,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": -3.141563177108765
+          "value": -3.141561985015869
         },
         "CloseLockDC": {
           "type": "byte",
@@ -369,7 +369,7 @@
               },
               "Cost": {
                 "type": "dword",
-                "value": 0
+                "value": 3
               },
               "Cursed": {
                 "type": "byte",
@@ -383,7 +383,9 @@
               },
               "Description": {
                 "type": "cexolocstring",
-                "value": {}
+                "value": {
+                  "0": ""
+                }
               },
               "Identified": {
                 "type": "byte",
@@ -418,7 +420,7 @@
                     },
                     "CostValue": {
                       "type": "word",
-                      "value": 8
+                      "value": 13
                     },
                     "Param1": {
                       "type": "byte",
@@ -595,7 +597,7 @@
         },
         "TemplateResRef": {
           "type": "resref",
-          "value": "plc_bookshelf"
+          "value": "bookshelf"
         },
         "TrapDetectable": {
           "type": "byte",
@@ -639,11 +641,11 @@
         },
         "Y": {
           "type": "float",
-          "value": 22.76463317871094
+          "value": 22.75485610961914
         },
         "Z": {
           "type": "float",
-          "value": 9.5367431640625e-06
+          "value": -5.7220458984375e-06
         }
       }
     ]
@@ -855,7 +857,7 @@
         },
         "XOrientation": {
           "type": "float",
-          "value": -2.947648135886993e-05
+          "value": -3.066857243538834e-05
         },
         "XPosition": {
           "type": "float",
