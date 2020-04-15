@@ -76,6 +76,13 @@
           "type": "resref",
           "value": "armorshop"
         }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "clothingshop"
+        }
       }
     ]
   },

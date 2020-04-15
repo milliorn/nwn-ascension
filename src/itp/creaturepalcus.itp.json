@@ -2091,6 +2091,25 @@
               "__struct_id": 0,
               "CR": {
                 "type": "float",
+                "value": 156.0
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Merchant"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Renny"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "rennysigne"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
                 "value": 120.0
               },
               "FACTION": {
