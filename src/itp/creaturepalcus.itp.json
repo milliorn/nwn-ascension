@@ -1901,6 +1901,25 @@
               "__struct_id": 0,
               "CR": {
                 "type": "float",
+                "value": 12.0
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Merchant"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Armor Smith"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "armorsmith"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
                 "value": 0.5
               },
               "FACTION": {
@@ -1971,6 +1990,25 @@
               "RESREF": {
                 "type": "resref",
                 "value": "captainmaleyreyn"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
+                "value": 12.0
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Merchant"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Dwarven Smith"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "dwarvenbeetlecol"
               }
             },
             {

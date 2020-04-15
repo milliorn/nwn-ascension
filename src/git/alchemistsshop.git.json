@@ -66,7 +66,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": -3.141551971435547
+          "value": -3.141551733016968
         },
         "CloseLockDC": {
           "type": "byte",
@@ -2387,11 +2387,11 @@
         },
         "OnOpenStore": {
           "type": "resref",
-          "value": "st_close_clean"
+          "value": ""
         },
         "OnStoreClosed": {
           "type": "resref",
-          "value": ""
+          "value": "st_close_clean"
         },
         "ResRef": {
           "type": "resref",
@@ -2425,11 +2425,11 @@
                     "__struct_id": 0,
                     "AddCost": {
                       "type": "dword",
-                      "value": 12
+                      "value": 1234
                     },
                     "BaseItem": {
                       "type": "int",
-                      "value": 79
+                      "value": 81
                     },
                     "Charges": {
                       "type": "byte",
@@ -2437,41 +2437,33 @@
                     },
                     "Cost": {
                       "type": "dword",
-                      "value": 13
+                      "value": 1500
                     },
                     "Cursed": {
                       "type": "byte",
                       "value": 0
                     },
                     "DescIdentified": {
+                      "id": 84354,
                       "type": "cexolocstring",
-                      "value": {
-                        "0": "Acid bubbles inside this heavy flask. \n\nThis is a grenade-like weapon. Target it at your enemies and beware of splash damage."
-                      }
+                      "value": {}
                     },
                     "Description": {
                       "type": "cexolocstring",
-                      "value": {
-                        "0": ""
-                      }
+                      "value": {}
                     },
                     "Identified": {
                       "type": "byte",
                       "value": 1
                     },
-                    "Infinite": {
-                      "type": "byte",
-                      "value": 1
-                    },
                     "LocalizedName": {
+                      "id": 84352,
                       "type": "cexolocstring",
-                      "value": {
-                        "0": "Acid Flask"
-                      }
+                      "value": {}
                     },
                     "ModelPart1": {
                       "type": "byte",
-                      "value": 27
+                      "value": 6
                     },
                     "Plot": {
                       "type": "byte",
@@ -2508,7 +2500,7 @@
                           },
                           "Subtype": {
                             "type": "word",
-                            "value": 329
+                            "value": 529
                           }
                         }
                       ]
@@ -2531,11 +2523,11 @@
                     },
                     "Tag": {
                       "type": "cexostring",
-                      "value": "hc_acidflask"
+                      "value": "x2_it_acidbomb"
                     },
                     "TemplateResRef": {
                       "type": "resref",
-                      "value": "acidflask"
+                      "value": "x2_it_acidbomb"
                     },
                     "XOrientation": {
                       "type": "float",
@@ -2562,11 +2554,11 @@
                     "__struct_id": 1,
                     "AddCost": {
                       "type": "dword",
-                      "value": 32
+                      "value": 19
                     },
                     "BaseItem": {
                       "type": "int",
-                      "value": 79
+                      "value": 81
                     },
                     "Charges": {
                       "type": "byte",
@@ -2574,41 +2566,33 @@
                     },
                     "Cost": {
                       "type": "dword",
-                      "value": 33
+                      "value": 20
                     },
                     "Cursed": {
                       "type": "byte",
                       "value": 0
                     },
                     "DescIdentified": {
+                      "id": 2989,
                       "type": "cexolocstring",
-                      "value": {
-                        "0": "Alchemist's Fire is a sticky, adhesive substance that ignites on contact with air.\n\nThis is a grenade-like weapon. Target it at your enemies and beware of splash damage."
-                      }
+                      "value": {}
                     },
                     "Description": {
                       "type": "cexolocstring",
-                      "value": {
-                        "0": ""
-                      }
+                      "value": {}
                     },
                     "Identified": {
                       "type": "byte",
                       "value": 1
                     },
-                    "Infinite": {
-                      "type": "byte",
-                      "value": 1
-                    },
                     "LocalizedName": {
+                      "id": 2981,
                       "type": "cexolocstring",
-                      "value": {
-                        "0": "Alchemist's Fire"
-                      }
+                      "value": {}
                     },
                     "ModelPart1": {
                       "type": "byte",
-                      "value": 32
+                      "value": 6
                     },
                     "Plot": {
                       "type": "byte",
@@ -2645,7 +2629,7 @@
                           },
                           "Subtype": {
                             "type": "word",
-                            "value": 329
+                            "value": 341
                           }
                         }
                       ]
@@ -2668,11 +2652,11 @@
                     },
                     "Tag": {
                       "type": "cexostring",
-                      "value": "hc_alchfire"
+                      "value": "X1_WMGRENADE001"
                     },
                     "TemplateResRef": {
                       "type": "resref",
-                      "value": "alchemistsfire"
+                      "value": "x1_wmgrenade001"
                     },
                     "XOrientation": {
                       "type": "float",
@@ -2699,11 +2683,11 @@
                     "__struct_id": 2,
                     "AddCost": {
                       "type": "dword",
-                      "value": 48
+                      "value": 18
                     },
                     "BaseItem": {
                       "type": "int",
-                      "value": 79
+                      "value": 81
                     },
                     "Charges": {
                       "type": "byte",
@@ -2711,41 +2695,33 @@
                     },
                     "Cost": {
                       "type": "dword",
-                      "value": 49
+                      "value": 20
                     },
                     "Cursed": {
                       "type": "byte",
                       "value": 0
                     },
                     "DescIdentified": {
+                      "id": 2990,
                       "type": "cexolocstring",
-                      "value": {
-                        "0": "Blessed by devout priests, this water is imbued with positive energy that is harmful to most forms of undead.\n\nThis is a grenade-like weapon. Target it at your enemies and beware of splash damage."
-                      }
+                      "value": {}
                     },
                     "Description": {
                       "type": "cexolocstring",
-                      "value": {
-                        "0": ""
-                      }
+                      "value": {}
                     },
                     "Identified": {
                       "type": "byte",
                       "value": 1
                     },
-                    "Infinite": {
-                      "type": "byte",
-                      "value": 1
-                    },
                     "LocalizedName": {
+                      "id": 2982,
                       "type": "cexolocstring",
-                      "value": {
-                        "0": "Holy Water"
-                      }
+                      "value": {}
                     },
                     "ModelPart1": {
                       "type": "byte",
-                      "value": 6
+                      "value": 1
                     },
                     "Plot": {
                       "type": "byte",
@@ -2782,7 +2758,7 @@
                           },
                           "Subtype": {
                             "type": "word",
-                            "value": 329
+                            "value": 336
                           }
                         }
                       ]
@@ -2805,11 +2781,11 @@
                     },
                     "Tag": {
                       "type": "cexostring",
-                      "value": "hc_holywater"
+                      "value": "X1_WMGRENADE002"
                     },
                     "TemplateResRef": {
                       "type": "resref",
-                      "value": "holywaterflask"
+                      "value": "x1_wmgrenade002"
                     },
                     "XOrientation": {
                       "type": "float",
@@ -2836,11 +2812,11 @@
                     "__struct_id": 3,
                     "AddCost": {
                       "type": "dword",
-                      "value": 10
+                      "value": 18
                     },
                     "BaseItem": {
                       "type": "int",
-                      "value": 79
+                      "value": 81
                     },
                     "Charges": {
                       "type": "byte",
@@ -2848,41 +2824,33 @@
                     },
                     "Cost": {
                       "type": "dword",
-                      "value": 11
+                      "value": 20
                     },
                     "Cursed": {
                       "type": "byte",
                       "value": 0
                     },
                     "DescIdentified": {
+                      "id": 2991,
                       "type": "cexolocstring",
-                      "value": {
-                        "0": "An oil-soaked rag plugs the mouth of this bottle.\n\nThis is a grenade-like weapon. Target it at your enemies and beware of splash damage."
-                      }
+                      "value": {}
                     },
                     "Description": {
                       "type": "cexolocstring",
-                      "value": {
-                        "0": ""
-                      }
+                      "value": {}
                     },
                     "Identified": {
                       "type": "byte",
                       "value": 1
                     },
-                    "Infinite": {
-                      "type": "byte",
-                      "value": 1
-                    },
                     "LocalizedName": {
+                      "id": 2983,
                       "type": "cexolocstring",
-                      "value": {
-                        "0": "Oil Flask"
-                      }
+                      "value": {}
                     },
                     "ModelPart1": {
                       "type": "byte",
-                      "value": 19
+                      "value": 7
                     },
                     "Plot": {
                       "type": "byte",
@@ -2919,7 +2887,7 @@
                           },
                           "Subtype": {
                             "type": "word",
-                            "value": 329
+                            "value": 343
                           }
                         }
                       ]
@@ -2942,11 +2910,11 @@
                     },
                     "Tag": {
                       "type": "cexostring",
-                      "value": "hc_oilflask"
+                      "value": "X1_WMGRENADE003"
                     },
                     "TemplateResRef": {
                       "type": "resref",
-                      "value": "oilflask"
+                      "value": "x1_wmgrenade003"
                     },
                     "XOrientation": {
                       "type": "float",
@@ -2973,11 +2941,11 @@
                     "__struct_id": 4,
                     "AddCost": {
                       "type": "dword",
-                      "value": 94
+                      "value": 36
                     },
                     "BaseItem": {
                       "type": "int",
-                      "value": 29
+                      "value": 81
                     },
                     "Charges": {
                       "type": "byte",
@@ -2985,41 +2953,33 @@
                     },
                     "Cost": {
                       "type": "dword",
-                      "value": 94
+                      "value": 40
                     },
                     "Cursed": {
                       "type": "byte",
                       "value": 0
                     },
                     "DescIdentified": {
+                      "id": 2992,
                       "type": "cexolocstring",
-                      "value": {
-                        "0": "This leather bag oozes a strange alchemical goo which grows tough and resilient on exposure to air. You'd hate to be entangled in it if the bag were to rupture.\n\nThis is a grenade-like weapon. Target it at your enemies and beware of splash damage."
-                      }
+                      "value": {}
                     },
                     "Description": {
                       "type": "cexolocstring",
-                      "value": {
-                        "0": ""
-                      }
+                      "value": {}
                     },
                     "Identified": {
                       "type": "byte",
                       "value": 1
                     },
-                    "Infinite": {
-                      "type": "byte",
-                      "value": 1
-                    },
                     "LocalizedName": {
+                      "id": 2984,
                       "type": "cexolocstring",
-                      "value": {
-                        "0": "Tanglefoot Bag"
-                      }
+                      "value": {}
                     },
                     "ModelPart1": {
                       "type": "byte",
-                      "value": 13
+                      "value": 4
                     },
                     "Plot": {
                       "type": "byte",
@@ -3056,38 +3016,7 @@
                           },
                           "Subtype": {
                             "type": "word",
-                            "value": 329
-                          }
-                        },
-                        {
-                          "__struct_id": 0,
-                          "ChanceAppear": {
-                            "type": "byte",
-                            "value": 100
-                          },
-                          "CostTable": {
-                            "type": "byte",
-                            "value": 0
-                          },
-                          "CostValue": {
-                            "type": "word",
-                            "value": 0
-                          },
-                          "Param1": {
-                            "type": "byte",
-                            "value": 11
-                          },
-                          "Param1Value": {
-                            "type": "byte",
-                            "value": 0
-                          },
-                          "PropertyName": {
-                            "type": "word",
-                            "value": 81
-                          },
-                          "Subtype": {
-                            "type": "word",
-                            "value": 0
+                            "value": 339
                           }
                         }
                       ]
@@ -3110,11 +3039,11 @@
                     },
                     "Tag": {
                       "type": "cexostring",
-                      "value": "hc_tangle"
+                      "value": "X1_WMGRENADE004"
                     },
                     "TemplateResRef": {
                       "type": "resref",
-                      "value": "hc_tangle"
+                      "value": "x1_wmgrenade004"
                     },
                     "XOrientation": {
                       "type": "float",
@@ -3141,11 +3070,11 @@
                     "__struct_id": 5,
                     "AddCost": {
                       "type": "dword",
-                      "value": 54
+                      "value": 27
                     },
                     "BaseItem": {
                       "type": "int",
-                      "value": 24
+                      "value": 81
                     },
                     "Charges": {
                       "type": "byte",
@@ -3153,41 +3082,33 @@
                     },
                     "Cost": {
                       "type": "dword",
-                      "value": 54
+                      "value": 30
                     },
                     "Cursed": {
                       "type": "byte",
                       "value": 0
                     },
                     "DescIdentified": {
+                      "id": 2994,
                       "type": "cexolocstring",
-                      "value": {
-                        "0": "This manufactured lump of hardened alchemical substance creates a deafening bang when it strikes a hard surface.\n\nThis is a grenade-like weapon. Target it at your enemies and beware of splash damage."
-                      }
+                      "value": {}
                     },
                     "Description": {
                       "type": "cexolocstring",
-                      "value": {
-                        "0": ""
-                      }
+                      "value": {}
                     },
                     "Identified": {
                       "type": "byte",
                       "value": 1
                     },
-                    "Infinite": {
-                      "type": "byte",
-                      "value": 1
-                    },
                     "LocalizedName": {
+                      "id": 2986,
                       "type": "cexolocstring",
-                      "value": {
-                        "0": "Thunderstone"
-                      }
+                      "value": {}
                     },
                     "ModelPart1": {
                       "type": "byte",
-                      "value": 55
+                      "value": 3
                     },
                     "Plot": {
                       "type": "byte",
@@ -3224,14 +3145,14 @@
                           },
                           "Subtype": {
                             "type": "word",
-                            "value": 329
+                            "value": 338
                           }
                         }
                       ]
                     },
                     "Repos_PosX": {
                       "type": "word",
-                      "value": 6
+                      "value": 5
                     },
                     "Repos_Posy": {
                       "type": "word",
@@ -3247,11 +3168,11 @@
                     },
                     "Tag": {
                       "type": "cexostring",
-                      "value": "hc_thunder"
+                      "value": "X1_WMGRENADE005"
                     },
                     "TemplateResRef": {
                       "type": "resref",
-                      "value": "hc_thunder"
+                      "value": "x1_wmgrenade005"
                     },
                     "XOrientation": {
                       "type": "float",
@@ -3278,11 +3199,11 @@
                     "__struct_id": 6,
                     "AddCost": {
                       "type": "dword",
-                      "value": 32767
+                      "value": 54
                     },
                     "BaseItem": {
                       "type": "int",
-                      "value": 24
+                      "value": 81
                     },
                     "Charges": {
                       "type": "byte",
@@ -3290,41 +3211,33 @@
                     },
                     "Cost": {
                       "type": "dword",
-                      "value": 32967
+                      "value": 60
                     },
                     "Cursed": {
                       "type": "byte",
                       "value": 0
                     },
                     "DescIdentified": {
+                      "id": 2995,
                       "type": "cexolocstring",
-                      "value": {
-                        "0": "Aloranani once used this item to slay a dragon."
-                      }
+                      "value": {}
                     },
                     "Description": {
                       "type": "cexolocstring",
-                      "value": {
-                        "0": ""
-                      }
+                      "value": {}
                     },
                     "Identified": {
                       "type": "byte",
                       "value": 1
                     },
-                    "Infinite": {
-                      "type": "byte",
-                      "value": 1
-                    },
                     "LocalizedName": {
+                      "id": 2987,
                       "type": "cexolocstring",
-                      "value": {
-                        "0": "Useless Stone"
-                      }
+                      "value": {}
                     },
                     "ModelPart1": {
                       "type": "byte",
-                      "value": 85
+                      "value": 2
                     },
                     "Plot": {
                       "type": "byte",
@@ -3361,14 +3274,14 @@
                           },
                           "Subtype": {
                             "type": "word",
-                            "value": 49
+                            "value": 337
                           }
                         }
                       ]
                     },
                     "Repos_PosX": {
                       "type": "word",
-                      "value": 7
+                      "value": 6
                     },
                     "Repos_Posy": {
                       "type": "word",
@@ -3384,11 +3297,11 @@
                     },
                     "Tag": {
                       "type": "cexostring",
-                      "value": "UselessStone"
+                      "value": "X1_WMGRENADE006"
                     },
                     "TemplateResRef": {
                       "type": "resref",
-                      "value": "uselessstone"
+                      "value": "x1_wmgrenade006"
                     },
                     "XOrientation": {
                       "type": "float",
@@ -3415,11 +3328,11 @@
                     "__struct_id": 7,
                     "AddCost": {
                       "type": "dword",
-                      "value": 199
+                      "value": 36
                     },
                     "BaseItem": {
                       "type": "int",
-                      "value": 24
+                      "value": 81
                     },
                     "Charges": {
                       "type": "byte",
@@ -3427,14 +3340,14 @@
                     },
                     "Cost": {
                       "type": "dword",
-                      "value": 200
+                      "value": 40
                     },
                     "Cursed": {
                       "type": "byte",
                       "value": 0
                     },
                     "DescIdentified": {
-                      "id": 90962,
+                      "id": 2997,
                       "type": "cexolocstring",
                       "value": {}
                     },
@@ -3446,18 +3359,14 @@
                       "type": "byte",
                       "value": 1
                     },
-                    "Infinite": {
-                      "type": "byte",
-                      "value": 1
-                    },
                     "LocalizedName": {
-                      "id": 90975,
+                      "id": 2988,
                       "type": "cexolocstring",
                       "value": {}
                     },
                     "ModelPart1": {
                       "type": "byte",
-                      "value": 81
+                      "value": 5
                     },
                     "Plot": {
                       "type": "byte",
@@ -3494,14 +3403,14 @@
                           },
                           "Subtype": {
                             "type": "word",
-                            "value": 497
+                            "value": 340
                           }
                         }
                       ]
                     },
                     "Repos_PosX": {
                       "type": "word",
-                      "value": 8
+                      "value": 7
                     },
                     "Repos_Posy": {
                       "type": "word",
@@ -3517,277 +3426,11 @@
                     },
                     "Tag": {
                       "type": "cexostring",
-                      "value": "x2_it_poison032"
+                      "value": "X1_WMGRENADE007"
                     },
                     "TemplateResRef": {
                       "type": "resref",
-                      "value": "x2_it_poison032"
-                    },
-                    "XOrientation": {
-                      "type": "float",
-                      "value": 0.0
-                    },
-                    "XPosition": {
-                      "type": "float",
-                      "value": -1.0
-                    },
-                    "YOrientation": {
-                      "type": "float",
-                      "value": 1.0
-                    },
-                    "YPosition": {
-                      "type": "float",
-                      "value": -1.0
-                    },
-                    "ZPosition": {
-                      "type": "float",
-                      "value": -1.0
-                    }
-                  },
-                  {
-                    "__struct_id": 8,
-                    "AddCost": {
-                      "type": "dword",
-                      "value": 199
-                    },
-                    "BaseItem": {
-                      "type": "int",
-                      "value": 24
-                    },
-                    "Charges": {
-                      "type": "byte",
-                      "value": 0
-                    },
-                    "Cost": {
-                      "type": "dword",
-                      "value": 200
-                    },
-                    "Cursed": {
-                      "type": "byte",
-                      "value": 0
-                    },
-                    "DescIdentified": {
-                      "id": 90962,
-                      "type": "cexolocstring",
-                      "value": {}
-                    },
-                    "Description": {
-                      "type": "cexolocstring",
-                      "value": {}
-                    },
-                    "Identified": {
-                      "type": "byte",
-                      "value": 1
-                    },
-                    "Infinite": {
-                      "type": "byte",
-                      "value": 1
-                    },
-                    "LocalizedName": {
-                      "id": 90976,
-                      "type": "cexolocstring",
-                      "value": {}
-                    },
-                    "ModelPart1": {
-                      "type": "byte",
-                      "value": 81
-                    },
-                    "Plot": {
-                      "type": "byte",
-                      "value": 0
-                    },
-                    "PropertiesList": {
-                      "type": "list",
-                      "value": [
-                        {
-                          "__struct_id": 0,
-                          "ChanceAppear": {
-                            "type": "byte",
-                            "value": 100
-                          },
-                          "CostTable": {
-                            "type": "byte",
-                            "value": 3
-                          },
-                          "CostValue": {
-                            "type": "word",
-                            "value": 1
-                          },
-                          "Param1": {
-                            "type": "byte",
-                            "value": 255
-                          },
-                          "Param1Value": {
-                            "type": "byte",
-                            "value": 0
-                          },
-                          "PropertyName": {
-                            "type": "word",
-                            "value": 15
-                          },
-                          "Subtype": {
-                            "type": "word",
-                            "value": 497
-                          }
-                        }
-                      ]
-                    },
-                    "Repos_PosX": {
-                      "type": "word",
-                      "value": 9
-                    },
-                    "Repos_Posy": {
-                      "type": "word",
-                      "value": 0
-                    },
-                    "StackSize": {
-                      "type": "word",
-                      "value": 1
-                    },
-                    "Stolen": {
-                      "type": "byte",
-                      "value": 0
-                    },
-                    "Tag": {
-                      "type": "cexostring",
-                      "value": "x2_it_poison033"
-                    },
-                    "TemplateResRef": {
-                      "type": "resref",
-                      "value": "x2_it_poison033"
-                    },
-                    "XOrientation": {
-                      "type": "float",
-                      "value": 0.0
-                    },
-                    "XPosition": {
-                      "type": "float",
-                      "value": -1.0
-                    },
-                    "YOrientation": {
-                      "type": "float",
-                      "value": 1.0
-                    },
-                    "YPosition": {
-                      "type": "float",
-                      "value": -1.0
-                    },
-                    "ZPosition": {
-                      "type": "float",
-                      "value": -1.0
-                    }
-                  },
-                  {
-                    "__struct_id": 9,
-                    "AddCost": {
-                      "type": "dword",
-                      "value": 199
-                    },
-                    "BaseItem": {
-                      "type": "int",
-                      "value": 24
-                    },
-                    "Charges": {
-                      "type": "byte",
-                      "value": 0
-                    },
-                    "Cost": {
-                      "type": "dword",
-                      "value": 200
-                    },
-                    "Cursed": {
-                      "type": "byte",
-                      "value": 0
-                    },
-                    "DescIdentified": {
-                      "id": 90962,
-                      "type": "cexolocstring",
-                      "value": {}
-                    },
-                    "Description": {
-                      "type": "cexolocstring",
-                      "value": {}
-                    },
-                    "Identified": {
-                      "type": "byte",
-                      "value": 0
-                    },
-                    "Infinite": {
-                      "type": "byte",
-                      "value": 1
-                    },
-                    "LocalizedName": {
-                      "id": 90974,
-                      "type": "cexolocstring",
-                      "value": {}
-                    },
-                    "ModelPart1": {
-                      "type": "byte",
-                      "value": 81
-                    },
-                    "Plot": {
-                      "type": "byte",
-                      "value": 0
-                    },
-                    "PropertiesList": {
-                      "type": "list",
-                      "value": [
-                        {
-                          "__struct_id": 0,
-                          "ChanceAppear": {
-                            "type": "byte",
-                            "value": 100
-                          },
-                          "CostTable": {
-                            "type": "byte",
-                            "value": 3
-                          },
-                          "CostValue": {
-                            "type": "word",
-                            "value": 1
-                          },
-                          "Param1": {
-                            "type": "byte",
-                            "value": 255
-                          },
-                          "Param1Value": {
-                            "type": "byte",
-                            "value": 0
-                          },
-                          "PropertyName": {
-                            "type": "word",
-                            "value": 15
-                          },
-                          "Subtype": {
-                            "type": "word",
-                            "value": 497
-                          }
-                        }
-                      ]
-                    },
-                    "Repos_PosX": {
-                      "type": "word",
-                      "value": 6
-                    },
-                    "Repos_Posy": {
-                      "type": "word",
-                      "value": 1
-                    },
-                    "StackSize": {
-                      "type": "word",
-                      "value": 1
-                    },
-                    "Stolen": {
-                      "type": "byte",
-                      "value": 0
-                    },
-                    "Tag": {
-                      "type": "cexostring",
-                      "value": "x2_it_poison031"
-                    },
-                    "TemplateResRef": {
-                      "type": "resref",
-                      "value": "x2_it_poison031"
+                      "value": "x1_wmgrenade007"
                     },
                     "XOrientation": {
                       "type": "float",
@@ -3970,7 +3613,7 @@
         },
         "XOrientation": {
           "type": "float",
-          "value": -4.068215275765397e-05
+          "value": -4.092057133675553e-05
         },
         "XPosition": {
           "type": "float",

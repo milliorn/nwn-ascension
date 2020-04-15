@@ -768,22 +768,6 @@
                 "type": "byte",
                 "value": 5
               },
-              "LIST": {
-                "type": "list",
-                "value": [
-                  {
-                    "__struct_id": 0,
-                    "NAME": {
-                      "type": "cexostring",
-                      "value": "Urchin Rags"
-                    },
-                    "RESREF": {
-                      "type": "resref",
-                      "value": "urchinrags"
-                    }
-                  }
-                ]
-              },
               "STRREF": {
                 "type": "dword",
                 "value": 186
@@ -1820,39 +1804,6 @@
                     "LIST": {
                       "type": "list",
                       "value": [
-                        {
-                          "__struct_id": 0,
-                          "NAME": {
-                            "type": "cexostring",
-                            "value": "Longsword +1"
-                          },
-                          "RESREF": {
-                            "type": "resref",
-                            "value": "longsword1"
-                          }
-                        },
-                        {
-                          "__struct_id": 0,
-                          "RESREF": {
-                            "type": "resref",
-                            "value": "wswmls004"
-                          },
-                          "STRREF": {
-                            "type": "dword",
-                            "value": 14346
-                          }
-                        },
-                        {
-                          "__struct_id": 0,
-                          "RESREF": {
-                            "type": "resref",
-                            "value": "wswmls005"
-                          },
-                          "STRREF": {
-                            "type": "dword",
-                            "value": 14346
-                          }
-                        },
                         {
                           "__struct_id": 0,
                           "NAME": {

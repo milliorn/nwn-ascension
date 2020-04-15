@@ -177,13 +177,6 @@
         }
       },
       {
-        "__struct_id": 16,
-        "EquippedRes": {
-          "type": "resref",
-          "value": "wswmls004"
-        }
-      },
-      {
         "__struct_id": 131072,
         "EquippedRes": {
           "type": "resref",

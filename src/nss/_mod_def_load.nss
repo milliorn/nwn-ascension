@@ -382,6 +382,31 @@ void main()
     //  Make a note in Server log of when this script finishes and send a message
     //  to Discord that the module is loaded.
     ModLoadWebhook();
+
+    //  Make all items in all stores marked as infinite if they are not infinite
+    oArea = GetFirstArea();
+    while (GetIsObjectValid(oArea))
+    {
+        object oObject = GetFirstObjectInArea(oArea);
+        while (GetIsObjectValid(oObject))
+        {
+            if (GetObjectType(oObject) == OBJECT_TYPE_STORE)
+            {
+                object oItem = GetFirstItemInInventory(oObject);
+                while (GetIsObjectValid(oItem))
+                {
+                    if (!GetInfiniteFlag(oItem))
+                    {
+                        SetInfiniteFlag(oItem);
+                    }
+                    oItem = GetNextItemInInventory(oObject);
+                }
+            }
+            oObject = GetNextObjectInArea(oArea);
+        }
+        oArea = GetNextArea();
+    }
+
     WriteTimestampedLogEntry("*** " + GetModuleName() + " - SERVER LOADED***");
 
     ExecuteScript("x3_mod_def_load", OBJECT_SELF);

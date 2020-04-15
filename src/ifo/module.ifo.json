@@ -69,6 +69,13 @@
           "type": "resref",
           "value": "alchemistsshop"
         }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "armorshop"
+        }
       }
     ]
   },
@@ -116,15 +123,15 @@
   },
   "Mod_Entry_X": {
     "type": "float",
-    "value": 35.32332611083984
+    "value": 35.2813835144043
   },
   "Mod_Entry_Y": {
     "type": "float",
-    "value": 34.98777770996094
+    "value": 34.31668472290039
   },
   "Mod_Entry_Z": {
     "type": "float",
-    "value": 5.79999828338623
+    "value": 5.799996376037598
   },
   "Mod_Expan_List": {
     "type": "list",
