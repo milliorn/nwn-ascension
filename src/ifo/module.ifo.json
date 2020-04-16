@@ -83,6 +83,13 @@
           "type": "resref",
           "value": "clothingshop"
         }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "merchantsemporiu"
+        }
       }
     ]
   },
@@ -118,27 +125,27 @@
   },
   "Mod_Entry_Area": {
     "type": "resref",
-    "value": "thevoyage"
+    "value": "merchantsemporiu"
   },
   "Mod_Entry_Dir_X": {
     "type": "float",
-    "value": 0.0
+    "value": -0.02454144880175591
   },
   "Mod_Entry_Dir_Y": {
     "type": "float",
-    "value": 1.0
+    "value": -0.99969881772995
   },
   "Mod_Entry_X": {
     "type": "float",
-    "value": 35.2813835144043
+    "value": 4.63860559463501
   },
   "Mod_Entry_Y": {
     "type": "float",
-    "value": 34.31668472290039
+    "value": 7.294527053833008
   },
   "Mod_Entry_Z": {
     "type": "float",
-    "value": 5.799996376037598
+    "value": -1.192092895507812e-07
   },
   "Mod_Expan_List": {
     "type": "list",

@@ -2015,6 +2015,63 @@
               "__struct_id": 0,
               "CR": {
                 "type": "float",
+                "value": 0.25
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Merchant"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Emporium Armor"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "emporiumarmor"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
+                "value": 0.1666666716337204
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Merchant"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Emporium Items"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "emporiumitems"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
+                "value": 0.25
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Merchant"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Emporium Weapons"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "emporiumweapons"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
                 "value": 0.5
               },
               "FACTION": {
