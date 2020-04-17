@@ -90,6 +90,13 @@
           "type": "resref",
           "value": "merchantsemporiu"
         }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "itemshop"
+        }
       }
     ]
   },
@@ -125,27 +132,27 @@
   },
   "Mod_Entry_Area": {
     "type": "resref",
-    "value": "merchantsemporiu"
+    "value": "thevoyage"
   },
   "Mod_Entry_Dir_X": {
     "type": "float",
-    "value": -0.02454144880175591
+    "value": 0.0
   },
   "Mod_Entry_Dir_Y": {
     "type": "float",
-    "value": -0.99969881772995
+    "value": 1.0
   },
   "Mod_Entry_X": {
     "type": "float",
-    "value": 4.63860559463501
+    "value": 35.55972290039062
   },
   "Mod_Entry_Y": {
     "type": "float",
-    "value": 7.294527053833008
+    "value": 34.52857208251953
   },
   "Mod_Entry_Z": {
     "type": "float",
-    "value": -1.192092895507812e-07
+    "value": 5.799996376037598
   },
   "Mod_Expan_List": {
     "type": "list",

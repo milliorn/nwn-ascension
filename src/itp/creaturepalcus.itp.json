@@ -2314,6 +2314,25 @@
                 "type": "resref",
                 "value": "warden"
               }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
+                "value": 0.25
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Merchant"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Wondrous Items Shopkeeper"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "wondrousitemss"
+              }
             }
           ]
         },
