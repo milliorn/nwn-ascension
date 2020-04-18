@@ -26,8 +26,6 @@ I want to put some torches in town that turn on at night and off in the day?
 
 In the module rest event make sure drowwarrior003 exist when npcs are imported, if not change the tagname.
 
-Replace the trinket in the Sages home with another item, probably the sequencer stone.
-
 Add lokitheft code to onenter area scripts script
 
 Add the item with the tagname "Readme" to the players inventory.
