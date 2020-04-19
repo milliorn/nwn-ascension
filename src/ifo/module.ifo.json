@@ -139,27 +139,27 @@
   },
   "Mod_Entry_Area": {
     "type": "resref",
-    "value": "thevoyage"
+    "value": "armorshop"
   },
   "Mod_Entry_Dir_X": {
     "type": "float",
-    "value": 0.0
+    "value": -0.02454144880175591
   },
   "Mod_Entry_Dir_Y": {
     "type": "float",
-    "value": 1.0
+    "value": -0.99969881772995
   },
   "Mod_Entry_X": {
     "type": "float",
-    "value": 35.55972290039062
+    "value": 14.79052448272705
   },
   "Mod_Entry_Y": {
     "type": "float",
-    "value": 34.52857208251953
+    "value": 8.975895881652832
   },
   "Mod_Entry_Z": {
     "type": "float",
-    "value": 5.799996376037598
+    "value": -1.9073486328125e-06
   },
   "Mod_Expan_List": {
     "type": "list",

@@ -710,7 +710,7 @@
   },
   "TemplateResRef": {
     "type": "resref",
-    "value": "armorsmith"
+    "value": "armorsmithhull"
   },
   "WalkRate": {
     "type": "int",

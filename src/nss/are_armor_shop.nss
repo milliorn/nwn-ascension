@@ -11,7 +11,7 @@
 void main()
 {
     object oEnter = GetEnteringObject(),
-           oWp1 = GetWaypointByTag("WP_weapshop_01"),
+           oWp1 = GetWaypointByTag("WP_armorshop_01"),
            oWp2 = GetWaypointByTag("WP_beetlecollect_01");
 
     if (GetTag(oEnter) == "RogueSpectre")
@@ -38,7 +38,7 @@ void main()
 
     if (OBJECT_INVALID == GetNearestObjectByTag("armorshop", oWp1))
     {
-        CreateObject(OBJECT_TYPE_CREATURE, "armorsmith", GetLocation(oWp1));
+        CreateObject(OBJECT_TYPE_CREATURE, "armorsmithhull", GetLocation(oWp1));
     }
 
     if (OBJECT_INVALID == GetNearestObjectByTag("beetlecollect", oWp2))

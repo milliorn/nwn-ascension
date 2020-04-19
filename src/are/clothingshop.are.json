@@ -66,7 +66,7 @@
   },
   "MoonAmbientColor": {
     "type": "dword",
-    "value": 3947580
+    "value": 6316128
   },
   "MoonDiffuseColor": {
     "type": "dword",
@@ -78,7 +78,7 @@
   },
   "MoonFogColor": {
     "type": "dword",
-    "value": 0
+    "value": 3618615
   },
   "MoonShadows": {
     "type": "byte",
