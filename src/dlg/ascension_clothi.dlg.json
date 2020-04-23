@@ -428,7 +428,7 @@
         },
         "Script": {
           "type": "resref",
-          "value": "cv_clothing_shop"
+          "value": "cv_st_clothing"
         },
         "Sound": {
           "type": "resref",

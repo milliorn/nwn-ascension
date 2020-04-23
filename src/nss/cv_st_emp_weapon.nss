@@ -1,25 +1,23 @@
 //:://////////////////////////////////////////////
-//::
 //:: Created By: Scott Milliorn
-//:: Created On: 2020-04-17
-//::
+//:: Created On: 20-04-14
 //::///////////////////////////////////////////////
-//:: FileName weapshop
+//:: FileName startweap1merc
 //:://////////////////////////////////////////////
 //:://////////////////////////////////////////////
 //:: Created By: Script Wizard
-//:: Created On: 8/11/2002 5:36:05 PM
+//:: Created On: 11/17/2002 8:28:07 PM
 //:://////////////////////////////////////////////
+
+#include "inc_cv"
+
 void main()
 {
     object oPC = GetPCSpeaker();
     object oItem = GetItemPossessedBy(oPC, "NW_WSWMLS013");
-    object oStore = GetNearestObjectByTag("lowweapons");
+    object oStore = GetNearestObjectByTag("weapons1");
 
-    if (GetIsObjectValid(oItem) != 0)
-    {
-        DestroyObject(oItem);
-    }
+    HasItemNW_WSWMLS013(oPC, oItem);
 
     if (GetObjectType(oStore) == OBJECT_TYPE_STORE)
         OpenStore(oStore, oPC);

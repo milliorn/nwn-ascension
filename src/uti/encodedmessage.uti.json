@@ -1,0 +1,81 @@
+{
+  "__data_type": "UTI ",
+  "AddCost": {
+    "type": "dword",
+    "value": 0
+  },
+  "BaseItem": {
+    "type": "int",
+    "value": 74
+  },
+  "Charges": {
+    "type": "byte",
+    "value": 0
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Cost": {
+    "type": "dword",
+    "value": 1
+  },
+  "Cursed": {
+    "type": "byte",
+    "value": 0
+  },
+  "DescIdentified": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "This is a message of some sort, written in a simple code.  Fortunately, the decoder chart has been scribbled onto the back of the book.\n\"Whatever you do, do not place the decoder chart anywhere where it may be found. I know how easily you forget the code, but I would rather you not be able to read the messages I send you, than have the messages read by someone from House Gur'atsz.\nOur plans have been coming along nicely. We have mimicked many of the Gur'atsz defences, however the strange defender statue they use is still a mystery. Perhaps the queen gave it to them, for it closely resembles the statues in the palace.  Fortunately we have what I consider to be an improvement over the night golems they use so liberaly.... The Living Statues are fully functional, and the house wizard is building them at an amazing rate.  Still, we must hold off our attack untill they have mistepped, and gained the Queens displeasure. Only then will we have a chance at attaining first house status!"
+    }
+  },
+  "Description": {
+    "type": "cexolocstring",
+    "value": {
+      "0": ""
+    }
+  },
+  "Identified": {
+    "type": "byte",
+    "value": 1
+  },
+  "LocalizedName": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "Encoded Message"
+    }
+  },
+  "ModelPart1": {
+    "type": "byte",
+    "value": 4
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 60
+  },
+  "Plot": {
+    "type": "byte",
+    "value": 0
+  },
+  "PropertiesList": {
+    "type": "list",
+    "value": []
+  },
+  "StackSize": {
+    "type": "word",
+    "value": 1
+  },
+  "Stolen": {
+    "type": "byte",
+    "value": 0
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "EncodedMessage"
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "encodedmessage"
+  }
+}

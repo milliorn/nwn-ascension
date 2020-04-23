@@ -21,7 +21,7 @@ void main()
            oWpGuard3 = GetWaypointByTag("WP_TownWatch3_01"),
            oWpTravel = GetWaypointByTag("WP_travel_07");
 
-    if (GetTag(oEnter) == "RogueSpectre")
+    if (IsRogueSpectre(oEnter))
     {
         return;
     }

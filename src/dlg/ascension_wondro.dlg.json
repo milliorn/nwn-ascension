@@ -237,7 +237,7 @@
         },
         "Script": {
           "type": "resref",
-          "value": "cv_wond_items"
+          "value": "cv_st_wond_items"
         },
         "Sound": {
           "type": "resref",

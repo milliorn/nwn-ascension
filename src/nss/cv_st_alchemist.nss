@@ -8,15 +8,15 @@
 //:: Created By: Script Wizard
 //:: Created On: 12/15/2002 5:53:04 PM
 //:://////////////////////////////////////////////
+
+#include "inc_cv"
+
 void main()
 {
     object oPC = GetPCSpeaker();
     object oItem = GetItemPossessedBy(oPC, "NW_WSWMLS013");
 
-    if (GetIsObjectValid(oItem) != 0)
-    {
-        DestroyObject(oItem);
-    }
+    HasItemNW_WSWMLS013(oPC, oItem);
 
     oItem = GetItemPossessedBy(oPC, "BlueSkies");
     if (GetIsObjectValid(oItem) != 0)

@@ -15,7 +15,7 @@ void main()
            oArmor = GetWaypointByTag("WP_NW_BARTENDER_01"),
            oItem = GetWaypointByTag("WP_NW_OLDWOMAN_01");
 
-    if (GetTag(oEnter) == "RogueSpectre")
+    if (IsRogueSpectre(oEnter))
     {
         return;
     }

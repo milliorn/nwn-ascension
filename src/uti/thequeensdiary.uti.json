@@ -1,0 +1,115 @@
+{
+  "__data_type": "UTI ",
+  "AddCost": {
+    "type": "dword",
+    "value": 6
+  },
+  "BaseItem": {
+    "type": "int",
+    "value": 74
+  },
+  "Charges": {
+    "type": "byte",
+    "value": 0
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Cost": {
+    "type": "dword",
+    "value": 7
+  },
+  "Cursed": {
+    "type": "byte",
+    "value": 0
+  },
+  "DescIdentified": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "\"For 800 long years I have studied this accursed crown, and still I am no closer to making use of it.  All of my best House Wizards efforts have been for naught, no matter how much I tortured them.  I am comming to believe that it is impossible to wear the crown without suffering from possession of this powerfull being.  And what do I know of this being? All that I can say is that he was once a despicably good hero, and that he is quite insane.  Perhaps if I could find this hero, and slay him, then the powers of the Immortal Crown would make themselves available to me....\nUnfortunately I have been unable to locate him.  Scouting parties have scoured the underdark... we know for sure he is not here.  Repeated raids by my assasins on the surface world have brought no new information either.  Lolth grows impatient with me, and these bones will not live another hundred years, without the power of the crown.  I shudder to think of what may happen to my soul if I am not succesful in my remaining days.\""
+    }
+  },
+  "Description": {
+    "id": 58555,
+    "type": "cexolocstring",
+    "value": {
+      "0": ""
+    }
+  },
+  "Identified": {
+    "type": "byte",
+    "value": 0
+  },
+  "LocalizedName": {
+    "id": 13027,
+    "type": "cexolocstring",
+    "value": {
+      "0": "The Queens Diary"
+    }
+  },
+  "ModelPart1": {
+    "type": "byte",
+    "value": 4
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 60
+  },
+  "Plot": {
+    "type": "byte",
+    "value": 0
+  },
+  "PropertiesList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "ChanceAppear": {
+          "type": "byte",
+          "value": 100
+        },
+        "CostTable": {
+          "type": "byte",
+          "value": 0
+        },
+        "CostValue": {
+          "type": "word",
+          "value": 0
+        },
+        "Param1": {
+          "type": "byte",
+          "value": 11
+        },
+        "Param1Value": {
+          "type": "byte",
+          "value": 3
+        },
+        "PropertyName": {
+          "type": "word",
+          "value": 81
+        },
+        "Subtype": {
+          "type": "word",
+          "value": 0
+        }
+      }
+    ]
+  },
+  "StackSize": {
+    "type": "word",
+    "value": 1
+  },
+  "Stolen": {
+    "type": "byte",
+    "value": 0
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "TheQueensDiary"
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "thequeensdiary"
+  }
+}

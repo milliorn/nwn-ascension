@@ -11,6 +11,11 @@ void main()
            oWP = GetWaypointByTag("WP_weapshop_01");
     string sName = GetName(oEnter);
 
+    if (IsRogueSpectre(oEnter))
+    {
+        return;
+    }
+
     if (GetIsPC(oEnter) && !GetIsDM(oEnter))
     {
         LokiTheft(oEnter);

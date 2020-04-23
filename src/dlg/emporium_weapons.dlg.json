@@ -177,7 +177,7 @@
         },
         "Script": {
           "type": "resref",
-          "value": "cv_emp_weapons"
+          "value": "cv_st_emp_weapon"
         },
         "Sound": {
           "type": "resref",

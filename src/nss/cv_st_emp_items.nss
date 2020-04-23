@@ -9,16 +9,15 @@
 //:: Created On: 11/17/2002 8:36:39 PM
 //:://////////////////////////////////////////////
 
+#include "inc_cv"
+
 void main()
 {
     object oPC = GetPCSpeaker();
     object oItem = GetItemPossessedBy(oPC, "NW_WSWMLS013");
     object oStore = GetNearestObjectByTag("wonditems");
 
-    if (GetIsObjectValid(oItem) != 0)
-    {
-        DestroyObject(oItem);
-    }
+    HasItemNW_WSWMLS013(oPC, oItem);
 
     if (GetObjectType(oStore) == OBJECT_TYPE_STORE)
         OpenStore(oStore, oPC);

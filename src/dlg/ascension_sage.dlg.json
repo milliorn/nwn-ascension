@@ -504,7 +504,7 @@
               "__struct_id": 0,
               "Active": {
                 "type": "resref",
-                "value": "https://github.c"
+                "value": ""
               },
               "Index": {
                 "type": "dword",

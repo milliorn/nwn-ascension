@@ -177,7 +177,7 @@
         },
         "Script": {
           "type": "resref",
-          "value": "cv_alchemist"
+          "value": "cv_st_alchemist"
         },
         "Sound": {
           "type": "resref",

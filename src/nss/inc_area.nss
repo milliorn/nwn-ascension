@@ -15,6 +15,9 @@ void CheckItemLimit(object oPC);
 //  Check if we possess the crown or immortal daggers
 void LokiTheft(object oEnter);
 
+//  Check if we are a Rogue Spectre
+int IsRogueSpectre(object oEnter);
+
 
 void CheckItemLimit(object oPC)
 {
@@ -73,4 +76,11 @@ void LokiTheft(object oEnter)
         DelayCommand(3.0, ApplyEffectToObject(DURATION_TYPE_INSTANT, EffectDeath(TRUE, TRUE), oEnter));
     }
 }
+
+int IsRogueSpectre(object oEnter)
+{
+    return GetTag(oEnter) == "RogueSpectre";
+}
+
+
 //void main(){}

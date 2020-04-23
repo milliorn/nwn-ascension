@@ -177,7 +177,7 @@
         },
         "Script": {
           "type": "resref",
-          "value": "cv_emp_items"
+          "value": "cv_st_emp_items"
         },
         "Sound": {
           "type": "resref",

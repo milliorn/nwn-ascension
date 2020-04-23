@@ -1,0 +1,83 @@
+{
+  "__data_type": "UTI ",
+  "AddCost": {
+    "type": "dword",
+    "value": 0
+  },
+  "BaseItem": {
+    "type": "int",
+    "value": 29
+  },
+  "Charges": {
+    "type": "byte",
+    "value": 0
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Cost": {
+    "type": "dword",
+    "value": 0
+  },
+  "Cursed": {
+    "type": "byte",
+    "value": 0
+  },
+  "DescIdentified": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "This document seems to be written by the Sage a long time ago. The pieces speak of a great evil. A few other words can be seen on what remains of the note. Burried, forever, failiure and shame.\n\nPerhaps the Sage himself can explain how this note got here and fill in the blanks."
+    }
+  },
+  "Description": {
+    "id": 12967,
+    "type": "cexolocstring",
+    "value": {
+      "0": "This document seems to be written by the Sage a long time ago. The pieces speak of a great evil. A few other words can be seen on what remains of the note. Burried, forever, failiure and shame.\n\nPerhaps the Sage himself can explain how this note got here and fill in the blanks."
+    }
+  },
+  "Identified": {
+    "type": "byte",
+    "value": 1
+  },
+  "LocalizedName": {
+    "id": 12966,
+    "type": "cexolocstring",
+    "value": {
+      "0": "Sage's Note"
+    }
+  },
+  "ModelPart1": {
+    "type": "byte",
+    "value": 25
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 54
+  },
+  "Plot": {
+    "type": "byte",
+    "value": 1
+  },
+  "PropertiesList": {
+    "type": "list",
+    "value": []
+  },
+  "StackSize": {
+    "type": "word",
+    "value": 1
+  },
+  "Stolen": {
+    "type": "byte",
+    "value": 0
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "SagesNote"
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "hen_gal1qt001"
+  }
+}

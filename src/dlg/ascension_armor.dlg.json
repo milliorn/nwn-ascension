@@ -511,7 +511,7 @@
         },
         "Script": {
           "type": "resref",
-          "value": "cv_asc_armor"
+          "value": "cv_st_asc_armor"
         },
         "Sound": {
           "type": "resref",

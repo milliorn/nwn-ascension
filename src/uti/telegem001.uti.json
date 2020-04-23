@@ -1,0 +1,81 @@
+{
+  "__data_type": "UTI ",
+  "AddCost": {
+    "type": "dword",
+    "value": 0
+  },
+  "BaseItem": {
+    "type": "int",
+    "value": 77
+  },
+  "Charges": {
+    "type": "byte",
+    "value": 0
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Cost": {
+    "type": "dword",
+    "value": 0
+  },
+  "Cursed": {
+    "type": "byte",
+    "value": 0
+  },
+  "DescIdentified": {
+    "id": 56598,
+    "type": "cexolocstring",
+    "value": {
+      "0": "This small red gem was given to you by Grimgnaw, the monk from the Order of the Long Death to signify his allegiance to you and your cause."
+    }
+  },
+  "Description": {
+    "type": "cexolocstring",
+    "value": {}
+  },
+  "Identified": {
+    "type": "byte",
+    "value": 1
+  },
+  "LocalizedName": {
+    "id": 12982,
+    "type": "cexolocstring",
+    "value": {
+      "0": "Gem of Lesser Telepathy"
+    }
+  },
+  "ModelPart1": {
+    "type": "byte",
+    "value": 14
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 54
+  },
+  "Plot": {
+    "type": "byte",
+    "value": 1
+  },
+  "PropertiesList": {
+    "type": "list",
+    "value": []
+  },
+  "StackSize": {
+    "type": "word",
+    "value": 1
+  },
+  "Stolen": {
+    "type": "byte",
+    "value": 0
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "it_gemtel001"
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "telegem001"
+  }
+}

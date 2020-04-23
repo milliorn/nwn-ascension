@@ -50,6 +50,8 @@ Fix an issue with placeables not respawning
 
 Add code to onuse placeable events to stop GS looting
 
+Update tagname RogueSpectre in the future to work from gsloot include
+
 
 Area variables in non hostile areas
 

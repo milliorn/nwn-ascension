@@ -1,0 +1,81 @@
+{
+  "__data_type": "UTI ",
+  "AddCost": {
+    "type": "dword",
+    "value": 19999
+  },
+  "BaseItem": {
+    "type": "int",
+    "value": 74
+  },
+  "Charges": {
+    "type": "byte",
+    "value": 0
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Cost": {
+    "type": "dword",
+    "value": 20000
+  },
+  "Cursed": {
+    "type": "byte",
+    "value": 0
+  },
+  "DescIdentified": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "This book is written in the steady hand of the sage.\n\".... And a great Warrior ruled the land with a kind, yet firm fist.  All the land knew him to be just.   His downfall came shortly after the year of the Rat, when he had nearly conquered all resistance to his throne.  One of the defeated barons brought to him a 'Gift', a Glorious Crown, with unimaginable powers. the Crown was said to grant immortality, and the Warrior took this gift without hesitation.  Unfortunately, there was more to the Crown than he knew. Forged in the Abyss by  Asmodeus himself, bound to his evil spirit, no mortal can wear the Crown without suffering its intense Evil. The Warrior soon became enthralled by the Crown, and began slaughtering everything in his path. The crown made him invulnerable, and before the high council of mages could bannish him to the Abyss to meet his new master, thousands of innocents lay dead in the streets.  The Mages knew the only way to destroy the Crown was to take it to the Abyss where it was made, and destroy it in the fiery forge it was made in. None of them had the courage to do so, and so the Crown was buried deep within the underdark, with powerfull seals to last centuries. this book has been written by the priests of Helm, as a warning to any who might find the Crown...  It will eat your soul."
+    }
+  },
+  "Description": {
+    "type": "cexolocstring",
+    "value": {
+      "0": ""
+    }
+  },
+  "Identified": {
+    "type": "byte",
+    "value": 1
+  },
+  "LocalizedName": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "Translation of Ancient Tome"
+    }
+  },
+  "ModelPart1": {
+    "type": "byte",
+    "value": 4
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 60
+  },
+  "Plot": {
+    "type": "byte",
+    "value": 0
+  },
+  "PropertiesList": {
+    "type": "list",
+    "value": []
+  },
+  "StackSize": {
+    "type": "word",
+    "value": 1
+  },
+  "Stolen": {
+    "type": "byte",
+    "value": 1
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "TranslatedAncientTome"
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "translatedancien"
+  }
+}

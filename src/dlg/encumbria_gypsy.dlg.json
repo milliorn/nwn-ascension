@@ -181,7 +181,7 @@
         },
         "Script": {
           "type": "resref",
-          "value": "cv_encumbria"
+          "value": "cv_st_encumbria"
         },
         "Sound": {
           "type": "resref",

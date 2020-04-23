@@ -14,7 +14,7 @@ void main()
            oWp1 = GetWaypointByTag("WP_armorshop_01"),
            oWp2 = GetWaypointByTag("WP_beetlecollect_01");
 
-    if (GetTag(oEnter) == "RogueSpectre")
+    if (IsRogueSpectre(oEnter))
     {
         return;
     }

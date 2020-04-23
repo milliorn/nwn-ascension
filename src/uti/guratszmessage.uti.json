@@ -1,0 +1,81 @@
+{
+  "__data_type": "UTI ",
+  "AddCost": {
+    "type": "dword",
+    "value": 0
+  },
+  "BaseItem": {
+    "type": "int",
+    "value": 74
+  },
+  "Charges": {
+    "type": "byte",
+    "value": 0
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Cost": {
+    "type": "dword",
+    "value": 1
+  },
+  "Cursed": {
+    "type": "byte",
+    "value": 0
+  },
+  "DescIdentified": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "This well worn journal contains messages from 2 Preistesses of House Gur'atz.\n\n_Why must our alliances always fail? It seems the first House always finds a way to turn us against each other?\n___Indeed her power grows, and the other Houses argue over the scraps she does not want.  She keeps us busy defending the advances of the other, lesser houses, and we have no time or resources to devote to weakening the Throne.\n_Do you think it is wise to continue this conversation?\n___Perhaps when we have settled things with the lesser houses. Untill then we must remain faceless, and wordless.  Remember what she did to Har'eck?  I dont think he will be completely dead for months, if not years! And afterwards? I shudder to think of it.\n"
+    }
+  },
+  "Description": {
+    "type": "cexolocstring",
+    "value": {
+      "0": ""
+    }
+  },
+  "Identified": {
+    "type": "byte",
+    "value": 1
+  },
+  "LocalizedName": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "Gur'atsz Message Ledger"
+    }
+  },
+  "ModelPart1": {
+    "type": "byte",
+    "value": 2
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 60
+  },
+  "Plot": {
+    "type": "byte",
+    "value": 0
+  },
+  "PropertiesList": {
+    "type": "list",
+    "value": []
+  },
+  "StackSize": {
+    "type": "word",
+    "value": 1
+  },
+  "Stolen": {
+    "type": "byte",
+    "value": 0
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "GuratszMessage"
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "guratszmessage"
+  }
+}

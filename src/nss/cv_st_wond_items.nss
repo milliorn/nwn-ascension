@@ -10,16 +10,16 @@
 //:: Created By: Script Wizard
 //:: Created On: 9/14/2002 6:55:20 PM
 //:://////////////////////////////////////////////
+
+#include "inc_cv"
+
 void main()
 {
     object oPC = GetPCSpeaker();
     object oItem = GetItemPossessedBy(oPC, "NW_WSWMLS013");
     object oStore = GetNearestObjectByTag("lowpotionsnscrolls");
 
-    if (GetIsObjectValid(oItem) != 0)
-    {
-        DestroyObject(oItem);
-    }
+    HasItemNW_WSWMLS013(oPC, oItem);
 
     if (GetObjectType(oStore) == OBJECT_TYPE_STORE)
         OpenStore(oStore, oPC);

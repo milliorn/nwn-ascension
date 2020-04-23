@@ -15,7 +15,7 @@ void main()
            oWpJail = GetWaypointByTag("WP_warden_01");
 
 
-    if (GetTag(oEnter) == "RogueSpectre")
+    if (IsRogueSpectre(oEnter))
     {
         return;
     }

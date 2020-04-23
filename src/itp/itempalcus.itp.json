@@ -790,6 +790,22 @@
                 "type": "byte",
                 "value": 9
               },
+              "LIST": {
+                "type": "list",
+                "value": [
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Immortal Crown"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "immortalcrown2"
+                    }
+                  }
+                ]
+              },
               "STRREF": {
                 "type": "dword",
                 "value": 6739
@@ -1039,6 +1055,88 @@
                 "type": "byte",
                 "value": 60
               },
+              "LIST": {
+                "type": "list",
+                "value": [
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Ancient Tome"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "ancienttome"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Drow Diary"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "drowdiary"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Encoded Message"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "encodedmessage"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Gur'atsz Message Ledger"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "guratszmessage"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Hierarchy Of Manatakloss"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "hierarchyofmanat"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "The Queens Diary"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "thequeensdiary"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Translation of Ancient Tome"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "translatedancien"
+                    }
+                  }
+                ]
+              },
               "STRREF": {
                 "type": "dword",
                 "value": 6815
@@ -1160,6 +1258,22 @@
               "ID": {
                 "type": "byte",
                 "value": 57
+              },
+              "LIST": {
+                "type": "list",
+                "value": [
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Loki's Eye"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "lokiseye"
+                    }
+                  }
+                ]
               },
               "STRREF": {
                 "type": "dword",
@@ -1306,6 +1420,72 @@
                     "__struct_id": 0,
                     "NAME": {
                       "type": "cexostring",
+                      "value": "Anduins Staff Fragment"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "anduinsstafff001"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Anduins Staff Fragment"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "anduinsstafff002"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Anduins Staff Fragment"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "anduinsstafff003"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Anduins Staff Fragment"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "anduinsstafff004"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Anduins Staff Fragment"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "anduinsstafff005"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Anduins Staff Fragment"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "anduinsstafffrag"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
                       "value": "Arcane Sheath"
                     },
                     "RESREF": {
@@ -1317,11 +1497,352 @@
                     "__struct_id": 0,
                     "NAME": {
                       "type": "cexostring",
+                      "value": "Ascension gate key"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "ascensiongatekey"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Bottle of Blessed Oils"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "bottleofblessedo"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Chicken Egg"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "chickenegg"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Chicken Feed"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "chickenfeed2"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Chicken Skull"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "chickenskull"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Empty Bottle"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "emptybottle"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Feather"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "feather"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Fertile Faery seeds"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "fertilefaeryseed"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Forest Garnet"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "forestgarnet001"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Forest Garnet"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "forestgarnet002"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Forest Garnet"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "forestgarnet003"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Forest Garnet"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "forestgarnet004"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Heart Stone"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "heartstone"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
                       "value": "Heart Stone"
                     },
                     "RESREF": {
                       "type": "resref",
                       "value": "itm_heartstone"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Hero Crystal"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "herocrystal"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "House De'Nat Crest"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "housedenatcrest"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "House Fen'Lis's Crest"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "housefenlisscest"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "House Gur'atsz Crest"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "houseguratszc"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "House Khur'aan Crest"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "housekhuraanc"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Human Sacrifice"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "humansacrifice"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Jade Tooth"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "jadetooth"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Krenshar Noble Cat's Eye"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "krensharnoblecat"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Lich Key"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "lichkey001"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Lokis Key"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "lokiskey"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Mutant Fire Beetle belly"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "mutantfirebeetle"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Nether Bat Eye"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "netherbateye"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Petrified Faery seeds"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "brownfaeryseed"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Rainbow Stone"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "4thkey"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Seal Breaker"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "sealbreaker"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Shovel"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "shovel"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Soul Stone"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "soulstone"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Sturdy Rope"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "sturdyrope"
                     }
                   },
                   {
@@ -1433,11 +1954,33 @@
               "__struct_id": 0,
               "NAME": {
                 "type": "cexostring",
+                "value": "Gem of Lesser Telepathy"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "telegem001"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
                 "value": "Gem of Teleportation"
               },
               "RESREF": {
                 "type": "resref",
                 "value": "itm_teleport"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Sage's Note"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "hen_gal1qt001"
               }
             },
             {
@@ -1512,6 +2055,22 @@
               "ID": {
                 "type": "byte",
                 "value": 4
+              },
+              "LIST": {
+                "type": "list",
+                "value": [
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Undead Leech"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "undeadleech"
+                    }
+                  }
+                ]
               },
               "STRREF": {
                 "type": "dword",
@@ -1768,6 +2327,33 @@
                       "type": "byte",
                       "value": 34
                     },
+                    "LIST": {
+                      "type": "list",
+                      "value": [
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "immortaldagger1"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "immortaldagger1"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "immortaldagger2"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "immortaldagge2"
+                          }
+                        }
+                      ]
+                    },
                     "STRREF": {
                       "type": "dword",
                       "value": 6765
@@ -1951,6 +2537,22 @@
                       "type": "byte",
                       "value": 48
                     },
+                    "LIST": {
+                      "type": "list",
+                      "value": [
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Broken Ceremonial Staff"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "brokenceremonial"
+                          }
+                        }
+                      ]
+                    },
                     "STRREF": {
                       "type": "dword",
                       "value": 6778
@@ -2028,6 +2630,22 @@
                     "ID": {
                       "type": "byte",
                       "value": 44
+                    },
+                    "LIST": {
+                      "type": "list",
+                      "value": [
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Blue Skies"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "blueskies"
+                          }
+                        }
+                      ]
                     },
                     "STRREF": {
                       "type": "dword",

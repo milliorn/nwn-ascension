@@ -139,27 +139,27 @@
   },
   "Mod_Entry_Area": {
     "type": "resref",
-    "value": "armorshop"
+    "value": "townofascension"
   },
   "Mod_Entry_Dir_X": {
     "type": "float",
-    "value": -0.02454144880175591
+    "value": 0.9987954497337341
   },
   "Mod_Entry_Dir_Y": {
     "type": "float",
-    "value": -0.99969881772995
+    "value": -0.04906750097870827
   },
   "Mod_Entry_X": {
     "type": "float",
-    "value": 14.79052448272705
+    "value": 15.07950019836426
   },
   "Mod_Entry_Y": {
     "type": "float",
-    "value": 8.975895881652832
+    "value": 103.2177658081055
   },
   "Mod_Entry_Z": {
     "type": "float",
-    "value": -1.9073486328125e-06
+    "value": 0.0
   },
   "Mod_Expan_List": {
     "type": "list",
@@ -361,7 +361,7 @@
   },
   "Mod_StartHour": {
     "type": "byte",
-    "value": 13
+    "value": 0
   },
   "Mod_StartMonth": {
     "type": "byte",
@@ -386,5 +386,25 @@
   "Mod_XPScale": {
     "type": "byte",
     "value": 10
+  },
+  "VarTable": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "TOWN_LIGHTS"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 0
+        }
+      }
+    ]
   }
 }

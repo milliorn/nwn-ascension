@@ -1,0 +1,81 @@
+{
+  "__data_type": "UTI ",
+  "AddCost": {
+    "type": "dword",
+    "value": 0
+  },
+  "BaseItem": {
+    "type": "int",
+    "value": 74
+  },
+  "Charges": {
+    "type": "byte",
+    "value": 0
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Cost": {
+    "type": "dword",
+    "value": 1
+  },
+  "Cursed": {
+    "type": "byte",
+    "value": 0
+  },
+  "DescIdentified": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "This Diary apparently belongs to one of the commanding officers of House Fen'Lis's. Of interest is a recent entry: Our recent and succesfull raid on House De'Nat has brought the defection of two officers from thier ranks. This, along with the new slave quarters recently built, will insure our house still maintains dominance over at least one house in this cursed city, and we shall not suffer the indignity of being the doormat of every single House! Perhaps the Matron and her daughters will ease up a bit on the torture before each nightly sacrifice...  I must go now, for I hear one of the Matrons daughters aproach."
+    }
+  },
+  "Description": {
+    "type": "cexolocstring",
+    "value": {
+      "0": ""
+    }
+  },
+  "Identified": {
+    "type": "byte",
+    "value": 1
+  },
+  "LocalizedName": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "Drow Diary"
+    }
+  },
+  "ModelPart1": {
+    "type": "byte",
+    "value": 7
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 60
+  },
+  "Plot": {
+    "type": "byte",
+    "value": 0
+  },
+  "PropertiesList": {
+    "type": "list",
+    "value": []
+  },
+  "StackSize": {
+    "type": "word",
+    "value": 1
+  },
+  "Stolen": {
+    "type": "byte",
+    "value": 0
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "DrowDiary"
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "drowdiary"
+  }
+}
