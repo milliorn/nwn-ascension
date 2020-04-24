@@ -104,6 +104,13 @@
           "type": "resref",
           "value": "weaponsshop"
         }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "farmhouse"
+        }
       }
     ]
   },
@@ -139,27 +146,27 @@
   },
   "Mod_Entry_Area": {
     "type": "resref",
-    "value": "townofascension"
+    "value": "farmhouse"
   },
   "Mod_Entry_Dir_X": {
     "type": "float",
-    "value": 0.9987954497337341
+    "value": 0.0
   },
   "Mod_Entry_Dir_Y": {
     "type": "float",
-    "value": -0.04906750097870827
+    "value": 1.0
   },
   "Mod_Entry_X": {
     "type": "float",
-    "value": 15.07950019836426
+    "value": 18.1445484161377
   },
   "Mod_Entry_Y": {
     "type": "float",
-    "value": 103.2177658081055
+    "value": 3.794475078582764
   },
   "Mod_Entry_Z": {
     "type": "float",
-    "value": 0.0
+    "value": -0.0002809762954711914
   },
   "Mod_Expan_List": {
     "type": "list",

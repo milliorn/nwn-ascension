@@ -2072,6 +2072,25 @@
               "__struct_id": 0,
               "CR": {
                 "type": "float",
+                "value": 0.25
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Defender"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Farmer Bob"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "farmerbob001"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
                 "value": 0.5
               },
               "FACTION": {
