@@ -146,7 +146,7 @@
   },
   "Mod_Entry_Area": {
     "type": "resref",
-    "value": "farmhouse"
+    "value": "thevoyage"
   },
   "Mod_Entry_Dir_X": {
     "type": "float",
@@ -158,15 +158,15 @@
   },
   "Mod_Entry_X": {
     "type": "float",
-    "value": 18.1445484161377
+    "value": 35.56492233276367
   },
   "Mod_Entry_Y": {
     "type": "float",
-    "value": 3.794475078582764
+    "value": 34.62430953979492
   },
   "Mod_Entry_Z": {
     "type": "float",
-    "value": -0.0002809762954711914
+    "value": 5.800000190734863
   },
   "Mod_Expan_List": {
     "type": "list",

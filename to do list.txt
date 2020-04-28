@@ -52,6 +52,8 @@ Add code to onuse placeable events to stop GS looting
 
 Update tagname RogueSpectre in the future to work from gsloot include
 
+Add GM message to cv_jade_statue
+
 
 Area variables in non hostile areas
 
