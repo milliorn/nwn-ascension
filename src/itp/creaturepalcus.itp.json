@@ -1985,11 +1985,87 @@
               },
               "NAME": {
                 "type": "cexostring",
+                "value": "Bartender"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "bartenderhalenne"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
+                "value": 26.0
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Defender"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Bouncer"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "bouncer"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
+                "value": 330.0
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Defender"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Candy "
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "stripper"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
+                "value": 0.25
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Merchant"
+              },
+              "NAME": {
+                "type": "cexostring",
                 "value": "Captain Maley"
               },
               "RESREF": {
                 "type": "resref",
                 "value": "captainmaleyreyn"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
+                "value": 0.25
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Commoner"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Dana"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "gossip"
               }
             },
             {
@@ -2091,6 +2167,25 @@
               "__struct_id": 0,
               "CR": {
                 "type": "float",
+                "value": 4.0
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Commoner"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Grok"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "fbi_npc_drinker"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
                 "value": 0.5
               },
               "FACTION": {
@@ -2167,6 +2262,25 @@
               "__struct_id": 0,
               "CR": {
                 "type": "float",
+                "value": 0.25
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Commoner"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Railline"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "raillinepatter"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
                 "value": 156.0
               },
               "FACTION": {
@@ -2237,6 +2351,63 @@
               "RESREF": {
                 "type": "resref",
                 "value": "satan"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
+                "value": 0.25
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Commoner"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Shing"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "shingdallennemen"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
+                "value": 330.0
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Defender"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Star"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "lapdancer"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
+                "value": 0.25
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Merchant"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Tert"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "tertwelter"
               }
             },
             {

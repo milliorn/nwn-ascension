@@ -111,6 +111,13 @@
           "type": "resref",
           "value": "farmhouse"
         }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "trespasserstaver"
+        }
       }
     ]
   },
@@ -158,15 +165,15 @@
   },
   "Mod_Entry_X": {
     "type": "float",
-    "value": 35.0
+    "value": 35.48128128051758
   },
   "Mod_Entry_Y": {
     "type": "float",
-    "value": 34.0
+    "value": 34.42054748535156
   },
   "Mod_Entry_Z": {
     "type": "float",
-    "value": 5.0
+    "value": 5.79999828338623
   },
   "Mod_Expan_List": {
     "type": "list",

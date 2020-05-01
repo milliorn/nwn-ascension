@@ -2097,6 +2097,39 @@
               "__struct_id": 0,
               "NAME": {
                 "type": "cexostring",
+                "value": "Barbarian's Outfit"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "007"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Black Silk"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "002"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Commoner's Tunic"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "005"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
                 "value": "Elven Gift"
               },
               "RESREF": {
@@ -2201,6 +2234,39 @@
               "RESREF": {
                 "type": "resref",
                 "value": "shortshrift"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "RESREF": {
+                "type": "resref",
+                "value": "cloth031"
+              },
+              "STRREF": {
+                "type": "dword",
+                "value": 12914
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Strippers Lingerie"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "003"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Strippers Lingerie"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "009"
               }
             }
           ]
