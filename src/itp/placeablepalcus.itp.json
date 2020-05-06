@@ -906,6 +906,22 @@
           "type": "byte",
           "value": 6
         },
+        "LIST": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "LOOT_"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "loot_"
+              }
+            }
+          ]
+        },
         "STRREF": {
           "type": "dword",
           "value": 6782
