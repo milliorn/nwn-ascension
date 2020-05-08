@@ -1073,6 +1073,17 @@
                     "__struct_id": 0,
                     "NAME": {
                       "type": "cexostring",
+                      "value": "Ascension Spellbook"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "itm_spellbook"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
                       "value": "Drow Diary"
                     },
                     "RESREF": {
