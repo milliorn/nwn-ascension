@@ -57,6 +57,9 @@ Add GM message to cv_jade_statue
 tres_gossip conversation has exploits in it that needs to be fixed with taking gold.
 
 Add the armor back to the lap dancer in tavern (star) cv_tres_lap_danc
+
+Consider more shops with crafting items and other.
+
 Area variables in non hostile areas
 
 NO_CROWN 
