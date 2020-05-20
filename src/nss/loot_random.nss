@@ -5,6 +5,6 @@ void main()
     {
         GenerateRandomLoot();
         SetLocalInt(OBJECT_SELF, "TIMER", TRUE);
-        DelayCommand(600.0, DeleteLocalInt(OBJECT_SELF, "TIMER"));
+        DelayCommand(6.0, DeleteLocalInt(OBJECT_SELF, "TIMER"));
     }
 }
