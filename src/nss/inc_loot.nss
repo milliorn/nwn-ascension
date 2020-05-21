@@ -11,118 +11,8 @@
 
 #include "x2_inc_itemprop"
 
-//  Custom Code to Randomize the Coloring of Weapons.
-void ColorWeapon(object oItem, int iBottom, int iMiddle, int iTop, object oPC);
-
-//  Custom Code from Dorrian, the Creator of Trials of Newcastle Module.  Modified by Milliorn.
-void ColorArmor(object oItem, int cloth1, int cloth2, int leather1, int leather2, int meatal1, int meatal2, object oPC);
-
-//  Custom Code to make random weapon appearances.
-void ChangeApprWeapon(object oItem, int iBottom, int iMiddle, int iTop, object oPC);
-
 //  Custom Code to generate common equippable loot and to randomize Item Properties
 void GenerateRandomLoot();
-
-//  Return TRUE if its a weapon that can be disarmed
-int GetIsWeapon(object oItem);
-
-int GetIsWeapon(object oItem)
-{
-    switch (GetBaseItemType(oItem))
-    {
-    case BASE_ITEM_BASTARDSWORD:
-    case BASE_ITEM_BATTLEAXE:
-    case BASE_ITEM_CLUB:
-    case BASE_ITEM_DAGGER:
-    case BASE_ITEM_DIREMACE:
-    case BASE_ITEM_DOUBLEAXE:
-    case BASE_ITEM_DWARVENWARAXE:
-    case BASE_ITEM_GREATAXE:
-    case BASE_ITEM_GREATSWORD:
-    case BASE_ITEM_HALBERD:
-    case BASE_ITEM_HANDAXE:
-    case BASE_ITEM_HEAVYCROSSBOW:
-    case BASE_ITEM_HEAVYFLAIL:
-    case BASE_ITEM_KAMA:
-    case BASE_ITEM_KATANA:
-    case BASE_ITEM_KUKRI:
-    case BASE_ITEM_LIGHTCROSSBOW:
-    case BASE_ITEM_LIGHTFLAIL:
-    case BASE_ITEM_LIGHTHAMMER:
-    case BASE_ITEM_LIGHTMACE:
-    case BASE_ITEM_LONGBOW:
-    case BASE_ITEM_LONGSWORD:
-    case BASE_ITEM_MAGICSTAFF:
-    case BASE_ITEM_MORNINGSTAR:
-    case BASE_ITEM_QUARTERSTAFF:
-    case BASE_ITEM_RAPIER:
-    case BASE_ITEM_SCIMITAR:
-    case BASE_ITEM_SCYTHE:
-    case BASE_ITEM_SHORTBOW:
-    case BASE_ITEM_SHORTSPEAR:
-    case BASE_ITEM_SHORTSWORD:
-    case BASE_ITEM_SICKLE:
-    case BASE_ITEM_SLING:
-    case BASE_ITEM_TRIDENT:
-    case BASE_ITEM_TWOBLADEDSWORD:
-    case BASE_ITEM_WARHAMMER:
-    case BASE_ITEM_WHIP:
-    {
-        return TRUE;
-    }
-    }
-    return FALSE;
-}
-
-void ColorArmor(object oItem, int cloth1, int cloth2, int leather1, int leather2, int meatal1, int meatal2, object oPC)
-{
-    object oCopyBox = OBJECT_SELF;
-
-    object oCopy = CopyItem(oItem, oCopyBox, TRUE);
-    DestroyObject(oItem); // remove old item
-    object oCopy1 = CopyItemAndModify(oCopy, ITEM_APPR_TYPE_ARMOR_COLOR, ITEM_APPR_ARMOR_COLOR_CLOTH1, cloth1, TRUE);
-    DestroyObject(oCopy); // remove old item
-    object oCopy2 = CopyItemAndModify(oCopy1, ITEM_APPR_TYPE_ARMOR_COLOR, ITEM_APPR_ARMOR_COLOR_CLOTH2, cloth2, TRUE);
-    DestroyObject(oCopy1); // remove old item
-    object oCopy3 = CopyItemAndModify(oCopy2, ITEM_APPR_TYPE_ARMOR_COLOR, ITEM_APPR_ARMOR_COLOR_LEATHER1, leather1, TRUE);
-    DestroyObject(oCopy2); // remove old item
-    object oCopy4 = CopyItemAndModify(oCopy3, ITEM_APPR_TYPE_ARMOR_COLOR, ITEM_APPR_ARMOR_COLOR_LEATHER2, leather2, TRUE);
-    DestroyObject(oCopy3); // remove old item
-    object oCopy5 = CopyItemAndModify(oCopy4, ITEM_APPR_TYPE_ARMOR_COLOR, ITEM_APPR_ARMOR_COLOR_METAL1, meatal1, TRUE);
-    DestroyObject(oCopy4); // remove old item
-    object oCopy6 = CopyItemAndModify(oCopy5, ITEM_APPR_TYPE_ARMOR_COLOR, ITEM_APPR_ARMOR_COLOR_METAL2, meatal2, TRUE);
-    DestroyObject(oCopy5); // remove old item
-    object oCopy7 = CopyItem(oCopy6, oPC, TRUE);
-    DestroyObject(oCopy6); // remove old item
-}
-
-void ChangeApprWeapon(object oItem, int iBottom, int iMiddle, int iTop, object oPC)
-{
-    object oCopyBox = OBJECT_SELF;
-
-    object oCopy = CopyItem(oItem, oCopyBox, TRUE);
-    DestroyObject(oItem); // remove old item
-    object oCopy1 = CopyItemAndModify(oCopy, ITEM_APPR_TYPE_WEAPON_MODEL, ITEM_APPR_WEAPON_MODEL_BOTTOM, iBottom, TRUE);
-    DestroyObject(oCopy); // remove old item
-    object oCopy2 = CopyItemAndModify(oCopy1, ITEM_APPR_TYPE_WEAPON_MODEL, ITEM_APPR_WEAPON_MODEL_MIDDLE, iMiddle, TRUE);
-    DestroyObject(oCopy1); // remove old item
-    object oCopy3 = CopyItemAndModify(oCopy2, ITEM_APPR_TYPE_WEAPON_MODEL, ITEM_APPR_WEAPON_MODEL_TOP, iTop, TRUE);
-    DestroyObject(oCopy2); // remove old item
-}
-
-void ColorWeapon(object oItem, int iBottom, int iMiddle, int iTop, object oPC)
-{
-    object oCopyBox = OBJECT_SELF;
-
-    object oCopy = CopyItem(oItem, oCopyBox, TRUE);
-    //DestroyObject(oItem); // remove old item
-    object oCopy1 = CopyItemAndModify(oCopy, ITEM_APPR_TYPE_WEAPON_COLOR, ITEM_APPR_WEAPON_COLOR_BOTTOM, iBottom, TRUE);
-    DestroyObject(oCopy); // remove old item
-    object oCopy2 = CopyItemAndModify(oCopy1, ITEM_APPR_TYPE_WEAPON_COLOR, ITEM_APPR_WEAPON_COLOR_MIDDLE, iMiddle, TRUE);
-    DestroyObject(oCopy1); // remove old item
-    object oCopy3 = CopyItemAndModify(oCopy2, ITEM_APPR_TYPE_WEAPON_COLOR, ITEM_APPR_WEAPON_COLOR_TOP, iTop, TRUE);
-    DestroyObject(oCopy2); // remove old item
-}
 
 void GenerateRandomLoot()
 {
@@ -303,108 +193,39 @@ void GenerateRandomLoot()
         oItem = GetNextItemInInventory(oChest);
     }
 
-    switch (GetBaseItemType(oItem))
-    {
-    case BASE_ITEM_ARMOR:
-    case BASE_ITEM_CLOAK:
-    case BASE_ITEM_HELMET:
-    {
-        ColorArmor(oItem, d4(), d4(), d4(), d4(), d4(), d4(), oChest);
-    }
-    default:
-        break;
-    }
-
-    if (IPGetIsMeleeWeapon(oItem) ||
-        IPGetIsProjectile(oItem) ||
-        IPGetIsRangedWeapon(oItem))
-    {
-        ColorWeapon(oItem, d4(), d4(), d4(), oChest);
-    }
-
-    switch (GetBaseItemType(oItem))
-    {
-    case BASE_ITEM_ARROW:
-    case BASE_ITEM_DOUBLEAXE:
-    case BASE_ITEM_TWOBLADEDSWORD:
-    case BASE_ITEM_SCYTHE:
-    {
-        ChangeApprWeapon(oItem, d3(), d3(), d3(), oChest);
-        return;
-    }
-
-    case BASE_ITEM_BOLT:
-    {
-        ChangeApprWeapon(oItem, d3(), Random(4) + 1, d3(), oChest);
-        return;
-    }
-
-    case BASE_ITEM_GREATAXE:
-    case BASE_ITEM_HANDAXE:
-    case BASE_ITEM_KATANA:
-    case BASE_ITEM_RAPIER:
-    case BASE_ITEM_HEAVYFLAIL:
-    case BASE_ITEM_LIGHTHAMMER:
-    case BASE_ITEM_LIGHTMACE:
-    case BASE_ITEM_MORNINGSTAR:
-    case BASE_ITEM_DIREMACE:
-    case BASE_ITEM_HALBERD:
-    case BASE_ITEM_SHORTSPEAR:
-    case BASE_ITEM_TRIDENT:
-    case BASE_ITEM_HEAVYCROSSBOW:
-    case BASE_ITEM_LIGHTCROSSBOW:
-    case BASE_ITEM_THROWINGAXE:
-    {
-        ChangeApprWeapon(oItem, d4(), d4(), d4(), oChest);
-        return;
-    }
-
-    case BASE_ITEM_DWARVENWARAXE:
-    case BASE_ITEM_BATTLEAXE:
-    {
-        ChangeApprWeapon(oItem, d8(), d6(), d6(), oChest);
-        return;
-    }
-
-    case BASE_ITEM_BASTARDSWORD:
-    case BASE_ITEM_DAGGER:
-    case BASE_ITEM_SHORTSWORD:
-    case BASE_ITEM_CLUB:
-    case BASE_ITEM_SHORTBOW:
-    {
-        ChangeApprWeapon(oItem, d6(), d6(), d6(), oChest);
-        return;
-    }
-
-    case BASE_ITEM_GREATSWORD:
-    case BASE_ITEM_WARHAMMER:
-    case BASE_ITEM_MAGICSTAFF:
-    {
-        ChangeApprWeapon(oItem, Random(6) + 1, Random(6) + 1, Random(6) + 1, oChest);
-        return;
-    }
-
-    case BASE_ITEM_LONGSWORD:
-    case BASE_ITEM_LONGBOW:
-    {
-        ChangeApprWeapon(oItem, d8(), d8(), d8(), oChest);
-        return;
-    }
-
-    case BASE_ITEM_SCIMITAR:
-    case BASE_ITEM_LIGHTFLAIL:
-    case BASE_ITEM_QUARTERSTAFF:
-    {
-        ChangeApprWeapon(oItem, Random(4) + 1, Random(4) + 1, Random(4) + 1, oChest);
-        return;
-    }
-
-    default:
-        break;
-    }
-
     //  Copy the item to the target inventory
     oCopy = CopyItem(oItem, oPC, TRUE);
+
+    if (GetBaseItemType(oCopy) == BASE_ITEM_ARMOR)
+    {
+        oCopy = IPDyeArmor(oCopy, ITEM_APPR_ARMOR_COLOR_CLOTH1, Random(63));
+        oCopy = IPDyeArmor(oCopy, ITEM_APPR_ARMOR_COLOR_CLOTH2, Random(63));
+        oCopy = IPDyeArmor(oCopy, ITEM_APPR_ARMOR_COLOR_LEATHER1, Random(63));
+        oCopy = IPDyeArmor(oCopy, ITEM_APPR_ARMOR_COLOR_LEATHER2, Random(63));
+        oCopy = IPDyeArmor(oCopy, ITEM_APPR_ARMOR_COLOR_METAL1, Random(63));
+        oCopy = IPDyeArmor(oCopy, ITEM_APPR_ARMOR_COLOR_METAL2, Random(63));
+
+        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_BELT, X2_IP_ARMORTYPE_RANDOM, TRUE);
+        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_LBICEP, X2_IP_ARMORTYPE_RANDOM, TRUE);
+        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_LFOOT, X2_IP_ARMORTYPE_RANDOM, TRUE);
+        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_LFOREARM, X2_IP_ARMORTYPE_RANDOM, TRUE);
+        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_LHAND, X2_IP_ARMORTYPE_RANDOM, TRUE);
+
+        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_LSHIN, X2_IP_ARMORTYPE_RANDOM, TRUE);
+        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_LSHOULDER, X2_IP_ARMORTYPE_RANDOM, TRUE);
+        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_LTHIGH, X2_IP_ARMORTYPE_RANDOM, TRUE);
+        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_NECK, X2_IP_ARMORTYPE_RANDOM, TRUE);
+        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_PELVIS, X2_IP_ARMORTYPE_RANDOM, TRUE);
+
+        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_RBICEP, X2_IP_ARMORTYPE_RANDOM, TRUE);
+        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_RFOOT, X2_IP_ARMORTYPE_RANDOM, TRUE);
+        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_RFOREARM, X2_IP_ARMORTYPE_RANDOM, TRUE);
+        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_RHAND, X2_IP_ARMORTYPE_RANDOM, TRUE);
+
+        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_RSHIN, X2_IP_ARMORTYPE_RANDOM, TRUE);
+        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_RSHOULDER, X2_IP_ARMORTYPE_RANDOM, TRUE);
+        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_RTHIGH, X2_IP_ARMORTYPE_RANDOM, TRUE);
+    }
 
     //  We now check to make sure all appropriate flags are set and give it a random name
     SetDroppableFlag(oCopy, TRUE);
