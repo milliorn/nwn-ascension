@@ -193,47 +193,35 @@ void GenerateRandomLoot()
         oItem = GetNextItemInInventory(oChest);
     }
 
+    //  We now check to make sure all appropriate flags are set and give it a random name
+    //SetName(oCopy, RandomName(Random(23 - 1)) + " " + GetName(oCopy, TRUE));
+    SetIdentified(oItem, TRUE);
+    if (GetBaseItemType(oItem) == BASE_ITEM_ARMOR)
+    {
+        object oCopyBox = IPGetIPWorkContainer();
+
+        object oCopy = CopyItem(oItem,oCopyBox, TRUE);
+        DestroyObject(oItem); // remove old item
+        object oCopy1 = CopyItemAndModify(oCopy, ITEM_APPR_TYPE_ARMOR_COLOR, ITEM_APPR_ARMOR_COLOR_CLOTH1, Random(175), TRUE);
+        DestroyObject(oCopy); // remove old item
+        object oCopy2 = CopyItemAndModify(oCopy1, ITEM_APPR_TYPE_ARMOR_COLOR, ITEM_APPR_ARMOR_COLOR_CLOTH2, Random(175), TRUE);
+        DestroyObject(oCopy1); // remove old item
+        object oCopy3 = CopyItemAndModify(oCopy2, ITEM_APPR_TYPE_ARMOR_COLOR, ITEM_APPR_ARMOR_COLOR_LEATHER1, Random(175), TRUE);
+        DestroyObject(oCopy2); // remove old item
+        object oCopy4 = CopyItemAndModify(oCopy3, ITEM_APPR_TYPE_ARMOR_COLOR, ITEM_APPR_ARMOR_COLOR_LEATHER2, Random(175), TRUE);
+        DestroyObject(oCopy3); // remove old item
+        object oCopy5 = CopyItemAndModify(oCopy4, ITEM_APPR_TYPE_ARMOR_COLOR, ITEM_APPR_ARMOR_COLOR_METAL1, Random(175), TRUE);
+        DestroyObject(oCopy4); // remove old item
+        object oCopy6 = CopyItemAndModify(oCopy5, ITEM_APPR_TYPE_ARMOR_COLOR, ITEM_APPR_ARMOR_COLOR_METAL2, Random(175), TRUE);
+        DestroyObject(oCopy5); // remove old item
+        object oCopy7 = CopyItem(oCopy6,oPC, TRUE);
+        DestroyObject(oCopy6); // remove old item
+        return;
+    }
+
     //  Copy the item to the target inventory
     oCopy = CopyItem(oItem, oPC, TRUE);
 
-    if (GetBaseItemType(oCopy) == BASE_ITEM_ARMOR)
-    {
-        oCopy = IPDyeArmor(oCopy, ITEM_APPR_ARMOR_COLOR_CLOTH1, Random(63));
-        oCopy = IPDyeArmor(oCopy, ITEM_APPR_ARMOR_COLOR_CLOTH2, Random(63));
-        oCopy = IPDyeArmor(oCopy, ITEM_APPR_ARMOR_COLOR_LEATHER1, Random(63));
-        oCopy = IPDyeArmor(oCopy, ITEM_APPR_ARMOR_COLOR_LEATHER2, Random(63));
-        oCopy = IPDyeArmor(oCopy, ITEM_APPR_ARMOR_COLOR_METAL1, Random(63));
-        oCopy = IPDyeArmor(oCopy, ITEM_APPR_ARMOR_COLOR_METAL2, Random(63));
-
-        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_BELT, X2_IP_ARMORTYPE_RANDOM, TRUE);
-        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_LBICEP, X2_IP_ARMORTYPE_RANDOM, TRUE);
-        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_LFOOT, X2_IP_ARMORTYPE_RANDOM, TRUE);
-        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_LFOREARM, X2_IP_ARMORTYPE_RANDOM, TRUE);
-        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_LHAND, X2_IP_ARMORTYPE_RANDOM, TRUE);
-
-        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_LSHIN, X2_IP_ARMORTYPE_RANDOM, TRUE);
-        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_LSHOULDER, X2_IP_ARMORTYPE_RANDOM, TRUE);
-        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_LTHIGH, X2_IP_ARMORTYPE_RANDOM, TRUE);
-        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_NECK, X2_IP_ARMORTYPE_RANDOM, TRUE);
-        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_PELVIS, X2_IP_ARMORTYPE_RANDOM, TRUE);
-
-        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_RBICEP, X2_IP_ARMORTYPE_RANDOM, TRUE);
-        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_RFOOT, X2_IP_ARMORTYPE_RANDOM, TRUE);
-        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_RFOREARM, X2_IP_ARMORTYPE_RANDOM, TRUE);
-        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_RHAND, X2_IP_ARMORTYPE_RANDOM, TRUE);
-
-        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_RSHIN, X2_IP_ARMORTYPE_RANDOM, TRUE);
-        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_RSHOULDER, X2_IP_ARMORTYPE_RANDOM, TRUE);
-        oCopy = IPGetModifiedArmor(oCopy, ITEM_APPR_ARMOR_MODEL_RTHIGH, X2_IP_ARMORTYPE_RANDOM, TRUE);
-    }
-
-    //  We now check to make sure all appropriate flags are set and give it a random name
-    SetDroppableFlag(oCopy, TRUE);
-    SetItemCursedFlag(oCopy, FALSE);
-    SetPickpocketableFlag(oCopy, TRUE);
-    SetStolenFlag(oCopy, FALSE);
-    SetIdentified(oCopy, FALSE);
-    SetName(oCopy, RandomName(Random(23 - 1)) + " " + GetName(oCopy, TRUE));
 }
 
 /*void main () {}
