@@ -1,6 +1,6 @@
 //  Common Loot Generator Script
 //  Created By: Scott Milliorn
-//  Module - A Carpathian Nightmare
+//  Module - A Carpathian Nightmare & Ascension
 //  Date: June 13th, 2018
 
 //  Additional help with donation of code from Dorrian of Trials of Newcastle
@@ -14,15 +14,70 @@
 //  Custom Code to generate common equippable loot and to randomize Item Properties
 void GenerateRandomLoot();
 
+//  Custom Color Armor
+void ColorArmor(object oItem);
+
+//  Custom Code to make random weapon appearances.
+void ChangeApprWeapon(object oItem, int iBottom, int iMiddle, int iTop);
+
+
+void ColorArmor(object oItem)
+{
+    object oCopyBox = IPGetIPWorkContainer();
+
+    object oCopy = CopyItem(oItem, oCopyBox, TRUE);
+    DestroyObject(oItem); // remove old item
+    object oCopy1 = CopyItemAndModify(oCopy, ITEM_APPR_TYPE_ARMOR_COLOR, ITEM_APPR_ARMOR_COLOR_CLOTH1, Random(175), TRUE);
+    DestroyObject(oCopy); // remove old item
+    object oCopy2 = CopyItemAndModify(oCopy1, ITEM_APPR_TYPE_ARMOR_COLOR, ITEM_APPR_ARMOR_COLOR_CLOTH2, Random(175), TRUE);
+    DestroyObject(oCopy1); // remove old item
+    object oCopy3 = CopyItemAndModify(oCopy2, ITEM_APPR_TYPE_ARMOR_COLOR, ITEM_APPR_ARMOR_COLOR_LEATHER1, Random(175), TRUE);
+    DestroyObject(oCopy2); // remove old item
+    object oCopy4 = CopyItemAndModify(oCopy3, ITEM_APPR_TYPE_ARMOR_COLOR, ITEM_APPR_ARMOR_COLOR_LEATHER2, Random(175), TRUE);
+    DestroyObject(oCopy3); // remove old item
+    object oCopy5 = CopyItemAndModify(oCopy4, ITEM_APPR_TYPE_ARMOR_COLOR, ITEM_APPR_ARMOR_COLOR_METAL1, Random(175), TRUE);
+    DestroyObject(oCopy4); // remove old item
+    object oCopy6 = CopyItemAndModify(oCopy5, ITEM_APPR_TYPE_ARMOR_COLOR, ITEM_APPR_ARMOR_COLOR_METAL2, Random(175), TRUE);
+    DestroyObject(oCopy5); // remove old item
+    object oCopy7 = CopyItem(oCopy6, OBJECT_SELF, TRUE);
+    DestroyObject(oCopy6); // remove old item
+}
+
+void ChangeApprWeapon(object oItem, int iBottom, int iMiddle, int iTop)
+{
+    object oCopyBox = IPGetIPWorkContainer();
+
+    object oCopy = CopyItem(oItem, oCopyBox, TRUE);
+    DestroyObject(oItem); // remove old item
+    object oCopy1 = CopyItemAndModify(oCopy, ITEM_APPR_TYPE_WEAPON_MODEL, ITEM_APPR_WEAPON_MODEL_BOTTOM, iBottom, TRUE);
+    DestroyObject(oCopy); // remove old item
+    object oCopy2 = CopyItemAndModify(oCopy1, ITEM_APPR_TYPE_WEAPON_MODEL, ITEM_APPR_WEAPON_MODEL_MIDDLE, iMiddle, TRUE);
+    DestroyObject(oCopy1); // remove old item
+    object oCopy3 = CopyItemAndModify(oCopy2, ITEM_APPR_TYPE_WEAPON_MODEL, ITEM_APPR_WEAPON_MODEL_TOP, iTop, TRUE);
+    DestroyObject(oCopy2); // remove old item
+
+    object oCopy4 = CopyItemAndModify(oCopy3, ITEM_APPR_TYPE_WEAPON_COLOR, ITEM_APPR_WEAPON_COLOR_BOTTOM, d4(), TRUE);
+    DestroyObject(oCopy3); // remove old item
+    object oCopy5 = CopyItemAndModify(oCopy4, ITEM_APPR_TYPE_WEAPON_COLOR, ITEM_APPR_WEAPON_COLOR_MIDDLE, d4(), TRUE);
+    DestroyObject(oCopy4); // remove old item
+    object oCopy6 = CopyItemAndModify(oCopy5, ITEM_APPR_TYPE_WEAPON_COLOR, ITEM_APPR_WEAPON_COLOR_TOP, d4(), TRUE);
+    DestroyObject(oCopy5); // remove old item
+    object oCopy7 = CopyItem(oCopy6, OBJECT_SELF, TRUE);
+    DestroyObject(oCopy6); // remove old item
+}
+
 void GenerateRandomLoot()
 {
     // Vars
     object oPC = OBJECT_SELF,
            oChest,
            oItem,
-           oCopy;
+           oCopy,
+           oCopyBox = IPGetIPWorkContainer();
 
-    int iRoll = d100();
+    int iRoll = d100(),
+        nCount = GetLocalInt(oChest, "GenerateRandomLootTreature"),
+        nPick;
 
     switch (iRoll)
     {
@@ -167,9 +222,6 @@ void GenerateRandomLoot()
         return;
     }
 
-    int nCount = GetLocalInt(oChest, "GenerateRandomLootTreature"),
-        nPick;
-
     //  Do a numeric count of all items in the placeables inventory
     if (!nCount)
     {
@@ -178,9 +230,8 @@ void GenerateRandomLoot()
         {
             nCount++;
             oItem = GetNextItemInInventory(oChest);
-        }
+        } while (GetIsObjectValid(oItem));
 
-        while (GetIsObjectValid(oItem));
         SetLocalInt(oChest, "GenerateRandomLootTreature", nCount);
     }
 
@@ -193,35 +244,92 @@ void GenerateRandomLoot()
         oItem = GetNextItemInInventory(oChest);
     }
 
-    //  We now check to make sure all appropriate flags are set and give it a random name
-    //SetName(oCopy, RandomName(Random(23 - 1)) + " " + GetName(oCopy, TRUE));
-    SetIdentified(oItem, TRUE);
-    if (GetBaseItemType(oItem) == BASE_ITEM_ARMOR)
+    switch (GetBaseItemType(oItem))
     {
-        object oCopyBox = IPGetIPWorkContainer();
-
-        object oCopy = CopyItem(oItem,oCopyBox, TRUE);
-        DestroyObject(oItem); // remove old item
-        object oCopy1 = CopyItemAndModify(oCopy, ITEM_APPR_TYPE_ARMOR_COLOR, ITEM_APPR_ARMOR_COLOR_CLOTH1, Random(175), TRUE);
-        DestroyObject(oCopy); // remove old item
-        object oCopy2 = CopyItemAndModify(oCopy1, ITEM_APPR_TYPE_ARMOR_COLOR, ITEM_APPR_ARMOR_COLOR_CLOTH2, Random(175), TRUE);
-        DestroyObject(oCopy1); // remove old item
-        object oCopy3 = CopyItemAndModify(oCopy2, ITEM_APPR_TYPE_ARMOR_COLOR, ITEM_APPR_ARMOR_COLOR_LEATHER1, Random(175), TRUE);
-        DestroyObject(oCopy2); // remove old item
-        object oCopy4 = CopyItemAndModify(oCopy3, ITEM_APPR_TYPE_ARMOR_COLOR, ITEM_APPR_ARMOR_COLOR_LEATHER2, Random(175), TRUE);
-        DestroyObject(oCopy3); // remove old item
-        object oCopy5 = CopyItemAndModify(oCopy4, ITEM_APPR_TYPE_ARMOR_COLOR, ITEM_APPR_ARMOR_COLOR_METAL1, Random(175), TRUE);
-        DestroyObject(oCopy4); // remove old item
-        object oCopy6 = CopyItemAndModify(oCopy5, ITEM_APPR_TYPE_ARMOR_COLOR, ITEM_APPR_ARMOR_COLOR_METAL2, Random(175), TRUE);
-        DestroyObject(oCopy5); // remove old item
-        object oCopy7 = CopyItem(oCopy6,oPC, TRUE);
-        DestroyObject(oCopy6); // remove old item
+    case BASE_ITEM_ARMOR:
+    case BASE_ITEM_CLOAK:
+    case BASE_ITEM_HELMET:
+    {
+        ColorArmor(oItem);
+        return;
+    }
+    case BASE_ITEM_ARROW:
+    case BASE_ITEM_DOUBLEAXE:
+    case BASE_ITEM_TWOBLADEDSWORD:
+    case BASE_ITEM_SCYTHE:
+    {
+        ChangeApprWeapon(oItem, d3(), d3(), d3());
         return;
     }
 
-    //  Copy the item to the target inventory
-    oCopy = CopyItem(oItem, oPC, TRUE);
+    case BASE_ITEM_BOLT:
+    {
+        ChangeApprWeapon(oItem, d3(), Random(4) + 1, d3());
+        return;
+    }
+    case BASE_ITEM_GREATAXE:
+    case BASE_ITEM_HANDAXE:
+    case BASE_ITEM_KATANA:
+    case BASE_ITEM_RAPIER:
+    case BASE_ITEM_HEAVYFLAIL:
+    case BASE_ITEM_LIGHTHAMMER:
+    case BASE_ITEM_LIGHTMACE:
+    case BASE_ITEM_MORNINGSTAR:
+    case BASE_ITEM_DIREMACE:
+    case BASE_ITEM_HALBERD:
+    case BASE_ITEM_SHORTSPEAR:
+    case BASE_ITEM_TRIDENT:
+    case BASE_ITEM_HEAVYCROSSBOW:
+    case BASE_ITEM_LIGHTCROSSBOW:
+    case BASE_ITEM_THROWINGAXE:
+    {
+        ChangeApprWeapon(oItem, d4(), d4(), d4());
+        return;
+    }
 
+    case BASE_ITEM_DWARVENWARAXE:
+    case BASE_ITEM_BATTLEAXE:
+    {
+        ChangeApprWeapon(oItem, d8(), d6(), d6());
+        return;
+    }
+
+    case BASE_ITEM_BASTARDSWORD:
+    case BASE_ITEM_DAGGER:
+    case BASE_ITEM_SHORTSWORD:
+    case BASE_ITEM_CLUB:
+    case BASE_ITEM_SHORTBOW:
+    {
+        ChangeApprWeapon(oItem, d6(), d6(), d6());
+        return;
+    }
+
+    case BASE_ITEM_GREATSWORD:
+    case BASE_ITEM_WARHAMMER:
+    case BASE_ITEM_MAGICSTAFF:
+    {
+        ChangeApprWeapon(oItem, Random(6) + 1, Random(6) + 1, Random(6) + 1);
+        return;
+    }
+
+    case BASE_ITEM_LONGSWORD:
+    case BASE_ITEM_LONGBOW:
+    {
+        ChangeApprWeapon(oItem, d8(), d8(), d8());
+        return;
+    }
+
+    case BASE_ITEM_SCIMITAR:
+    case BASE_ITEM_LIGHTFLAIL:
+    case BASE_ITEM_QUARTERSTAFF:
+    {
+        ChangeApprWeapon(oItem, Random(4) + 1, Random(4) + 1, Random(4) + 1);
+        return;
+    }
+
+    default:
+        oCopy = CopyItem(oItem, oPC, TRUE);
+    }
 }
 
 /*void main () {}
