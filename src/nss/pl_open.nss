@@ -4,6 +4,8 @@
 //  Modified by AW Olorin 1-12-2004
 //  Anti-GS Looting
 
+#include "inc_loot"
+
 void RespawnObject(string sTag, int iType, location lLoc)
 {
 
@@ -15,6 +17,7 @@ void RespawnObject(string sTag, int iType, location lLoc)
 
 void main()
 {
+    GenerateRandomLoot();
     SetPlotFlag(OBJECT_SELF, FALSE);
     float fDelay2 = 0.0;
     DestroyObject(OBJECT_SELF, fDelay2);

@@ -167,7 +167,7 @@
   },
   "Mod_Entry_Area": {
     "type": "resref",
-    "value": "thevoyage"
+    "value": "itemshop"
   },
   "Mod_Entry_Dir_X": {
     "type": "float",
@@ -179,15 +179,15 @@
   },
   "Mod_Entry_X": {
     "type": "float",
-    "value": 35.48128128051758
+    "value": 14.05985164642334
   },
   "Mod_Entry_Y": {
     "type": "float",
-    "value": 34.42054748535156
+    "value": 6.640176296234131
   },
   "Mod_Entry_Z": {
     "type": "float",
-    "value": 5.79999828338623
+    "value": 9.5367431640625e-07
   },
   "Mod_Expan_List": {
     "type": "list",
