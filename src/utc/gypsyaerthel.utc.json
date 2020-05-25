@@ -62,7 +62,9 @@
   },
   "Description": {
     "type": "cexolocstring",
-    "value": {}
+    "value": {
+      "0": "Black with blue streaks, long straight hair hangs over her strong frowning face, bright blue eyes set deep above her cheeks, watch you gratefully over the crates and barrels. A smudge of eye makeup just below her right eye leaves a sad memory of a lost love. There is alluring about her, perhaps it's her presence of perhaps it's a simple way she smiles. "
+    }
   },
   "Dex": {
     "type": "byte",

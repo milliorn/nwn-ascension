@@ -126,7 +126,7 @@
   },
   "Comment": {
     "type": "cexostring",
-    "value": ""
+    "value": "There's something captivating about him, perhaps it's his sense of honor or perhaps it's simply a feeling of arogance. But nonetheless, people tend to follow him, while wanting to fight along his side in battle."
   },
   "Con": {
     "type": "byte",
@@ -154,7 +154,9 @@
   },
   "Description": {
     "type": "cexolocstring",
-    "value": {}
+    "value": {
+      "0": "A smooth, shiny forehead reveals a small scare over his left eye. His hair is pulled back tightly and in a well-groomed ponytail.. He wears a custom cut and fitted robe made of high-quality silk is held tightly to his waist with a wide old leather belt. There is something captivating about him, perhaps it is his sense of honor or perhaps it is simply a feeling of arrogance. But nonetheless, he smells of fine perfume and hair oil."
+    }
   },
   "Dex": {
     "type": "byte",

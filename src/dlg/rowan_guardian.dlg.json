@@ -106,7 +106,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "I am the Rowan tree guardian. Should anyone try  to damage the Rowan tree, I will take care of business.  I have a limited power granted me by the tree.. I can tune the trees spirit with your own...."
+            "0": "I am the Rowan tree guardian. Should anyone try to damage the Rowan tree, I will take care of business.  I have a limited power granted me by the tree. I can tune the trees spirit with your own..."
           }
         }
       },
@@ -182,7 +182,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "This is a permanent thing to do i hope you are aware of that."
+            "0": "This is a permanent thing to do I hope you are aware of that."
           }
         }
       },
@@ -379,7 +379,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Your spirit is battle hardened... I can do nothing for you."
+            "0": "Your spirit is battle hardened... I can do nothing for you now."
           }
         }
       },
@@ -592,7 +592,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Keep that Crown away from me and the Rowan tree... that crown can only cause trouble, and I'll have none of that!"
+            "0": "Keep that crown away from me and the Rowan tree... that crown can only cause trouble, and I'll have none of that!"
           }
         }
       },
@@ -637,7 +637,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "So, you are Immortal now.... Just remember there there ares still powers greater than you in these realms..."
+            "0": "So, you are Immortal now... Just remember that there ares still powers greater than you in these realms..."
           }
         }
       }
@@ -645,7 +645,7 @@
   },
   "NumWords": {
     "type": "dword",
-    "value": 226
+    "value": 227
   },
   "PreventZoomIn": {
     "type": "byte",
@@ -748,7 +748,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Oh i did not know that"
+            "0": "Oh I did not know that"
           }
         }
       },

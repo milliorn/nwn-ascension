@@ -62,7 +62,9 @@
   },
   "Description": {
     "type": "cexolocstring",
-    "value": {}
+    "value": {
+      "0": "Brown, shoulder-length hair is pulled back to reveal a full, lived-in face. Dancing silver eyes, set high within their sockets, watch wearily over the shop he has looked after for so long."
+    }
   },
   "Dex": {
     "type": "byte",
@@ -110,7 +112,7 @@
     "id": 12619,
     "type": "cexolocstring",
     "value": {
-      "0": "Emporium Weapons"
+      "0": "Weapons Merchant"
     }
   },
   "fortbonus": {

@@ -62,7 +62,9 @@
   },
   "Description": {
     "type": "cexolocstring",
-    "value": {}
+    "value": {
+      "0": "Silver, tightly tied hair neatly coiffured to reveal a furrowed, tense face. Light brown eyes widely opened, watch anxiously over the store she has come to love and appreciate for so long. A smile comes across her pale lips as you walk into the room. There is something captivating about her, maybe it is her gentile way of tending to her work station as is it is the only thing she is proud of or maybe it is her gentile smile and presents of no stress in these troubled times."
+    }
   },
   "Dex": {
     "type": "byte",
@@ -103,7 +105,7 @@
     "id": 12618,
     "type": "cexolocstring",
     "value": {
-      "0": "Emporium Items"
+      "0": "Items Merchant"
     }
   },
   "fortbonus": {

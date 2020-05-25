@@ -228,7 +228,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "I can give you the heads up on whats going on around here...   And it wont cost you a penny."
+            "0": "I can give you the heads up on what's going on around here...   And it won't cost you a penny."
           }
         }
       },
@@ -289,7 +289,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Ok you wanna know what there is to do around here?  First things, ya gotta go see the Rowan Guardian.  He can help newcomers survive in this tough frontier land.  After that, Im sure you will be wantin ta head out adventuring, lookin for that silly Crown, so make sure you save enough money to buy a gate key from that crooked guard. Things get a little rough on the north side of town though, thats goblin country. If I were you, i think I would explore the road to town, I know of at least 2 caves out there.  the folks in the tavern can be really helpfull, so be sure to stop in and say hi to em. Oh and if you need a little practice, the cellar behind the tavern is always full of rats."
+            "0": "Ok you wanna know what there is to do around here?  First things, ya gotta go see the Rowan Guardian.  He can help newcomers survive in this tough frontier land.  After that, I'm sure you will be wantin ta head out adventuring, lookin for that silly Crown, so make sure you save enough money to buy a gate key from that crooked guard. Things get a little rough on the north side of town though, that's goblin country you know. If I were you, I think I would explore the road to town, I know of at least 2 caves out there.  the folks in the tavern can be really helpful, so be sure to stop in and say hi to em. Oh, and if you need a little practice, the cellar behind the tavern is always full of rats."
           }
         }
       },
@@ -334,7 +334,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Dont forget to check with the sage from time to time, he can give you usefull information about some of the unusual items you might find."
+            "0": "Don't forget to check with the sage from time to time, he can give you usefull information about some of the unusual items you might find."
           }
         }
       },
@@ -395,7 +395,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "If you go into the forgotten forest, take supplies for a long journey, because  you will get lost. Even your compass will be lost, hee hee.  I dont even really know where the forest is, but I think its not far from the swamp of decay."
+            "0": "If you go into the forgotten forest, take supplies for a long journey, because you will get lost. Even your compass will be lost, hee-hee.  I don't even really know where the forest is, but I think it is not far from the swamp of decay."
           }
         }
       },
@@ -448,7 +448,7 @@
   },
   "NumWords": {
     "type": "dword",
-    "value": 269
+    "value": 271
   },
   "PreventZoomIn": {
     "type": "byte",
@@ -706,7 +706,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Well, Ill hear you out then."
+            "0": "Well, I'll hear you out then."
           }
         }
       },
@@ -747,7 +747,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Hey thanks, youve been a great help."
+            "0": "Hey thanks, you've been a great help."
           }
         }
       },

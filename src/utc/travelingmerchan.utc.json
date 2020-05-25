@@ -154,7 +154,9 @@
   },
   "Description": {
     "type": "cexolocstring",
-    "value": {}
+    "value": {
+      "0": "There is something fascinating about this man as he proudly walks around town. His dapper hair and beard are trimmed neatly and accent his cheeks and square jaw bone. His eye are set deep into his face while his perfectly groomed eye brows, think and full as they are help hide something perhaps sinister or perhaps it is nothing. "
+    }
   },
   "Dex": {
     "type": "byte",

@@ -160,7 +160,7 @@
   },
   "NumWords": {
     "type": "dword",
-    "value": 36
+    "value": 37
   },
   "PreventZoomIn": {
     "type": "byte",
@@ -288,7 +288,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Thats because I am an Immortal!"
+            "0": "That is because I am an Immortal!"
           }
         }
       }

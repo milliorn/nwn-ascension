@@ -137,7 +137,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Ok then, I'll have to assume your here to find the crown of Ascension...Why else would anyone come to this pit?   Although much of the talk I have heard is hearsay at best, and outright tall tales at worst, one thing is agreed by everyone, that the Crown Of Ascension grants its wearer immortality. If one is to risk ones life for adventure, what better goal could there be? As for the Crown's location, most tale tellers agree that it is deep beneath a dry riverbed dotted with caves. A quick glance at any map of the realms explains why hundreds of fame seekers come to the appropriately named frontier town of Ascension each year. "
+            "0": "Ok then, I'll have to assume you're here to find the crown of Ascension...Why else would anyone come to this pit?   Although much of the talk I have heard is hearsay at best, and outright tall tales at worst, one thing is agreed by everyone, that the Crown of Ascension grants its wearer immortality. If one is to risk one's life for adventure, what better goal could there be? As for the Crown's location, most tale tellers agree that it is deep beneath a dry riverbed dotted with caves. A quick glance at any map of the realms explains why hundreds of fame seekers come to the appropriately named frontier town of Ascension each year."
           }
         }
       },
@@ -198,7 +198,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Well, I can't say I've been there, but I have heard from a few people that the town militia will be tough and won't put up with nonsense, as in any border town, but maybe a few of the locals can be helpful in locating the Crown.  I know that the locals don't put up with any vandalism, begging or hostile activities in town... Like for example, setting a trap there, or casting a harmful spell, well, they just wouldn't like that at all.  I've heard also of a magical Rowan Tree... Where one can increase his or her soul energy or some such thing... Nonsense if you ask me.   "
+            "0": "Well, I can't say I've been there, but I have heard from a few people that the town militia will be tough and won't put up with nonsense, as in any border town, but maybe a few of the locals can be helpful in locating the Crown.  I know that the locals do not put up with any vandalism, begging or hostile activities in town... Like for example, setting a trap there, or casting a harmful spell, well, they just would not like that at all.  I have heard also of a magical Rowan Tree... Where one can increase his or her soul energy or some such thing... Nonsense if you ask me.   "
           }
         }
       },
@@ -259,7 +259,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "The borderlands are tough, you will see much evidence of monsters during your journey. Monsters that aren't afraid to come near your camp at night. You will need to remain alert and attentive at all times. Don't expose your back to anyone you don't trust with your life.  Be attentive, and examine things.  \n\nIf you get stuck, and you will, search carefully, and think about what you see.  It will take more than brawn, brains or wisdom to find the Crown after all these centuries, in fact it will take all of that and more.  Don't be afraid to run, and find someone you can trust to help keep you alive, without stealing all the loot. Talk to everyone you meet, and carefully. Some may say different things at different times, and they might just have some information you need. "
+            "0": "The borderlands are tough, you will see much evidence of monsters during your journey. Monsters that are not afraid to come near your camp at night. You will always need to remain alert and attentive. Do not expose your back to anyone you do not trust with your life.  Be attentive and examine things.  \n\nIf you get stuck, and you will, search carefully, and think about what you see.  It will take more than brawn, brains, or wisdom to find the Crown after all these centuries, in fact it will take all of that and more.  Do not be afraid to run and find someone you can trust to help keep you alive, without stealing all the loot. Talk to everyone you meet, and carefully. Some may say different things at different times, and they might just have some information you need.\n"
           }
         }
       },
@@ -320,7 +320,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Indeed, Im glad you asked. There's a lot to learn about these frontier lands.  Server Rules are enforced when and how the DM's choose.  Repeated violations can result in a wide range of actions, from jail time to permanent ban. The DM has a wide array of choices in between as well, including level loss, gold loss, item loss, XP loss, banishment to Hell, and more.\n\nThese rules are in no particular order:\n\nExploiters will not be tolerated. A large reward is in place for any who can provide information leading to the arrest and imprisonment, (or worse) of exploiters. An exploiter can be defined as someone who takes advantage of anything within the game for uses it was not intended. Example: Logging off and returning to\navoid death.  Battle Looters run the risk of the DM's attention. It is frowned upon, to say the least. Battle looters are defined as someone who constantly loots while others are in battle nearby. "
+            "0": "Indeed, I am glad you asked. There is a lot to learn about these frontier lands.  Server Rules are enforced when and how the DM's choose.  Repeated violations can result in a wide range of actions, from jail time to permanent ban. The DM has a wide array of choices in between as well, including level loss, gold loss, item loss, XP loss, banishment to Hell, and more.\n\nThese rules are in no particular order:\n\nExploiters will not be tolerated. A large reward is in place for any who can provide information leading to the arrest and imprisonment, (or worse) of exploiters. An exploiter can be defined as someone who takes advantage of anything within the game for uses it was not intended. Example: Logging off and returning to\navoid death.  Battle Looters run the risk of the DM's attention. It is frowned upon, to say the least. Battle looters are defined as someone who constantly loots while others are in battle nearby.\n"
           }
         }
       },
@@ -381,7 +381,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Town is off limits to combat.  The only time combat is allowed in town is if hostile monsters invade. (Even then, it is easy to injure a townspeople, and be jailed or worse) The Town Guard is well trained to handle such situations, but if you must enter the fray, do not use area effects. Absolutely no offensive action is to be directed at PC's or the Town NPC's.  This includes, but is not limited to, traps, spells, summoned creatures, pick pocketing, disarm, etc.\n\nPvP is somewhat permissible on this server.  DM's will expect a good reason for murders.. Homicidal maniacs will be treated as such, and electrocuted. Don't dish it out if you can't take it. Hunting down PC's lower than your level will probably result in you being hunted by a powerful defender for the explicit purpose of giving you the opportunity to see what your spine looks like nailed to a tree.  This also applies to anyone who kills an opponent, utilizes \"Raise Dead\" to bring them back to one HP just to kill them again.  You abuse, you lose."
+            "0": "Town is off limits to combat.  The only time combat is allowed in town is if hostile monsters invade. (Even then, it is easy to injure a townspeople, and be jailed or worse) The Town Guard is well trained to handle such situations, but if you must enter the fray, do not use area effects. Absolutely no offensive action is to be directed at PC's or the Town NPC's.  This includes, but is not limited to, traps, spells, summoned creatures, pick pocketing, disarm, etc.\n\nPvP is somewhat permissible on this server.  DM's will expect a good reason for murders. Homicidal maniacs will be treated as such, and electrocuted. Do not dish it out if you can't take it. Hunting down PC's lower than your level will probably result in you being hunted by a powerful defender for the explicit purpose of giving you the opportunity to see what your spine looks like nailed to a tree.  This also applies to anyone who kills an opponent, utilizes \"Raise Dead\" to bring them back to one HP just to kill them again.  You abuse, you lose.\n"
           }
         }
       },
@@ -442,7 +442,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Leeching is frowned upon as you gain no XP if anyone in your party is 5 or more levels higher than you. To gain XP, party with people near your level for a party bonus. Summoned creatures actually contribute to XP, and do not count towards party number.\n\nThe underworld is a dangerous place.  Go alone or in a small group and you will likely be killed.  Archemlis the Betrayer is not merciful on stragglers.  Don't bother complaining...you been warned. Its not that we discourage adventuring.. in fact that's where some of the best loot is.  We just don't think anyone has any business going in alone.\n\nDo not complain to the DM, or report thefts.  It's possible that a hostile creature to pickpocket you. They can do that you know.  If you are 100% sure you been robbed, exact revenge yourself, or ask for help from a player in your quest for vengeance.\n\nIf a player kills another player, the victim loses XP and gold, while the killer gains. There are limits to this in place to prevent exploits, don't bother trying"
+            "0": "Leeching is frowned upon as you gain no XP if anyone in your party is 5 or more levels higher than you. To gain XP, party with people near your level for a party bonus. Summoned creatures actually contribute to XP, and do not count towards party number.\n\nThe underworld is a dangerous place.  Go alone or in a small group and you will likely be killed.  Archemlis the Betrayer is not merciful on stragglers.  Do not bother complaining...you been warned. It is not that we discourage adventuring... in fact that is where some of the best loot is.  We just do not think anyone has any business going in alone.\n\nDo not complain to the DM, or report thefts.  It is possible that a hostile creature to pickpocket you. They can do that you know.  If you are 100% sure you been robbed, exact revenge yourself, or ask for help from a player in your quest for vengeance.\n\nIf a player kills another player, the victim loses XP and gold, while the killer gains. There are limits to this in place to prevent exploits, do not bothe"
           }
         }
       },
@@ -503,7 +503,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Talk to all NPC in town, and read the book in your inventory before asking questions that have probably already been answered. Traps are not allowed in non combat areas.\n\nEvil roleplayers: Your task is difficult here. Do not pick on lower level characters. Do not become homicidal. Have a reason for every evil act, and roleplay it. If what you are doing is ruining someone else's fun, whether you think it should or not, cease and desist immediately.  Keep the DM's as informed of your plans as possible, so that victims cannot make false claims. \n\nThe little known vagrancy law:  The officers of Ascension do feel sympathy for the poor, and so they gladly give a night with a roof over your head if you are found begging in the streets.\n\nPlayers who are inactive, and do not respond when questioned, may be booted to free up space for others, if space is needed. You may attempt to relog when you return to your keyboard. No offense is intended.\n"
+            "0": "Talk to all NPC in town and read the book in your inventory before asking questions that have probably already been answered. Traps are not allowed in non-combat areas.\n\nEvil role-players: Your task is difficult here. Do not pick on lower level characters. Do not become homicidal. Have a reason for every evil act, and roleplay it. If what you are doing is ruining someone else's fun, whether you think it should or not, cease and desist immediately.  Keep the DM's as informed of your plans as possible, so that victims cannot make false claims. \n\nThe little-known vagrancy law:  The officers of Ascension do feel sympathy for the poor, and so they gladly give a night with a roof over your head if you are found begging in the streets.\n\nPlayers who are inactive, and do not respond when questioned, may be booted to free up space for others if space is needed. You may attempt to relog when you return to your keyboard. No offense is intended.\n\n"
           }
         }
       },
@@ -564,7 +564,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "In addition to the rules of conduct, there are some things you need to know about PoA:\n\nIf you die, If you want to prevent this, keep near people who have raise dead scrolls such as party members.\n\nIf you respawn, you will lose XP, gold, and possibly an equipped item.\n\nSome spells may not have the effects you are familiar with.\n\nWhen a container is opened, it disappears, and a loot bag is dropped. You can get your loot from the bag. \n\nYou can level your character to level 2 at the Rowan tree in town.\n\nItems left on ground will be despawned after a short time.\n"
+            "0": "In addition to the rules of conduct, there are some things you need to know about PoA:\n\nIf you die, if you want to prevent this, keep near people who have raise dead scrolls such as party members.\n\nIf you respawn, you will lose XP, gold, and possibly an equipped item.\n\nSome spells may not have the affects you are familiar with.\n\nWhen a container is opened, it disappears, and a loot bag is dropped. You can get your loot from the bag. \n\nYou can level your character to level 2 at the Rowan tree in town.\n\nItems left on ground will be despawned after a short time.\n\n"
           }
         }
       },
@@ -1050,7 +1050,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Thats right, be carefull who you hit with spells and the like.  What rules are in place concerning traps ?"
+            "0": "That is right, be carefull who you hit with spells and the like.  What rules are in place concerning traps ?"
           }
         }
       },
@@ -1141,7 +1141,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Yes, the town guard are vigilant for hostile actions in non combat areas.   Im almost convinced you were listening.  Is it OK to kill other players?"
+            "0": "Yes, the town guard are vigilant for hostile actions in non combat areas.   I'm almost convinced you were listening.  Is it OK to kill other players?"
           }
         }
       },
@@ -1457,7 +1457,7 @@
   },
   "NumWords": {
     "type": "dword",
-    "value": 1867
+    "value": 1879
   },
   "PreventZoomIn": {
     "type": "byte",
@@ -1804,7 +1804,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Sounds like you keep the retards off this server...Tell me more."
+            "0": "Sounds like you keep the idiots off this server...Tell me more."
           }
         }
       },
@@ -3200,7 +3200,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "I can place traps anywhere, as long as I roleplay a good reason."
+            "0": "I can place traps anywhere, as long as I role-play a good reason."
           }
         }
       },

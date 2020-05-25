@@ -62,7 +62,9 @@
   },
   "Description": {
     "type": "cexolocstring",
-    "value": {}
+    "value": {
+      "0": "Blonde, perfectly groomed hair neatly coiffured to reveal a round, charming face. Big, round brown eyes, set seductively within their sockets, watch honorably over her shop they've grieved with for so long. An old tattoo resembling a rose is proudly worn just below her right eye and leaves a gracious memory of forbidden adventures."
+    }
   },
   "Dex": {
     "type": "byte",

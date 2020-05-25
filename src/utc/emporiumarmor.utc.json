@@ -62,7 +62,9 @@
   },
   "Description": {
     "type": "cexolocstring",
-    "value": {}
+    "value": {
+      "0": "Silver blue hair high lights this man deep blue eyes. His eyes are narrow and bloodshot with a small amount of sleep in one corner. His face is clean and well groomed but has many wrinkles on his face not of age but of exhaustion. His vest is open and his belly hangs out and over his belt. He is confident and smiles at you as you walk into the shop."
+    }
   },
   "Dex": {
     "type": "byte",
@@ -110,7 +112,7 @@
     "id": 12374,
     "type": "cexolocstring",
     "value": {
-      "0": "Emporium Armor"
+      "0": "Armor Merchant"
     }
   },
   "fortbonus": {
@@ -201,7 +203,7 @@
   },
   "ScriptAttacked": {
     "type": "resref",
-    "value": "nw_c2_default5"
+    "value": "door_at_send_jai"
   },
   "ScriptDamaged": {
     "type": "resref",

@@ -91,7 +91,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "This woman is here to make money, not socialize."
+            "0": "I am here to make money, not socialize. If you want me to spend some time with you, how about giving up a coin."
           }
         }
       }
@@ -99,7 +99,7 @@
   },
   "NumWords": {
     "type": "dword",
-    "value": 19
+    "value": 34
   },
   "PreventZoomIn": {
     "type": "byte",

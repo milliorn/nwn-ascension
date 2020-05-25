@@ -34,7 +34,7 @@ void main()
                 AssignCommand(oNPC, SpeakString("To the west just past a cave you should look out for Kobolds."));
                 break;
             case 5:
-                AssignCommand(oNPC, SpeakString("There used to be pirates in an undergound cove west of here. Some say thier bones still walk."));
+                AssignCommand(oNPC, SpeakString("There used to be pirates in an underground cove west of here. Some say their bones still walk."));
                 break;
             case 6:
                 AssignCommand(oNPC, SpeakString("Some say there are Orcs and Bandits west of town. Aren't they pretty much the same thing?"));
@@ -59,10 +59,10 @@ void main()
                 AssignCommand(oNPC, SpeakString("Some farmers found a Goblin Key and went searching for the nasty critters, but none returned."));
                 break;
             case 5:
-                AssignCommand(oNPC, SpeakString("Theres a wizard lives north of town who knows a lot about Goblins."));
+                AssignCommand(oNPC, SpeakString("There’s a wizard lives north of town who knows a lot about Goblins."));
                 break;
             case 6:
-                AssignCommand(oNPC, SpeakString("You know whats worse than Goblins? Hobgoblins!"));
+                AssignCommand(oNPC, SpeakString("You know what’s worse than Goblins? Hobgoblins!"));
                 break;
         }
     }
@@ -75,19 +75,19 @@ void main()
                 AssignCommand(oNPC, SpeakString("There is a forest famous for being difficult to find your way out of."));
                 break;
             case 2:
-                AssignCommand(oNPC, SpeakString("Anduins Temple Ruins still stand north of chasm in the Swamp of Decay."));
+                AssignCommand(oNPC, SpeakString("Anduin’s Temple Ruins still stand north of chasm in the Swamp of Decay."));
                 break;
             case 3:
-                AssignCommand(oNPC, SpeakString("The parts of Anduins Staff are supposedly in some strange forest."));
+                AssignCommand(oNPC, SpeakString("The parts of Anduin’s Staff are supposedly in some strange forest."));
                 break;
             case 4:
-                AssignCommand(oNPC, SpeakString("Hazel lives west of the Ogres, and knows everything about Anduins Staff."));
+                AssignCommand(oNPC, SpeakString("Hazel lives west of the Ogres, and knows everything about Anduin’s Staff."));
                 break;
             case 5:
                 AssignCommand(oNPC, SpeakString("I have heard that trolls have found a new home in the Abandoned Mansion."));
                 break;
             case 6:
-                AssignCommand(oNPC, SpeakString("Rumour says that the Sage stays in the town for a good reason."));
+                AssignCommand(oNPC, SpeakString("Rumor says that the Sage stays in the town for a good reason."));
                 break;
         }
     }
@@ -97,22 +97,22 @@ void main()
         switch (d6())
         {
             case 1:
-                AssignCommand(oNPC, SpeakString("Anduins Staff might reveal a way into his temple."));
+                AssignCommand(oNPC, SpeakString("Anduin’s Staff might reveal a way into his temple."));
                 break;
             case 2:
                 AssignCommand(oNPC, SpeakString("Folks say the old priests who served Anduin are damned to living death forever."));
                 break;
             case 3:
-                AssignCommand(oNPC, SpeakString("I think you use the magic fountain by the tavern to get to Anduins Temple Ruins."));
+                AssignCommand(oNPC, SpeakString("I think you use the magic fountain by the tavern to get to Anduin’s Temple Ruins."));
                 break;
             case 4:
-                AssignCommand(oNPC, SpeakString("There are Giants to the west of Anduins Temple Ruins, and Renders to the west."));
+                AssignCommand(oNPC, SpeakString("There are Giants to the west of Anduin’s Temple Ruins, and Renders to the west."));
                 break;
             case 5:
                 AssignCommand(oNPC, SpeakString("Can you believe there are some Giants with control over a Dragon!!!"));
                 break;
             case 6:
-                AssignCommand(oNPC, SpeakString("Anduins Catacombs supposedly lead eventualy to the underdark."));
+                AssignCommand(oNPC, SpeakString("Anduin’s Catacombs supposedly lead eventually to the underdark."));
                 break;
         }
     }
@@ -121,7 +121,7 @@ void main()
         switch (d6())
         {
             case 1:
-                AssignCommand(oNPC, SpeakString("Drow War Parties often attack small groups under Anduins Temple."));
+                AssignCommand(oNPC, SpeakString("Drow War Parties often attack small groups under Anduin’s Temple."));
                 break;
             case 2:
                 AssignCommand(oNPC, SpeakString("Archemlis is a coward and will run if he feels he is outmatched."));
@@ -130,14 +130,15 @@ void main()
                 AssignCommand(oNPC, SpeakString("Archemlis likes to use ambushes, complete with traps, to overwhelm his victim."));
                 break;
             case 4:
-                AssignCommand(oNPC, SpeakString("Small parties have been ambushed recently by Drow War parties under Anduins Temple."));
+                AssignCommand(oNPC, SpeakString("Small parties have been ambushed recently by Drow War parties under Anduin’s Temple."));
                 break;
             case 5:
-                AssignCommand(oNPC, SpeakString("Rumour says Archemlis actualy gets paid to kill intruders of the underdark."));
+                AssignCommand(oNPC, SpeakString("Rumor says Archemlis actually gets paid to kill intruders of the underdark."));
                 break;
             case 6:
                 AssignCommand(oNPC, SpeakString("Archemlis is a human, but a traitor for making a pact with the Drow."));
                 break;
         }
     }
+
 }

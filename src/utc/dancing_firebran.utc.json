@@ -62,7 +62,9 @@
   },
   "Description": {
     "type": "cexolocstring",
-    "value": {}
+    "value": {
+      "0": "A set of fire imbue blades move with un-surpassed grace and fierce anger. "
+    }
   },
   "Dex": {
     "type": "byte",

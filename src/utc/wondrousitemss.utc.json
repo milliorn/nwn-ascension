@@ -62,7 +62,9 @@
   },
   "Description": {
     "type": "cexolocstring",
-    "value": {}
+    "value": {
+      "0": "White, sleek hair almost fully covers a handsome, lively face. Lidded sapphire eyes, set tightly within their sockets, watch rapidly over the woods they've watched over for so long. Smooth skin handsomely compliments his hair and cheekbones and leaves a beautiful memory of his luck in battles."
+    }
   },
   "Dex": {
     "type": "byte",

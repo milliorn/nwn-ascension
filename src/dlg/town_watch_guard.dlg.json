@@ -273,7 +273,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "*The guard looks you over carefully, with a shrewd judging eye*  Well, you know they dont pay me enough to keep track of how many keys I have....."
+            "0": "*The guard looks you over carefully, with a shrewd judging eye*  Well, you know they don't pay me enough to keep track of how many keys I have....."
           }
         }
       },
@@ -439,7 +439,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Hey listen... I know 300 sounds like a lot, but Im risking my job here...  Besides there is a LOT of loot outside town...   Look, if you need cash, I hear the armor shop is in need of firebeeetles... you can hunt beetles all day for profit just west of town."
+            "0": "Hey listen... I know 300 sounds like a lot, but I'm risking my job here...  Besides there is a LOT of loot outside town...   Look, if you need cash, I hear the armor shop is in need of fire beetles... you can hunt beetles all day for profit just west of town."
           }
         }
       }
@@ -447,7 +447,7 @@
   },
   "NumWords": {
     "type": "dword",
-    "value": 183
+    "value": 185
   },
   "PreventZoomIn": {
     "type": "byte",
@@ -721,7 +721,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Well, I have 300, and I really need to get through that gate, so heres your raise."
+            "0": "Well, I have 300, and I really need to get through that gate, so here is your raise."
           }
         }
       },
@@ -778,7 +778,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "You must really be crazy!! I think Ill leave now."
+            "0": "You must really be crazy!! I think I'll leave now."
           }
         }
       },

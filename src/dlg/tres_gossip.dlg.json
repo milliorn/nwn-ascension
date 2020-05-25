@@ -60,7 +60,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "They locked the gates up on the north side of town, but rumour has it a key can be bought for the right price from one of the guards."
+            "0": "They locked the gates up on the north side of town, but rumor has it a key can be bought for the right price from one of the guards."
           }
         }
       },
@@ -242,7 +242,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "You can find the beetle you search for in a cavern west of town. Make sure you stay out of the Nether caves.. they are haunted. The old mines are just full of bats. You want to go up the bank of the river and find a cave there. Just becareful of those orcs and kobolds."
+            "0": "You can find the beetle you search for in a cavern west of town. Make sure you stay out of the Nether caves... they are haunted. The old mines are just full of bats. You want to go up the bank of the river and find a cave there. Just be careful of those orcs and kobolds."
           }
         }
       },
@@ -424,7 +424,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "I knew you would help me out...  Some of the farmers found a goblin key, and thought they could sneak into the goblin camp and poison their well. Unfortunately, they died before they could use the key. Maybe one of them managed to crawl away and hide before the goblins used them for stew...   Im sure if you search carefully outside the goblin camp, you will find they key."
+            "0": "I knew you would help me out...  Some of the farmers found a goblin key and thought they could sneak into the goblin camp and poison their well. Unfortunately, they died before they could use the key. Maybe one of them managed to crawl away and hide before the goblins used them for stew...   I'm sure if you search carefully outside the goblin camp, you will find they key."
           }
         }
       },
@@ -606,7 +606,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Thanks sweety. Past the goblin camp, on the west side of the swamp of decay..  you will find a cave leading to a forest. Hazel has lived out there in that forest for as long as anyone can remember, and Im sure she has information you need."
+            "0": "Thanks, sweety. Past the goblin camp, on the west side of the swamp of decay...  you will find a cave leading to a forest. Hazel has lived out there in that forest for as long as anyone can remember, and I'm sure she has information you need."
           }
         }
       },
@@ -667,7 +667,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "A man came through here purchasing supplies... says he found the head of Anduins Staff. It was some time back, but I could tell you where he might be...."
+            "0": "A man came through here purchasing supplies... says he found the head of Anduin's Staff. It was some time back, but I could tell you where he might be...."
           }
         }
       },
@@ -743,7 +743,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Well, the head of Anduins Staff would be the find of a lifetime... people have been searching for it for a long long time. Id say the information is worth 10,000 gp."
+            "0": "Well, the head of Anduin's Staff would be the find of a lifetime... people have been searching for it for a long long time. I'd say the information is worth 10,000 gp."
           }
         }
       },
@@ -788,7 +788,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Your such a sweety. The man I saw was buying camp supplies... go to the forgotten forest, and find his camp.. Im sure the head of Anduins Staff will be nearby.  To get to the forgotten forest, just head past the goblin camp to the swamp of decay, and turn left through either the dread caverns or the ogre caves.  Make sure you talk to the hag while your there."
+            "0": "You are such a sweety. The man I saw was buying camp supplies... go to the forgotten forest and find his camp. I am sure the head of Anduin's Staff will be nearby.  To get to the forgotten forest, just head past the goblin camp to the swamp of decay and turn left through either the dread caverns or the ogre caves.  Make sure you talk to the hag while your there."
           }
         }
       },
@@ -1016,7 +1016,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "So the rumours are true... there IS an Immortal running about town!!"
+            "0": "So, the rumors are true... there is an Immortal running about town!"
           }
         }
       }
@@ -1024,7 +1024,7 @@
   },
   "NumWords": {
     "type": "dword",
-    "value": 588
+    "value": 592
   },
   "PreventZoomIn": {
     "type": "byte",
@@ -1127,7 +1127,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "No thanks, I dont care about beetles."
+            "0": "No thanks, I don't care about beetles."
           }
         }
       },
@@ -1184,7 +1184,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Ok, heres 50gp"
+            "0": "Ok, here is 50gp"
           }
         }
       },
@@ -1396,7 +1396,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Let me guess, you wont gold for the information?"
+            "0": "Let me guess, you want gold for the information?"
           }
         }
       },
@@ -1494,7 +1494,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Il find it myself."
+            "0": "I'll find it myself."
           }
         }
       },
@@ -1608,7 +1608,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "I cant find the blasted thing, Heres you cash."
+            "0": "I can't find the blasted thing, Heres you cash."
           }
         }
       },
@@ -1649,7 +1649,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "You really are crazy arent you?"
+            "0": "You really are crazy aren't you?"
           }
         }
       },

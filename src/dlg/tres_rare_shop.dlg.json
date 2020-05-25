@@ -152,7 +152,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "WHAT? SPEAK UP IM DEAF IN ONE EAR!!"
+            "0": "WHAT? SPEAK UP I'M DEAF IN ONE EAR AND CAN'T HEAR OUT OF THE OTHER!!"
           }
         }
       },
@@ -213,7 +213,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "WELL YOU DONT HAVE TO YELL!!!"
+            "0": "WELL YOU DON'T HAVE TO YELL!!!"
           }
         }
       }
@@ -221,7 +221,7 @@
   },
   "NumWords": {
     "type": "dword",
-    "value": 41
+    "value": 49
   },
   "PreventZoomIn": {
     "type": "byte",
@@ -283,7 +283,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "I said Id like to see your provisions."
+            "0": "I... said I would like to see your provisions."
           }
         }
       },
@@ -340,7 +340,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "I SAID, I WANT TO SEE YOUR PROVISIONS."
+            "0": "I SAID, I WANT TO SEE YOUR PROVISIONS!"
           }
         }
       },
@@ -422,7 +422,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "I didnt say anything..."
+            "0": "I didn't say anything..."
           }
         }
       }

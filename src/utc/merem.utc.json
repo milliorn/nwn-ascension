@@ -155,7 +155,7 @@
   "Description": {
     "type": "cexolocstring",
     "value": {
-      "0": "From the shadows its hard to make out much about this halfling... Wait a minute here...  shes stand in the open in broad daylight?!"
+      "0": "From the shadows it's hard to make out much about this halfling. She wears all black and masks her face. She spins two blades, one in either hand with perfect control and ease. She stands nonchalantly as she whistles ever so quietly to herself. She makes eye contact with you and motions you to her."
     }
   },
   "Dex": {
@@ -164,7 +164,7 @@
   },
   "Disarmable": {
     "type": "byte",
-    "value": 1
+    "value": 0
   },
   "Equip_ItemList": {
     "type": "list",
@@ -624,7 +624,7 @@
   },
   "IsImmortal": {
     "type": "byte",
-    "value": 0
+    "value": 1
   },
   "IsPC": {
     "type": "byte",
@@ -654,7 +654,7 @@
   },
   "NoPermDeath": {
     "type": "byte",
-    "value": 1
+    "value": 0
   },
   "PaletteID": {
     "type": "byte",
@@ -670,7 +670,7 @@
   },
   "Plot": {
     "type": "byte",
-    "value": 1
+    "value": 0
   },
   "PortraitId": {
     "type": "word",

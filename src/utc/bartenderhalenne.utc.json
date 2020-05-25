@@ -62,7 +62,9 @@
   },
   "Description": {
     "type": "cexolocstring",
-    "value": {}
+    "value": {
+      "0": "Light brown, straight hair is pulled back and tied behind his head. Glazed over hazel eyes, set gracefully under a strong brow. Fair skin delightfully compliments his eyes, cheekbones, and long neck. The front of his shirt has several ale stains that have soaked in and hardened. He smells of mead and cheap rye. "
+    }
   },
   "Dex": {
     "type": "byte",

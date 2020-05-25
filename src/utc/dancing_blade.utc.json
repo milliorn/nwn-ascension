@@ -62,7 +62,9 @@
   },
   "Description": {
     "type": "cexolocstring",
-    "value": {}
+    "value": {
+      "0": "A single longsword graceful pushes through the air with unmatched skill and poise."
+    }
   },
   "Dex": {
     "type": "byte",
@@ -166,7 +168,7 @@
   "FirstName": {
     "type": "cexolocstring",
     "value": {
-      "0": "Dancing Blade"
+      "0": "Dancing Blad"
     }
   },
   "fortbonus": {

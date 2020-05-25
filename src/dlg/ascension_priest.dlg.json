@@ -106,7 +106,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Follow the Ancient ways wayward one. For a small donation of 150gp (per level) I will heal you completely.  I can also improve your reputation with the gods for a dontaion of 200gp [per level]."
+            "0": "Follow the Ancient ways wayward one. For a small donation of 150gp (per level) I will heal you completely.  I can also improve your reputation with the gods for a donation of 200gp [per level]."
           }
         }
       },
@@ -272,7 +272,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "I see you have found a remnant of Anduins Staff!!  I feel its ancient divine powers emanating from you. I did not want to believe...     But the time has come. I know I can not disuade you from your destiny, and so I will aid you with what knowledge I have, in hopes that you might help to defeat the rising evil wich you have surely awakened with your search for the Crown."
+            "0": "I see you have found a remnant of Anduins Staff!!  I feel its ancient divine powers emanating from you. I did not want to believe...     But the time has come. I know I cannot dissuade you from your destiny, and so I will aid you with what knowledge I have, in hopes that you might help to defeat the rising evil which you have surely awakened with your search for the Crown."
           }
         }
       },
@@ -348,7 +348,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "I can tell you only what I see in my visions, and what I have learned from my research,<class>.   If the crown you seek does in fact exist, then it is most likely in the hands of the Drow, having been discovered by them shortly after the destruction of Anduins temple city, up the river bed a few miles. You may already know this, but you will need all 5 parts of the staff before you will be able to enter the underdark. It may be that you will need the staff repaired as well... but I can't help you there.  Maybe Hazel can help you in the forgotten forest.  Just try not to get lost in the forest..... it is known to confuse even seasoned trackers.  But I must warn you now, my visions show me a horrible death for a band of worthy adventures....  deep in the darkest corner of the world. I see a dark and beautifull queen petting a huge spider with venom dripping from its fangs. She..    she...        she can not be defeated. Do not anger her.... or we may all feel her dark embrace. "
+            "0": "I can tell you only what I see in my visions, and what I have learned from my research, <class>.   If the crown you seek does in fact exist, then it is most likely in the hands of the Drow, having been discovered by them shortly after the destruction of Anduin's temple city, up the riverbed a few miles. You may already know this, but you will need all 5 parts of the staff before you will be able to enter the underdark. It may be that you will need the staff repaired as well... but I can't help you there.  Maybe Hazel can help you in the forgotten forest.  Just try not to get lost in the forest..... it is known to confuse even seasoned trackers.  But I must warn you now, my visions show me a horrible death for a band of worthy adventures....  deep in the darkest corner of the world. I see a dark and beautiful queen petting a huge spider with venom dripping from its fangs. She..    she...        she cannot be defeated. Do not anger her.... or we may all feel her dark embrace."
           }
         }
       },
@@ -409,7 +409,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "I see I can not persuade you. Go then, and may the luck of the gods help you defeat the evil you awaken!"
+            "0": "I see I cannot persuade you. Go then and may the luck of the gods help you defeat the evil you awaken!"
           }
         }
       },
@@ -470,7 +470,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "I see I can not persuade you. Go then, and may the luck of the gods help you defeat the evil you awaken!"
+            "0": "I see I cannot persuade you. Go then and may the luck of the gods help you defeat the evil you awaken!"
           }
         }
       },
@@ -515,7 +515,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "I see you have found the object you were destined to find. Yet, you have still not found your true destiny. Go and speak with the sage. This Immortal Crown must be destroyedor it will cause only chaos. The sage may be able to help you find a way to destroy it..."
+            "0": "I see you have found the object you were destined to find. Yet, you have still not found your true destiny. Go and speak with the sage. This Immortal Crown must be destroyed, or it will cause only chaos. The sage may be able to help you find a way to destroy it..."
           }
         }
       },
@@ -568,7 +568,7 @@
   },
   "NumWords": {
     "type": "dword",
-    "value": 528
+    "value": 525
   },
   "PreventZoomIn": {
     "type": "byte",
@@ -903,7 +903,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "No one is undefeatable. Even the gods themselves have weakneses. I shall wear the Crown of Ascension, or die in the attempt."
+            "0": "No one is undefeatable. Even the gods themselves have weaknesses. I shall wear the Crown of Ascension or die in the attempt."
           }
         }
       },
@@ -1082,7 +1082,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Have you anything else to say? I have a Crown to find."
+            "0": "Have you anything else to say? I have a crown to find."
           }
         }
       }

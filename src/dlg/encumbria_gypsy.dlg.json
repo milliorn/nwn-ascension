@@ -91,7 +91,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Well hello there.. not many come by this way.. but when they do, they need my services. I  goods, at a reduced rate. If you want to enter that portal, you will probably have to reduce your load. There is a scale over behind my wagon if you want to weigh yourself. Oh, one last thing... remember that stacked items, such as potions, count as only one item in your inventory."
+            "0": "Well hello there, not many come by this way, but when they do, they need my services. I buy goods at a reduced rate. If you want to enter that portal, you will probably have to reduce your load. There is a scale over behind my wagon if you want to weigh yourself. Oh, one last thing... remember that stacked items, such as potions, count as only one item in your inventory."
           }
         }
       },
@@ -144,7 +144,7 @@
   },
   "NumWords": {
     "type": "dword",
-    "value": 106
+    "value": 109
   },
   "PreventZoomIn": {
     "type": "byte",
@@ -190,7 +190,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "I'm glad you are here, else I would have to leave my goods here to rot, and make no profit at all!"
+            "0": "I'm glad you are here, else I would have to leave my goods on the ground to rot and make no profit at all!"
           }
         }
       },
@@ -247,7 +247,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "This is highway robbery, and Ill have no part of it!"
+            "0": "This is highway robbery and I'll have no part of it!"
           }
         }
       }

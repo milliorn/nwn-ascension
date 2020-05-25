@@ -62,7 +62,9 @@
   },
   "Description": {
     "type": "cexolocstring",
-    "value": {}
+    "value": {
+      "0": "A shaggy beard and unwashed hair is the first thing you notice about the captain of the ship. His neck is unshaven and the length of the hair growing from his ears match that of his eyebrows. He stands tall and sure of himself as he watched you wonder aimlessly on the deck."
+    }
   },
   "Dex": {
     "type": "byte",

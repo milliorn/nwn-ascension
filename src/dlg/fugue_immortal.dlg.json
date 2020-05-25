@@ -76,7 +76,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Your time has not come.  Find your destiny."
+            "0": "Your time has not yet come.  Find your destiny."
           }
         }
       }
@@ -84,7 +84,7 @@
   },
   "NumWords": {
     "type": "dword",
-    "value": 14
+    "value": 15
   },
   "PreventZoomIn": {
     "type": "byte",

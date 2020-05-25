@@ -91,7 +91,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Ive got magical trinkets for sale... Im terribly sorry for the high prices, but taxes here in Ascension are so expensive!"
+            "0": "I've got magical trinkets for sale... I am terribly sorry for the high prices, but taxes here in Ascension are so expensive!"
           }
         }
       }
@@ -99,7 +99,7 @@
   },
   "NumWords": {
     "type": "dword",
-    "value": 28
+    "value": 31
   },
   "PreventZoomIn": {
     "type": "byte",
@@ -186,7 +186,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Lets see what you have."
+            "0": "Lets see what you have for sale."
           }
         }
       }

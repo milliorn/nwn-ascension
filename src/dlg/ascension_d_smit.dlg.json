@@ -91,7 +91,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Hey maybe you can help me out..  Da boss man says I gotta go get some beetle bellies..  but if you have any Ill just buy em from you.... 5gp each."
+            "0": "Hey maybe you can help me out.  Da boss man says I gotta go get some beetle bellies.  but if you have any Ill just buy em from you.... 5gp each."
           }
         }
       },
@@ -286,7 +286,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Sorry, dont have any fire beetle bellies."
+            "0": "Sorry, don't have any fire beetle bellies."
           }
         }
       },
@@ -441,7 +441,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Sorry, dont have any fire beetle bellies."
+            "0": "Sorry, don't have any fire beetle bellies."
           }
         }
       }

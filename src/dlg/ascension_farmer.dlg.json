@@ -121,7 +121,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Well met, travelers....   say.. arent you the ones who are looking for the Crown of Ascension?"
+            "0": "Well met, traveler...   say... aren't you the one who are looking for the Crown of Ascension?"
           }
         }
       },
@@ -182,7 +182,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "<StartHighlight>farmer Bobs eyes roll back into his head, and he begins speaking in a voice that sends ice into your veins....</Start>    Sseeek the staff in the forgotten place......"
+            "0": "<StartHighlight>Farmer Bobs eyes roll back into his head and he begins speaking in a voice that sends ice into your veins....</Start>    Sseeek the stafff in the forgotten place......"
           }
         }
       },
@@ -227,7 +227,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "<StartHighlight>Bobs eyes return to normal, and he looks at you strangely</Start> What? Why are you cussing at me... I just asked you who you were is all."
+            "0": "<StartHighlight>Bobs eyes return to normal, and he looks at you strangely </Start> What? Why are you cussing at me... I just asked you who you are."
           }
         }
       },
@@ -386,7 +386,7 @@
   },
   "NumWords": {
     "type": "dword",
-    "value": 95
+    "value": 94
   },
   "PreventZoomIn": {
     "type": "byte",
@@ -448,7 +448,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Isnt everyone?"
+            "0": "Isn't everyone?"
           }
         }
       },
@@ -562,7 +562,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "But i just wanted to ask..."
+            "0": "But I just wanted to ask..."
           }
         }
       }

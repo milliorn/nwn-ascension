@@ -152,7 +152,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Hey you have been around a bit, could I ask you something?"
+            "0": "Hey you, have been around a bit. Could I ask you something?"
           }
         }
       },
@@ -258,7 +258,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Ah, ya, I didnt think so. My son yammers on about the magic kingdom, how it is full of magical treasures, faerys, even a sleeping Dragon who wont wake up when you steal his treasure.  I should have known that was nonsense when he said that."
+            "0": "Ah, ya, I didn/t think so. My son yammers on about the magic kingdom, how it is full of magical treasures, faerys, even a sleeping dragon who won't wake up when you steal his treasure.  I should have known that was nonsense when he said that."
           }
         }
       },
@@ -303,7 +303,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "WoW! I didnt really think that Crown existed! You had best be carefull with it, I've heard its a very evil artifact...."
+            "0": "WoW! I didn't really think that Crown existed! You had best be careful with it, I've heard its a very evil artifact...."
           }
         }
       }

@@ -1391,7 +1391,7 @@
                     },
                     "NAME": {
                       "type": "cexostring",
-                      "value": "Dancing Blade"
+                      "value": "Dancing Blad"
                     },
                     "RESREF": {
                       "type": "resref",
@@ -1901,6 +1901,25 @@
               "__struct_id": 0,
               "CR": {
                 "type": "float",
+                "value": 0.25
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Merchant"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Armor Merchant"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "emporiumarmor"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
                 "value": 12.0
               },
               "FACTION": {
@@ -2095,63 +2114,6 @@
               },
               "FACTION": {
                 "type": "cexostring",
-                "value": "Merchant"
-              },
-              "NAME": {
-                "type": "cexostring",
-                "value": "Emporium Armor"
-              },
-              "RESREF": {
-                "type": "resref",
-                "value": "emporiumarmor"
-              }
-            },
-            {
-              "__struct_id": 0,
-              "CR": {
-                "type": "float",
-                "value": 0.1666666716337204
-              },
-              "FACTION": {
-                "type": "cexostring",
-                "value": "Merchant"
-              },
-              "NAME": {
-                "type": "cexostring",
-                "value": "Emporium Items"
-              },
-              "RESREF": {
-                "type": "resref",
-                "value": "emporiumitems"
-              }
-            },
-            {
-              "__struct_id": 0,
-              "CR": {
-                "type": "float",
-                "value": 0.25
-              },
-              "FACTION": {
-                "type": "cexostring",
-                "value": "Merchant"
-              },
-              "NAME": {
-                "type": "cexostring",
-                "value": "Emporium Weapons"
-              },
-              "RESREF": {
-                "type": "resref",
-                "value": "emporiumweapons"
-              }
-            },
-            {
-              "__struct_id": 0,
-              "CR": {
-                "type": "float",
-                "value": 0.25
-              },
-              "FACTION": {
-                "type": "cexostring",
                 "value": "Defender"
               },
               "NAME": {
@@ -2218,6 +2180,25 @@
               "RESREF": {
                 "type": "resref",
                 "value": "immortal"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
+                "value": 0.1666666716337204
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Merchant"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Items Merchant"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "emporiumitems"
               }
             },
             {
@@ -2503,6 +2484,25 @@
               "RESREF": {
                 "type": "resref",
                 "value": "warden"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "CR": {
+                "type": "float",
+                "value": 0.25
+              },
+              "FACTION": {
+                "type": "cexostring",
+                "value": "Merchant"
+              },
+              "NAME": {
+                "type": "cexostring",
+                "value": "Weapons Merchant"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "emporiumweapons"
               }
             },
             {

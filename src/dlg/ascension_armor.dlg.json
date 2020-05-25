@@ -182,7 +182,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Aye, well the ye'd be here to ask me for me knoweledge concerning the Crown o' Ascenscion, ay? If I had a gold piece for everytime I was asked about that cursed crown! Hrmmm...  come to think of it, me should be makin a profit from the annoyance! I tell you what... I use fire beetle bellies for me work... If you bring me one, Ill tell ya everything I know about the bedamned Crown o' Ascension."
+            "0": "Aye, well the ye'd be here to ask me for me knowledge concerning the Crown o' Ascension, ay? If I had a gold piece for every time, I was asked about that cursed crown! Hrmmm...  come to think of it, me should be makin a profit from the annoyance! I tell you what... I use fire beetle bellies for me work... If you bring me one, I'll tell ya everything I know about the bedamned Crown o' Ascension."
           }
         }
       },
@@ -243,7 +243,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Aye, that ye do. Well the story is a bit vague really. The path of ascencion has been here for a very long time.  Legend has it that there is an artifact that will grant the user godlike powers.. mayhaps even immortality.  Of course, no bloke has ever actualy seen this device. Some say at one time Asmodeus the Arch-Devil himself came here seeking the Ascension Crown, and that the road he took to find it soaked up some of his evil nature. Apparently he never found it, because adventurers still come here from far and wide to search for it.  The Path of Ascension, as the road is called, and it runs north of town. Of course the road ends just a few miles down the way, but thats the starting point for the great search for Ascencion. if you ask me, Its all a pile of crock, but I cant complain about the buisness around here...   Thats all I know, at least all Ill tell for a vermins hide."
+            "0": "Aye, that ye do. Well the story is a bit vague really. The path of Ascension has been here for a very long time.  Legend has it that there is an artifact that will grant the user godlike powers.. mayhap even immortality.  Of course, no bloke has ever actually seen this device. Some say at one time Asmodeus the Arch-Devil himself came here seeking the Ascension Crown, and that the road he took to find it soaked up some of his evil nature. Apparently, he never found it, because adventurers still come here from far and wide to search for it.  The Path of Ascension, as the road is called, and it runs north of town. Of course, the road ends just a few miles down the way, but that's the starting point for the great search for Ascension. if you ask me, it's all a pile of crock, but I can't complain about the business around here...   That's all I know, at least all I'll tell for a vermin hide."
           }
         }
       },
@@ -319,7 +319,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Actualy, I dont, but I know who does. Is it worth 20 gold to ya?"
+            "0": "Actually, I don't, but I know who does. Is it worth 20 gold to ya?"
           }
         }
       },
@@ -380,7 +380,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Ok, well you can find out more by speaking with the hermit wizard fella just north of town.  Townfolk say hes crazy, but have you done much talkin to the townspeople here? I think maybe theyve got it backwards HAR HAR! Of course, the guards wont let you out of town except to the west, cause of all the troubles here lately. Maybe you can talk one of them into it if  yer willin to part with yer gold!"
+            "0": "Ok, well you can find out more by speaking with the hermit wizard fella just north of town.  Townsfolk say he's crazy, but have you done much talkin to the townspeople here? I think maybe they've got it backwards HAR HAR! Of course, the guards won't let you out of town except to the west, cause of all the troubles here lately. Maybe you can talk one of them into it if yer willin to part with yer gold!"
           }
         }
       },
@@ -425,7 +425,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Ive told ye all I can, so quit pestering me already!"
+            "0": "I've told ye all I can, so quit pestering me already!"
           }
         }
       }
@@ -433,7 +433,7 @@
   },
   "NumWords": {
     "type": "dword",
-    "value": 415
+    "value": 416
   },
   "PreventZoomIn": {
     "type": "byte",
@@ -479,7 +479,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "I dont want to talk to you."
+            "0": "I don't want to talk to you."
           }
         }
       },
@@ -592,7 +592,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Id rather ask you some questions."
+            "0": "I'd rather ask you some questions."
           }
         }
       },
@@ -633,7 +633,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Alright then, Ill do just that!"
+            "0": "Alright then, I'll do just that!"
           }
         }
       },
@@ -747,7 +747,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "well, if you know more, I have 10 gold for the information."
+            "0": "Well, if you know more, I have 10 gold for the information."
           }
         }
       },
@@ -788,7 +788,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "No thanks, Ill find out on my own."
+            "0": "No thanks, I'll find out on my own."
           }
         }
       },
@@ -886,7 +886,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "Well thanks for the info"
+            "0": "Well thanks for the info."
           }
         }
       }

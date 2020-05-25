@@ -62,7 +62,9 @@
   },
   "Description": {
     "type": "cexolocstring",
-    "value": {}
+    "value": {
+      "0": "This lady smiles as she sings a cheerful up-beat song that can both be danced to slowly or with a high step and an ale in both hands."
+    }
   },
   "Dex": {
     "type": "byte",
