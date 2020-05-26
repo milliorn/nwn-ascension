@@ -66,7 +66,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": -3.141564846038818
+          "value": -3.14156436920166
         },
         "CloseLockDC": {
           "type": "byte",
@@ -4485,7 +4485,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": 1.914392948150635
+          "value": 1.914392709732056
         },
         "BodyBag": {
           "type": "byte",
@@ -4714,7 +4714,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": 0.9326527714729309
+          "value": 0.9326527118682861
         },
         "BodyBag": {
           "type": "byte",
@@ -5401,7 +5401,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": -2.79795503616333
+          "value": -2.797954559326172
         },
         "BodyBag": {
           "type": "byte",
@@ -6088,7 +6088,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": 0.9817391037940979
+          "value": 0.9817390441894531
         },
         "BodyBag": {
           "type": "byte",
@@ -6636,7 +6636,7 @@
         },
         "OnDeath": {
           "type": "resref",
-          "value": "x_o2_bashed"
+          "value": "pl_death"
         },
         "OnDisarm": {
           "type": "resref",
@@ -6660,7 +6660,7 @@
         },
         "OnOpen": {
           "type": "resref",
-          "value": "x_o2_gen_low_x4"
+          "value": "loot_open_x4"
         },
         "OnSpellCastAt": {
           "type": "resref",
@@ -6775,7 +6775,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": 2.994302749633789
+          "value": 2.994302272796631
         },
         "BodyBag": {
           "type": "byte",
@@ -6865,7 +6865,7 @@
         },
         "OnDeath": {
           "type": "resref",
-          "value": "x_o2_bashed"
+          "value": "pl_death"
         },
         "OnDisarm": {
           "type": "resref",
@@ -6889,7 +6889,7 @@
         },
         "OnOpen": {
           "type": "resref",
-          "value": "x_o2_gen_low_x4"
+          "value": "loot_open_x4"
         },
         "OnSpellCastAt": {
           "type": "resref",
@@ -7004,7 +7004,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": -2.847041606903076
+          "value": -2.847041130065918
         },
         "BodyBag": {
           "type": "byte",
@@ -7134,7 +7134,7 @@
               },
               "TemplateResRef": {
                 "type": "resref",
-                "value": "sturdyrope"
+                "value": "sturdyrope1"
               },
               "XOrientation": {
                 "type": "float",
@@ -7235,7 +7235,7 @@
               },
               "TemplateResRef": {
                 "type": "resref",
-                "value": "sealbreaker"
+                "value": "sealbreaker1"
               },
               "XOrientation": {
                 "type": "float",

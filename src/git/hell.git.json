@@ -243,7 +243,7 @@
               "__struct_id": 2,
               "Orientation": {
                 "type": "float",
-                "value": -3.14154052734375
+                "value": -3.141540288925171
               },
               "X": {
                 "type": "float",
@@ -450,7 +450,7 @@
               "__struct_id": 2,
               "Orientation": {
                 "type": "float",
-                "value": -3.14154052734375
+                "value": -3.141540288925171
               },
               "X": {
                 "type": "float",
@@ -657,7 +657,7 @@
               "__struct_id": 2,
               "Orientation": {
                 "type": "float",
-                "value": -3.14154052734375
+                "value": -3.141540288925171
               },
               "X": {
                 "type": "float",
@@ -864,7 +864,7 @@
               "__struct_id": 2,
               "Orientation": {
                 "type": "float",
-                "value": -3.14154052734375
+                "value": -3.141540288925171
               },
               "X": {
                 "type": "float",
@@ -1071,7 +1071,7 @@
               "__struct_id": 2,
               "Orientation": {
                 "type": "float",
-                "value": -3.14154052734375
+                "value": -3.141540288925171
               },
               "X": {
                 "type": "float",
@@ -1278,7 +1278,7 @@
               "__struct_id": 2,
               "Orientation": {
                 "type": "float",
-                "value": -3.14154052734375
+                "value": -3.141540288925171
               },
               "X": {
                 "type": "float",
@@ -1485,7 +1485,7 @@
               "__struct_id": 2,
               "Orientation": {
                 "type": "float",
-                "value": -3.14154052734375
+                "value": -3.141540288925171
               },
               "X": {
                 "type": "float",
@@ -1677,7 +1677,7 @@
               "__struct_id": 2,
               "Orientation": {
                 "type": "float",
-                "value": -3.14154052734375
+                "value": -3.141540288925171
               },
               "X": {
                 "type": "float",
@@ -1844,7 +1844,7 @@
         },
         "XOrientation": {
           "type": "float",
-          "value": 7.788146376697114e-07
+          "value": 7.788145239828737e-07
         },
         "XPosition": {
           "type": "float",
@@ -1906,7 +1906,7 @@
         },
         "XOrientation": {
           "type": "float",
-          "value": 5.927880192757584e-05
+          "value": 5.975563908577897e-05
         },
         "XPosition": {
           "type": "float",

@@ -913,6 +913,17 @@
               "__struct_id": 0,
               "NAME": {
                 "type": "cexostring",
+                "value": "Barrel"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "barrelclassme003"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
                 "value": "LOOT_"
               },
               "RESREF": {

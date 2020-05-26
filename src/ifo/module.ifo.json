@@ -167,7 +167,7 @@
   },
   "Mod_Entry_Area": {
     "type": "resref",
-    "value": "itemshop"
+    "value": "cellar"
   },
   "Mod_Entry_Dir_X": {
     "type": "float",
@@ -179,15 +179,15 @@
   },
   "Mod_Entry_X": {
     "type": "float",
-    "value": 14.05985164642334
+    "value": 35.28177642822266
   },
   "Mod_Entry_Y": {
     "type": "float",
-    "value": 6.640176296234131
+    "value": 49.44869613647461
   },
   "Mod_Entry_Z": {
     "type": "float",
-    "value": 9.5367431640625e-07
+    "value": -1.549721332594345e-06
   },
   "Mod_Expan_List": {
     "type": "list",
